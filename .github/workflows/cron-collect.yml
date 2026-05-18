@@ -58,9 +58,22 @@ jobs:
       #   FTP_HOST   = ftp.okomox.com
       #   FTP_USER   = okomo2783657
       #   FTP_PASS   = (mot de passe FTP LWS)
+      # Si FTP_HOST est vide, le step est skip via env (secrets interdit dans if).
       # =====================================================================
+      - name: Check FTP secrets
+        id: check_ftp
+        env:
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+        run: |
+          if [ -n "$FTP_HOST" ]; then
+            echo "has_ftp=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_ftp=false" >> $GITHUB_OUTPUT
+            echo "Skip FTP upload (FTP_HOST secret non configuré)."
+          fi
+
       - name: Upload FTP vers LWS (okomox.site/data.json)
-        if: ${{ secrets.FTP_HOST != '' }}
+        if: steps.check_ftp.outputs.has_ftp == 'true'
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_HOST }}
