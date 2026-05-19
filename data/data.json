@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "generatedAt": "2026-05-19T20:33:15.013038+00:00",
-  "nextUpdateAt": "2026-05-19T21:03:15.013038+00:00",
+  "generatedAt": "2026-05-19T21:30:17.071663+00:00",
+  "nextUpdateAt": "2026-05-19T22:00:17.071663+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
-      "temperatureC": 16,
+      "temperatureC": 15,
       "lat": 48.8566,
       "lng": 2.3522,
       "traffic": "NORMAL"
     },
     "Lyon": {
-      "weather": "DRY",
-      "temperatureC": 19,
+      "weather": "LIGHT_RAIN",
+      "temperatureC": 18,
       "lat": 45.764,
       "lng": 4.8357,
       "traffic": "NORMAL"
@@ -26,21 +26,21 @@
     },
     "Toulouse": {
       "weather": "DRY",
-      "temperatureC": 21,
+      "temperatureC": 20,
       "lat": 43.6047,
       "lng": 1.4442,
       "traffic": "NORMAL"
     },
     "Bordeaux": {
       "weather": "DRY",
-      "temperatureC": 17,
+      "temperatureC": 16,
       "lat": 44.8378,
       "lng": -0.5792,
       "traffic": "NORMAL"
     },
     "Nice": {
       "weather": "DRY",
-      "temperatureC": 16,
+      "temperatureC": 18,
       "lat": 43.7102,
       "lng": 7.262,
       "traffic": "NORMAL"
@@ -53,15 +53,15 @@
       "traffic": "NORMAL"
     },
     "Strasbourg": {
-      "weather": "DRY",
-      "temperatureC": 16,
+      "weather": "LIGHT_RAIN",
+      "temperatureC": 15,
       "lat": 48.5734,
       "lng": 7.7521,
       "traffic": "NORMAL"
     },
     "Lille": {
-      "weather": "DRY",
-      "temperatureC": 14,
+      "weather": "LIGHT_RAIN",
+      "temperatureC": 13,
       "lat": 50.6292,
       "lng": 3.0573,
       "traffic": "NORMAL"
@@ -74,7 +74,7 @@
       "traffic": "NORMAL"
     },
     "Versailles": {
-      "weather": "DRY",
+      "weather": "LIGHT_RAIN",
       "temperatureC": 14,
       "lat": 48.8049,
       "lng": 2.1204,
@@ -82,7 +82,7 @@
     },
     "Cergy": {
       "weather": "DRY",
-      "temperatureC": 18,
+      "temperatureC": 15,
       "lat": 49.0367,
       "lng": 2.0717,
       "traffic": "NORMAL"
