@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-05-19T22:26:17.218434+00:00",
-  "nextUpdateAt": "2026-05-19T22:56:17.218434+00:00",
+  "generatedAt": "2026-05-19T22:52:10.982462+00:00",
+  "nextUpdateAt": "2026-05-19T23:22:10.982462+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
@@ -54,7 +54,7 @@
     },
     "Strasbourg": {
       "weather": "LIGHT_RAIN",
-      "temperatureC": 15,
+      "temperatureC": 14,
       "lat": 48.5734,
       "lng": 7.7521,
       "traffic": "NORMAL"
@@ -96,7 +96,7 @@
     },
     "Creteil": {
       "weather": "DRY",
-      "temperatureC": 15,
+      "temperatureC": 18,
       "lat": 48.7903,
       "lng": 2.4555,
       "traffic": "NORMAL"
