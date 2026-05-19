@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "generatedAt": "2026-05-19T13:34:50.383514+00:00",
-  "nextUpdateAt": "2026-05-19T14:04:50.383514+00:00",
+  "generatedAt": "2026-05-19T15:03:26.437616+00:00",
+  "nextUpdateAt": "2026-05-19T15:33:26.437616+00:00",
   "cities": {
     "Paris": {
-      "weather": "LIGHT_RAIN",
-      "temperatureC": 15,
+      "weather": "DRY",
+      "temperatureC": 16,
       "lat": 48.8566,
       "lng": 2.3522,
       "traffic": "NORMAL"
     },
     "Lyon": {
       "weather": "DRY",
-      "temperatureC": 21,
+      "temperatureC": 22,
       "lat": 45.764,
       "lng": 4.8357,
       "traffic": "NORMAL"
@@ -40,7 +40,7 @@
     },
     "Nice": {
       "weather": "DRY",
-      "temperatureC": 20,
+      "temperatureC": 19,
       "lat": 43.7102,
       "lng": 7.262,
       "traffic": "NORMAL"
@@ -53,15 +53,15 @@
       "traffic": "NORMAL"
     },
     "Strasbourg": {
-      "weather": "LIGHT_RAIN",
+      "weather": "DRY",
       "temperatureC": 18,
       "lat": 48.5734,
       "lng": 7.7521,
       "traffic": "NORMAL"
     },
     "Lille": {
-      "weather": "LIGHT_RAIN",
-      "temperatureC": 12,
+      "weather": "DRY",
+      "temperatureC": 13,
       "lat": 50.6292,
       "lng": 3.0573,
       "traffic": "NORMAL"
@@ -74,29 +74,29 @@
       "traffic": "NORMAL"
     },
     "Versailles": {
-      "weather": "LIGHT_RAIN",
-      "temperatureC": 14,
+      "weather": "DRY",
+      "temperatureC": 15,
       "lat": 48.8049,
       "lng": 2.1204,
       "traffic": "NORMAL"
     },
     "Cergy": {
-      "weather": "LIGHT_RAIN",
-      "temperatureC": 15,
+      "weather": "DRY",
+      "temperatureC": 16,
       "lat": 49.0367,
       "lng": 2.0717,
       "traffic": "NORMAL"
     },
     "Evry": {
       "weather": "DRY",
-      "temperatureC": 18,
+      "temperatureC": 16,
       "lat": 48.6294,
       "lng": 2.4413,
       "traffic": "NORMAL"
     },
     "Creteil": {
-      "weather": "LIGHT_RAIN",
-      "temperatureC": 16,
+      "weather": "DRY",
+      "temperatureC": 18,
       "lat": 48.7903,
       "lng": 2.4555,
       "traffic": "NORMAL"
