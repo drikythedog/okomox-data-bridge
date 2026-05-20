@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-05-20T22:55:54.836522+00:00",
-  "nextUpdateAt": "2026-05-20T23:25:54.836522+00:00",
+  "generatedAt": "2026-05-20T23:29:31.083602+00:00",
+  "nextUpdateAt": "2026-05-20T23:59:31.083602+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
-      "temperatureC": 16,
+      "temperatureC": 15,
       "lat": 48.8566,
       "lng": 2.3522,
       "traffic": "NORMAL"
@@ -75,14 +75,14 @@
     },
     "Versailles": {
       "weather": "DRY",
-      "temperatureC": 13,
+      "temperatureC": 18,
       "lat": 48.8049,
       "lng": 2.1204,
       "traffic": "NORMAL"
     },
     "Cergy": {
       "weather": "DRY",
-      "temperatureC": 14,
+      "temperatureC": 13,
       "lat": 49.0367,
       "lng": 2.0717,
       "traffic": "NORMAL"
