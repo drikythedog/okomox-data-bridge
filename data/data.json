@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-05-23T15:23:36.260890+00:00",
-  "nextUpdateAt": "2026-05-23T15:53:36.260890+00:00",
+  "generatedAt": "2026-05-23T15:49:54.286864+00:00",
+  "nextUpdateAt": "2026-05-23T16:19:54.286864+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
@@ -61,7 +61,7 @@
     },
     "Lille": {
       "weather": "DRY",
-      "temperatureC": 32,
+      "temperatureC": 31,
       "lat": 50.6292,
       "lng": 3.0573,
       "traffic": "NORMAL"
@@ -75,7 +75,7 @@
     },
     "Versailles": {
       "weather": "DRY",
-      "temperatureC": 29,
+      "temperatureC": 30,
       "lat": 48.8049,
       "lng": 2.1204,
       "traffic": "NORMAL"
