@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-05-24T15:50:08.976226+00:00",
-  "nextUpdateAt": "2026-05-24T16:20:08.976226+00:00",
+  "generatedAt": "2026-05-24T16:20:38.323075+00:00",
+  "nextUpdateAt": "2026-05-24T16:50:38.323075+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
@@ -19,7 +19,7 @@
     },
     "Marseille": {
       "weather": "DRY",
-      "temperatureC": 24,
+      "temperatureC": 25,
       "lat": 43.2965,
       "lng": 5.3698,
       "traffic": "NORMAL"
@@ -40,7 +40,7 @@
     },
     "Nice": {
       "weather": "DRY",
-      "temperatureC": 18,
+      "temperatureC": 28,
       "lat": 43.7102,
       "lng": 7.262,
       "traffic": "NORMAL"
@@ -54,14 +54,14 @@
     },
     "Strasbourg": {
       "weather": "DRY",
-      "temperatureC": 32,
+      "temperatureC": 31,
       "lat": 48.5734,
       "lng": 7.7521,
       "traffic": "NORMAL"
     },
     "Lille": {
       "weather": "DRY",
-      "temperatureC": 32,
+      "temperatureC": 31,
       "lat": 50.6292,
       "lng": 3.0573,
       "traffic": "NORMAL"
@@ -89,14 +89,14 @@
     },
     "Evry": {
       "weather": "DRY",
-      "temperatureC": 32,
+      "temperatureC": 31,
       "lat": 48.6294,
       "lng": 2.4413,
       "traffic": "NORMAL"
     },
     "Creteil": {
       "weather": "DRY",
-      "temperatureC": 32,
+      "temperatureC": 18,
       "lat": 48.7903,
       "lng": 2.4555,
       "traffic": "NORMAL"
