@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-05-24T15:24:17.969225+00:00",
-  "nextUpdateAt": "2026-05-24T15:54:17.969225+00:00",
+  "generatedAt": "2026-05-24T15:50:08.976226+00:00",
+  "nextUpdateAt": "2026-05-24T16:20:08.976226+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
-      "temperatureC": 33,
+      "temperatureC": 32,
       "lat": 48.8566,
       "lng": 2.3522,
       "traffic": "NORMAL"
@@ -40,7 +40,7 @@
     },
     "Nice": {
       "weather": "DRY",
-      "temperatureC": 28,
+      "temperatureC": 18,
       "lat": 43.7102,
       "lng": 7.262,
       "traffic": "NORMAL"
@@ -61,7 +61,7 @@
     },
     "Lille": {
       "weather": "DRY",
-      "temperatureC": 31,
+      "temperatureC": 32,
       "lat": 50.6292,
       "lng": 3.0573,
       "traffic": "NORMAL"
@@ -89,7 +89,7 @@
     },
     "Evry": {
       "weather": "DRY",
-      "temperatureC": 18,
+      "temperatureC": 32,
       "lat": 48.6294,
       "lng": 2.4413,
       "traffic": "NORMAL"
