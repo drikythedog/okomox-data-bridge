@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-05-24T12:49:45.889771+00:00",
-  "nextUpdateAt": "2026-05-24T13:19:45.889771+00:00",
+  "generatedAt": "2026-05-24T13:31:20.257091+00:00",
+  "nextUpdateAt": "2026-05-24T14:01:20.257091+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
@@ -12,14 +12,14 @@
     },
     "Lyon": {
       "weather": "DRY",
-      "temperatureC": 31,
+      "temperatureC": 32,
       "lat": 45.764,
       "lng": 4.8357,
       "traffic": "NORMAL"
     },
     "Marseille": {
       "weather": "DRY",
-      "temperatureC": 25,
+      "temperatureC": 26,
       "lat": 43.2965,
       "lng": 5.3698,
       "traffic": "NORMAL"
@@ -68,7 +68,7 @@
     },
     "Montpellier": {
       "weather": "DRY",
-      "temperatureC": 28,
+      "temperatureC": 27,
       "lat": 43.6108,
       "lng": 3.8767,
       "traffic": "NORMAL"
