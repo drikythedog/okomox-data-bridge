@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-05-25T23:24:16.376894+00:00",
-  "nextUpdateAt": "2026-05-25T23:54:16.376894+00:00",
+  "generatedAt": "2026-05-25T23:50:27.908502+00:00",
+  "nextUpdateAt": "2026-05-26T00:20:27.908502+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
@@ -33,7 +33,7 @@
     },
     "Bordeaux": {
       "weather": "DRY",
-      "temperatureC": 24,
+      "temperatureC": 23,
       "lat": 44.8378,
       "lng": -0.5792,
       "traffic": "NORMAL"
@@ -61,7 +61,7 @@
     },
     "Lille": {
       "weather": "DRY",
-      "temperatureC": 23,
+      "temperatureC": 22,
       "lat": 50.6292,
       "lng": 3.0573,
       "traffic": "NORMAL"
@@ -96,7 +96,7 @@
     },
     "Creteil": {
       "weather": "DRY",
-      "temperatureC": 24,
+      "temperatureC": 23,
       "lat": 48.7903,
       "lng": 2.4555,
       "traffic": "NORMAL"
