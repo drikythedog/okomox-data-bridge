@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-04T21:08:55.988260+00:00",
-  "nextUpdateAt": "2026-06-04T21:38:55.988260+00:00",
+  "generatedAt": "2026-06-04T22:51:30.021482+00:00",
+  "nextUpdateAt": "2026-06-04T23:21:30.021482+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
-      "temperatureC": 16,
+      "temperatureC": 15,
       "lat": 48.8566,
       "lng": 2.3522,
       "traffic": "NORMAL"
@@ -26,35 +26,35 @@
     },
     "Toulouse": {
       "weather": "DRY",
-      "temperatureC": 16,
+      "temperatureC": 15,
       "lat": 43.6047,
       "lng": 1.4442,
       "traffic": "NORMAL"
     },
     "Bordeaux": {
       "weather": "DRY",
-      "temperatureC": 15,
+      "temperatureC": 14,
       "lat": 44.8378,
       "lng": -0.5792,
       "traffic": "NORMAL"
     },
     "Nice": {
-      "weather": "LIGHT_RAIN",
-      "temperatureC": 20,
+      "weather": "DRY",
+      "temperatureC": 19,
       "lat": 43.7102,
       "lng": 7.262,
       "traffic": "NORMAL"
     },
     "Nantes": {
       "weather": "DRY",
-      "temperatureC": 15,
+      "temperatureC": 14,
       "lat": 47.2184,
       "lng": -1.5536,
       "traffic": "NORMAL"
     },
     "Strasbourg": {
       "weather": "DRY",
-      "temperatureC": 15,
+      "temperatureC": 14,
       "lat": 48.5734,
       "lng": 7.7521,
       "traffic": "NORMAL"
@@ -82,14 +82,14 @@
     },
     "Cergy": {
       "weather": "DRY",
-      "temperatureC": 15,
+      "temperatureC": 14,
       "lat": 49.0367,
       "lng": 2.0717,
       "traffic": "NORMAL"
     },
     "Evry": {
       "weather": "DRY",
-      "temperatureC": 14,
+      "temperatureC": 13,
       "lat": 48.6294,
       "lng": 2.4413,
       "traffic": "NORMAL"
