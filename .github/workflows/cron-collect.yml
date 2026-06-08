@@ -1,6 +1,5 @@
 name: Collect météo & trafic
 # Exécute collect.py toutes les 30 minutes + commit/push data/data.json
-# Publié automatiquement sur GitHub Pages (canonical URL).
 # Si secrets FTP configurés, upload aussi vers LWS (okomox.site/data.json).
 
 on:
@@ -10,11 +9,9 @@ on:
     - cron: '*/30 * * * *'
   workflow_dispatch: {}  # permet déclenchement manuel via UI GitHub
 
-# Permissions minimales : commit data/, déployer Pages.
+# Permissions minimales : commit data/.
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 # Évite les runs concurrents si un cron prend trop de temps.
 concurrency:
@@ -56,7 +53,7 @@ jobs:
       # Upload FTP optionnel — actif uniquement si les secrets sont configurés
       # Settings → Secrets and variables → Actions → New secret :
       #   FTP_HOST   = ftp.okomox.com
-      #   FTP_USER   = okomo2783657
+      #   FTP_USER   = (voir tableau LWS)
       #   FTP_PASS   = (mot de passe FTP LWS)
       # Si FTP_HOST est vide, le step est skip via env (secrets interdit dans if).
       # =====================================================================
@@ -85,28 +82,3 @@ jobs:
           exclude: |
             **/.git*
             **/.git*/**
-
-  deploy-pages:
-    needs: collect
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Checkout (avec le commit qu'on vient de pousser)
-        uses: actions/checkout@v4
-        with:
-          ref: main
-          fetch-depth: 1
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload artifact (dossier data/)
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./data
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
