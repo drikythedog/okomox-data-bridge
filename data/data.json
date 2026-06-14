@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-14T16:01:35.820718+00:00",
-  "nextUpdateAt": "2026-06-14T16:31:35.820718+00:00",
+  "generatedAt": "2026-06-14T16:58:12.203549+00:00",
+  "nextUpdateAt": "2026-06-14T17:28:12.203549+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
@@ -47,7 +47,7 @@
     },
     "Nantes": {
       "weather": "DRY",
-      "temperatureC": 34,
+      "temperatureC": 33,
       "lat": 47.2184,
       "lng": -1.5536,
       "traffic": "NORMAL"
@@ -61,7 +61,7 @@
     },
     "Lille": {
       "weather": "DRY",
-      "temperatureC": 18,
+      "temperatureC": 19,
       "lat": 50.6292,
       "lng": 3.0573,
       "traffic": "NORMAL"
@@ -75,14 +75,14 @@
     },
     "Versailles": {
       "weather": "DRY",
-      "temperatureC": 25,
+      "temperatureC": 18,
       "lat": 48.8049,
       "lng": 2.1204,
       "traffic": "NORMAL"
     },
     "Cergy": {
       "weather": "DRY",
-      "temperatureC": 18,
+      "temperatureC": 25,
       "lat": 49.0367,
       "lng": 2.0717,
       "traffic": "NORMAL"
