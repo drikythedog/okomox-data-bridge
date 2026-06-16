@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-16T15:14:52.724212+00:00",
-  "nextUpdateAt": "2026-06-16T15:44:52.724212+00:00",
+  "generatedAt": "2026-06-16T17:14:38.447439+00:00",
+  "nextUpdateAt": "2026-06-16T17:44:38.447439+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
@@ -12,14 +12,14 @@
     },
     "Lyon": {
       "weather": "DRY",
-      "temperatureC": 33,
+      "temperatureC": 32,
       "lat": 45.764,
       "lng": 4.8357,
       "traffic": "NORMAL"
     },
     "Marseille": {
       "weather": "DRY",
-      "temperatureC": 23,
+      "temperatureC": 24,
       "lat": 43.2965,
       "lng": 5.3698,
       "traffic": "NORMAL"
@@ -40,14 +40,14 @@
     },
     "Nice": {
       "weather": "DRY",
-      "temperatureC": 26,
+      "temperatureC": 25,
       "lat": 43.7102,
       "lng": 7.262,
       "traffic": "NORMAL"
     },
     "Nantes": {
       "weather": "DRY",
-      "temperatureC": 27,
+      "temperatureC": 25,
       "lat": 47.2184,
       "lng": -1.5536,
       "traffic": "NORMAL"
@@ -61,14 +61,14 @@
     },
     "Lille": {
       "weather": "DRY",
-      "temperatureC": 25,
+      "temperatureC": 24,
       "lat": 50.6292,
       "lng": 3.0573,
       "traffic": "NORMAL"
     },
     "Montpellier": {
       "weather": "DRY",
-      "temperatureC": 29,
+      "temperatureC": 27,
       "lat": 43.6108,
       "lng": 3.8767,
       "traffic": "NORMAL"
@@ -96,7 +96,7 @@
     },
     "Creteil": {
       "weather": "DRY",
-      "temperatureC": 28,
+      "temperatureC": 18,
       "lat": 48.7903,
       "lng": 2.4555,
       "traffic": "NORMAL"
