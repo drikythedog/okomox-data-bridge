@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-20T03:04:30.440371+00:00",
-  "nextUpdateAt": "2026-06-20T03:34:30.440371+00:00",
+  "generatedAt": "2026-06-20T04:56:21.818269+00:00",
+  "nextUpdateAt": "2026-06-20T05:26:21.818269+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
@@ -33,7 +33,7 @@
     },
     "Bordeaux": {
       "weather": "DRY",
-      "temperatureC": 20,
+      "temperatureC": 19,
       "lat": 44.8378,
       "lng": -0.5792,
       "traffic": "NORMAL"
@@ -61,7 +61,7 @@
     },
     "Lille": {
       "weather": "DRY",
-      "temperatureC": 18,
+      "temperatureC": 21,
       "lat": 50.6292,
       "lng": 3.0573,
       "traffic": "NORMAL"
@@ -75,14 +75,14 @@
     },
     "Versailles": {
       "weather": "DRY",
-      "temperatureC": 19,
+      "temperatureC": 17,
       "lat": 48.8049,
       "lng": 2.1204,
       "traffic": "NORMAL"
     },
     "Cergy": {
       "weather": "DRY",
-      "temperatureC": 20,
+      "temperatureC": 19,
       "lat": 49.0367,
       "lng": 2.0717,
       "traffic": "NORMAL"
@@ -96,7 +96,7 @@
     },
     "Creteil": {
       "weather": "DRY",
-      "temperatureC": 18,
+      "temperatureC": 22,
       "lat": 48.7903,
       "lng": 2.4555,
       "traffic": "NORMAL"
