@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-20T23:26:28.760589+00:00",
-  "nextUpdateAt": "2026-06-20T23:56:28.760589+00:00",
+  "generatedAt": "2026-06-20T23:52:29.730648+00:00",
+  "nextUpdateAt": "2026-06-21T00:22:29.730648+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
@@ -26,7 +26,7 @@
     },
     "Toulouse": {
       "weather": "DRY",
-      "temperatureC": 25,
+      "temperatureC": 24,
       "lat": 43.6047,
       "lng": 1.4442,
       "traffic": "NORMAL"
@@ -40,7 +40,7 @@
     },
     "Nice": {
       "weather": "DRY",
-      "temperatureC": 25,
+      "temperatureC": 24,
       "lat": 43.7102,
       "lng": 7.262,
       "traffic": "NORMAL"
@@ -54,7 +54,7 @@
     },
     "Strasbourg": {
       "weather": "DRY",
-      "temperatureC": 27,
+      "temperatureC": 26,
       "lat": 48.5734,
       "lng": 7.7521,
       "traffic": "NORMAL"
@@ -68,14 +68,14 @@
     },
     "Montpellier": {
       "weather": "DRY",
-      "temperatureC": 23,
+      "temperatureC": 22,
       "lat": 43.6108,
       "lng": 3.8767,
       "traffic": "NORMAL"
     },
     "Versailles": {
       "weather": "DRY",
-      "temperatureC": 18,
+      "temperatureC": 23,
       "lat": 48.8049,
       "lng": 2.1204,
       "traffic": "NORMAL"
@@ -89,7 +89,7 @@
     },
     "Evry": {
       "weather": "DRY",
-      "temperatureC": 26,
+      "temperatureC": 25,
       "lat": 48.6294,
       "lng": 2.4413,
       "traffic": "NORMAL"
