@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-22T23:29:43.102021+00:00",
-  "nextUpdateAt": "2026-06-22T23:59:43.102021+00:00",
+  "generatedAt": "2026-06-22T23:56:27.110143+00:00",
+  "nextUpdateAt": "2026-06-23T00:26:27.110143+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
@@ -12,14 +12,14 @@
     },
     "Lyon": {
       "weather": "DRY",
-      "temperatureC": 29,
+      "temperatureC": 28,
       "lat": 45.764,
       "lng": 4.8357,
       "traffic": "NORMAL"
     },
     "Marseille": {
       "weather": "DRY",
-      "temperatureC": 29,
+      "temperatureC": 28,
       "lat": 43.2965,
       "lng": 5.3698,
       "traffic": "NORMAL"
@@ -47,14 +47,14 @@
     },
     "Nantes": {
       "weather": "DRY",
-      "temperatureC": 31,
+      "temperatureC": 30,
       "lat": 47.2184,
       "lng": -1.5536,
       "traffic": "NORMAL"
     },
     "Strasbourg": {
       "weather": "DRY",
-      "temperatureC": 27,
+      "temperatureC": 26,
       "lat": 48.5734,
       "lng": 7.7521,
       "traffic": "NORMAL"
@@ -75,7 +75,7 @@
     },
     "Versailles": {
       "weather": "DRY",
-      "temperatureC": 27,
+      "temperatureC": 18,
       "lat": 48.8049,
       "lng": 2.1204,
       "traffic": "NORMAL"
