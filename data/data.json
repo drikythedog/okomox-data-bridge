@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-27T15:53:10.724412+00:00",
-  "nextUpdateAt": "2026-06-27T16:23:10.724412+00:00",
+  "generatedAt": "2026-06-27T16:23:17.608431+00:00",
+  "nextUpdateAt": "2026-06-27T16:53:17.608431+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
@@ -33,7 +33,7 @@
     },
     "Bordeaux": {
       "weather": "DRY",
-      "temperatureC": 36,
+      "temperatureC": 35,
       "lat": 44.8378,
       "lng": -0.5792,
       "traffic": "NORMAL"
@@ -89,7 +89,7 @@
     },
     "Evry": {
       "weather": "DRY",
-      "temperatureC": 18,
+      "temperatureC": 38,
       "lat": 48.6294,
       "lng": 2.4413,
       "traffic": "NORMAL"
