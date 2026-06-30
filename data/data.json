@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-30T15:49:32.415740+00:00",
-  "nextUpdateAt": "2026-06-30T16:19:32.415740+00:00",
+  "generatedAt": "2026-06-30T16:42:45.049991+00:00",
+  "nextUpdateAt": "2026-06-30T17:12:45.049991+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
-      "temperatureC": 29,
+      "temperatureC": 27,
       "lat": 48.8566,
       "lng": 2.3522,
       "traffic": "NORMAL"
@@ -19,7 +19,7 @@
     },
     "Marseille": {
       "weather": "DRY",
-      "temperatureC": 30,
+      "temperatureC": 31,
       "lat": 43.2965,
       "lng": 5.3698,
       "traffic": "NORMAL"
@@ -33,21 +33,21 @@
     },
     "Bordeaux": {
       "weather": "DRY",
-      "temperatureC": 27,
+      "temperatureC": 26,
       "lat": 44.8378,
       "lng": -0.5792,
       "traffic": "NORMAL"
     },
     "Nice": {
       "weather": "DRY",
-      "temperatureC": 32,
+      "temperatureC": 31,
       "lat": 43.7102,
       "lng": 7.262,
       "traffic": "NORMAL"
     },
     "Nantes": {
       "weather": "DRY",
-      "temperatureC": 28,
+      "temperatureC": 27,
       "lat": 47.2184,
       "lng": -1.5536,
       "traffic": "NORMAL"
@@ -75,7 +75,7 @@
     },
     "Versailles": {
       "weather": "DRY",
-      "temperatureC": 28,
+      "temperatureC": 18,
       "lat": 48.8049,
       "lng": 2.1204,
       "traffic": "NORMAL"
@@ -96,7 +96,7 @@
     },
     "Creteil": {
       "weather": "DRY",
-      "temperatureC": 30,
+      "temperatureC": 28,
       "lat": 48.7903,
       "lng": 2.4555,
       "traffic": "NORMAL"
