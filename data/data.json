@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-23T14:39:17.017581+00:00",
-  "nextUpdateAt": "2026-07-23T15:09:17.017581+00:00",
+  "generatedAt": "2026-07-23T16:21:00.670053+00:00",
+  "nextUpdateAt": "2026-07-23T16:51:00.670053+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
-      "temperatureC": 25,
+      "temperatureC": 26,
       "lat": 48.8566,
       "lng": 2.3522,
       "traffic": "NORMAL"
@@ -19,7 +19,7 @@
     },
     "Marseille": {
       "weather": "DRY",
-      "temperatureC": 34,
+      "temperatureC": 35,
       "lat": 43.2965,
       "lng": 5.3698,
       "traffic": "NORMAL"
@@ -40,28 +40,28 @@
     },
     "Nice": {
       "weather": "DRY",
-      "temperatureC": 30,
+      "temperatureC": 29,
       "lat": 43.7102,
       "lng": 7.262,
       "traffic": "NORMAL"
     },
     "Nantes": {
       "weather": "DRY",
-      "temperatureC": 30,
+      "temperatureC": 31,
       "lat": 47.2184,
       "lng": -1.5536,
       "traffic": "NORMAL"
     },
     "Strasbourg": {
       "weather": "DRY",
-      "temperatureC": 24,
+      "temperatureC": 25,
       "lat": 48.5734,
       "lng": 7.7521,
       "traffic": "NORMAL"
     },
     "Lille": {
       "weather": "DRY",
-      "temperatureC": 24,
+      "temperatureC": 23,
       "lat": 50.6292,
       "lng": 3.0573,
       "traffic": "NORMAL"
@@ -75,7 +75,7 @@
     },
     "Versailles": {
       "weather": "DRY",
-      "temperatureC": 24,
+      "temperatureC": 25,
       "lat": 48.8049,
       "lng": 2.1204,
       "traffic": "NORMAL"
@@ -89,14 +89,14 @@
     },
     "Evry": {
       "weather": "DRY",
-      "temperatureC": 24,
+      "temperatureC": 18,
       "lat": 48.6294,
       "lng": 2.4413,
       "traffic": "NORMAL"
     },
     "Creteil": {
       "weather": "DRY",
-      "temperatureC": 18,
+      "temperatureC": 26,
       "lat": 48.7903,
       "lng": 2.4555,
       "traffic": "NORMAL"
