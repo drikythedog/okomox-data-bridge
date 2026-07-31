@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-31T21:34:41.459909+00:00",
-  "nextUpdateAt": "2026-07-31T22:04:41.459909+00:00",
+  "generatedAt": "2026-07-31T22:52:44.057540+00:00",
+  "nextUpdateAt": "2026-07-31T23:22:44.057540+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
-      "temperatureC": 23,
+      "temperatureC": 21,
       "lat": 48.8566,
       "lng": 2.3522,
       "traffic": "NORMAL"
@@ -19,7 +19,7 @@
     },
     "Marseille": {
       "weather": "DRY",
-      "temperatureC": 26,
+      "temperatureC": 25,
       "lat": 43.2965,
       "lng": 5.3698,
       "traffic": "NORMAL"
@@ -33,28 +33,28 @@
     },
     "Bordeaux": {
       "weather": "DRY",
-      "temperatureC": 20,
+      "temperatureC": 19,
       "lat": 44.8378,
       "lng": -0.5792,
       "traffic": "NORMAL"
     },
     "Nice": {
       "weather": "DRY",
-      "temperatureC": 27,
+      "temperatureC": 26,
       "lat": 43.7102,
       "lng": 7.262,
       "traffic": "NORMAL"
     },
     "Nantes": {
       "weather": "DRY",
-      "temperatureC": 20,
+      "temperatureC": 19,
       "lat": 47.2184,
       "lng": -1.5536,
       "traffic": "NORMAL"
     },
     "Strasbourg": {
       "weather": "DRY",
-      "temperatureC": 23,
+      "temperatureC": 24,
       "lat": 48.5734,
       "lng": 7.7521,
       "traffic": "NORMAL"
@@ -75,28 +75,28 @@
     },
     "Versailles": {
       "weather": "DRY",
-      "temperatureC": 20,
+      "temperatureC": 19,
       "lat": 48.8049,
       "lng": 2.1204,
       "traffic": "NORMAL"
     },
     "Cergy": {
       "weather": "DRY",
-      "temperatureC": 21,
+      "temperatureC": 19,
       "lat": 49.0367,
       "lng": 2.0717,
       "traffic": "NORMAL"
     },
     "Evry": {
       "weather": "DRY",
-      "temperatureC": 24,
+      "temperatureC": 22,
       "lat": 48.6294,
       "lng": 2.4413,
       "traffic": "NORMAL"
     },
     "Creteil": {
       "weather": "DRY",
-      "temperatureC": 23,
+      "temperatureC": 22,
       "lat": 48.7903,
       "lng": 2.4555,
       "traffic": "NORMAL"
