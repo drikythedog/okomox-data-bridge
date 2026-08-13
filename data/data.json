@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-13T14:17:00.506980+00:00",
-  "nextUpdateAt": "2026-08-13T14:47:00.506980+00:00",
+  "generatedAt": "2026-08-13T15:28:36.806953+00:00",
+  "nextUpdateAt": "2026-08-13T15:58:36.806953+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
-      "temperatureC": 38,
+      "temperatureC": 18,
       "lat": 48.8566,
       "lng": 2.3522,
       "traffic": "NORMAL"
@@ -33,7 +33,7 @@
     },
     "Bordeaux": {
       "weather": "DRY",
-      "temperatureC": 39,
+      "temperatureC": 40,
       "lat": 44.8378,
       "lng": -0.5792,
       "traffic": "NORMAL"
@@ -68,14 +68,14 @@
     },
     "Montpellier": {
       "weather": "DRY",
-      "temperatureC": 35,
+      "temperatureC": 34,
       "lat": 43.6108,
       "lng": 3.8767,
       "traffic": "NORMAL"
     },
     "Versailles": {
       "weather": "DRY",
-      "temperatureC": 18,
+      "temperatureC": 37,
       "lat": 48.8049,
       "lng": 2.1204,
       "traffic": "NORMAL"
