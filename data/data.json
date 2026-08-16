@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-16T14:45:48.034493+00:00",
-  "nextUpdateAt": "2026-08-16T15:15:48.034493+00:00",
+  "generatedAt": "2026-08-16T15:13:01.895947+00:00",
+  "nextUpdateAt": "2026-08-16T15:43:01.895947+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
@@ -75,7 +75,7 @@
     },
     "Versailles": {
       "weather": "DRY",
-      "temperatureC": 18,
+      "temperatureC": 30,
       "lat": 48.8049,
       "lng": 2.1204,
       "traffic": "NORMAL"
@@ -96,7 +96,7 @@
     },
     "Creteil": {
       "weather": "DRY",
-      "temperatureC": 31,
+      "temperatureC": 32,
       "lat": 48.7903,
       "lng": 2.4555,
       "traffic": "NORMAL"
