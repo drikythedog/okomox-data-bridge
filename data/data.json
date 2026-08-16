@@ -1,25 +1,25 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-16T02:16:55.362382+00:00",
-  "nextUpdateAt": "2026-08-16T02:46:55.362382+00:00",
+  "generatedAt": "2026-08-16T03:25:06.171887+00:00",
+  "nextUpdateAt": "2026-08-16T03:55:06.171887+00:00",
   "cities": {
     "Paris": {
-      "weather": "DRY",
-      "temperatureC": 23,
+      "weather": "LIGHT_RAIN",
+      "temperatureC": 22,
       "lat": 48.8566,
       "lng": 2.3522,
       "traffic": "NORMAL"
     },
     "Lyon": {
       "weather": "EXTREME",
-      "temperatureC": 28,
+      "temperatureC": 27,
       "lat": 45.764,
       "lng": 4.8357,
       "traffic": "NORMAL"
     },
     "Marseille": {
       "weather": "DRY",
-      "temperatureC": 26,
+      "temperatureC": 25,
       "lat": 43.2965,
       "lng": 5.3698,
       "traffic": "NORMAL"
@@ -33,14 +33,14 @@
     },
     "Bordeaux": {
       "weather": "DRY",
-      "temperatureC": 22,
+      "temperatureC": 21,
       "lat": 44.8378,
       "lng": -0.5792,
       "traffic": "NORMAL"
     },
     "Nice": {
       "weather": "DRY",
-      "temperatureC": 27,
+      "temperatureC": 26,
       "lat": 43.7102,
       "lng": 7.262,
       "traffic": "NORMAL"
@@ -61,7 +61,7 @@
     },
     "Lille": {
       "weather": "DRY",
-      "temperatureC": 20,
+      "temperatureC": 19,
       "lat": 50.6292,
       "lng": 3.0573,
       "traffic": "NORMAL"
@@ -74,15 +74,15 @@
       "traffic": "NORMAL"
     },
     "Versailles": {
-      "weather": "DRY",
-      "temperatureC": 21,
+      "weather": "LIGHT_RAIN",
+      "temperatureC": 20,
       "lat": 48.8049,
       "lng": 2.1204,
       "traffic": "NORMAL"
     },
     "Cergy": {
       "weather": "DRY",
-      "temperatureC": 18,
+      "temperatureC": 21,
       "lat": 49.0367,
       "lng": 2.0717,
       "traffic": "NORMAL"
@@ -96,7 +96,7 @@
     },
     "Creteil": {
       "weather": "DRY",
-      "temperatureC": 24,
+      "temperatureC": 18,
       "lat": 48.7903,
       "lng": 2.4555,
       "traffic": "NORMAL"
