@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-17T22:15:39.872000+00:00",
-  "nextUpdateAt": "2026-08-17T22:45:39.872000+00:00",
+  "generatedAt": "2026-08-17T22:47:02.761339+00:00",
+  "nextUpdateAt": "2026-08-17T23:17:02.761339+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
-      "temperatureC": 23,
+      "temperatureC": 22,
       "lat": 48.8566,
       "lng": 2.3522,
       "traffic": "NORMAL"
@@ -47,21 +47,21 @@
     },
     "Nantes": {
       "weather": "DRY",
-      "temperatureC": 24,
+      "temperatureC": 23,
       "lat": 47.2184,
       "lng": -1.5536,
       "traffic": "NORMAL"
     },
     "Strasbourg": {
       "weather": "DRY",
-      "temperatureC": 23,
+      "temperatureC": 22,
       "lat": 48.5734,
       "lng": 7.7521,
       "traffic": "NORMAL"
     },
     "Lille": {
       "weather": "DRY",
-      "temperatureC": 21,
+      "temperatureC": 20,
       "lat": 50.6292,
       "lng": 3.0573,
       "traffic": "NORMAL"
