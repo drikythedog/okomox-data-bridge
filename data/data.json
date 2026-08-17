@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-17T16:17:05.165383+00:00",
-  "nextUpdateAt": "2026-08-17T16:47:05.165383+00:00",
+  "generatedAt": "2026-08-17T16:52:14.303900+00:00",
+  "nextUpdateAt": "2026-08-17T17:22:14.303900+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
@@ -68,7 +68,7 @@
     },
     "Montpellier": {
       "weather": "DRY",
-      "temperatureC": 36,
+      "temperatureC": 35,
       "lat": 43.6108,
       "lng": 3.8767,
       "traffic": "NORMAL"
@@ -89,7 +89,7 @@
     },
     "Evry": {
       "weather": "DRY",
-      "temperatureC": 18,
+      "temperatureC": 28,
       "lat": 48.6294,
       "lng": 2.4413,
       "traffic": "NORMAL"
