@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-18T19:46:56.185692+00:00",
-  "nextUpdateAt": "2026-08-18T20:16:56.185692+00:00",
+  "generatedAt": "2026-08-18T20:13:48.091974+00:00",
+  "nextUpdateAt": "2026-08-18T20:43:48.091974+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
-      "temperatureC": 25,
+      "temperatureC": 24,
       "lat": 48.8566,
       "lng": 2.3522,
       "traffic": "NORMAL"
@@ -61,7 +61,7 @@
     },
     "Lille": {
       "weather": "DRY",
-      "temperatureC": 21,
+      "temperatureC": 20,
       "lat": 50.6292,
       "lng": 3.0573,
       "traffic": "NORMAL"
@@ -82,7 +82,7 @@
     },
     "Cergy": {
       "weather": "DRY",
-      "temperatureC": 24,
+      "temperatureC": 23,
       "lat": 49.0367,
       "lng": 2.0717,
       "traffic": "NORMAL"
