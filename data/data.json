@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-18T05:00:04.507701+00:00",
-  "nextUpdateAt": "2026-08-18T05:30:04.507701+00:00",
+  "generatedAt": "2026-08-18T05:33:54.721935+00:00",
+  "nextUpdateAt": "2026-08-18T06:03:54.721935+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
@@ -54,14 +54,14 @@
     },
     "Strasbourg": {
       "weather": "DRY",
-      "temperatureC": 18,
+      "temperatureC": 20,
       "lat": 48.5734,
       "lng": 7.7521,
       "traffic": "NORMAL"
     },
     "Lille": {
       "weather": "DRY",
-      "temperatureC": 19,
+      "temperatureC": 20,
       "lat": 50.6292,
       "lng": 3.0573,
       "traffic": "NORMAL"
