@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-18T21:15:13.217601+00:00",
-  "nextUpdateAt": "2026-08-18T21:45:13.217601+00:00",
+  "generatedAt": "2026-08-18T21:44:34.281519+00:00",
+  "nextUpdateAt": "2026-08-18T22:14:34.281519+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
@@ -19,7 +19,7 @@
     },
     "Marseille": {
       "weather": "DRY",
-      "temperatureC": 28,
+      "temperatureC": 27,
       "lat": 43.2965,
       "lng": 5.3698,
       "traffic": "NORMAL"
@@ -47,7 +47,7 @@
     },
     "Nantes": {
       "weather": "DRY",
-      "temperatureC": 22,
+      "temperatureC": 21,
       "lat": 47.2184,
       "lng": -1.5536,
       "traffic": "NORMAL"
@@ -68,7 +68,7 @@
     },
     "Montpellier": {
       "weather": "DRY",
-      "temperatureC": 30,
+      "temperatureC": 29,
       "lat": 43.6108,
       "lng": 3.8767,
       "traffic": "NORMAL"
