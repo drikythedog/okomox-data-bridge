@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-19T23:15:19.886645+00:00",
-  "nextUpdateAt": "2026-08-19T23:45:19.886645+00:00",
+  "generatedAt": "2026-08-19T23:43:49.138308+00:00",
+  "nextUpdateAt": "2026-08-20T00:13:49.138308+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
-      "temperatureC": 19,
+      "temperatureC": 18,
       "lat": 48.8566,
       "lng": 2.3522,
       "traffic": "NORMAL"
