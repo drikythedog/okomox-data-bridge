@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-19T14:04:13.746770+00:00",
-  "nextUpdateAt": "2026-08-19T14:34:13.746770+00:00",
+  "generatedAt": "2026-08-19T14:59:53.344249+00:00",
+  "nextUpdateAt": "2026-08-19T15:29:53.344249+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
-      "temperatureC": 30,
+      "temperatureC": 29,
       "lat": 48.8566,
       "lng": 2.3522,
       "traffic": "NORMAL"
     },
     "Lyon": {
       "weather": "DRY",
-      "temperatureC": 35,
+      "temperatureC": 36,
       "lat": 45.764,
       "lng": 4.8357,
       "traffic": "NORMAL"
@@ -26,7 +26,7 @@
     },
     "Toulouse": {
       "weather": "DRY",
-      "temperatureC": 33,
+      "temperatureC": 34,
       "lat": 43.6047,
       "lng": 1.4442,
       "traffic": "NORMAL"
@@ -68,7 +68,7 @@
     },
     "Montpellier": {
       "weather": "DRY",
-      "temperatureC": 33,
+      "temperatureC": 32,
       "lat": 43.6108,
       "lng": 3.8767,
       "traffic": "NORMAL"
@@ -89,7 +89,7 @@
     },
     "Evry": {
       "weather": "DRY",
-      "temperatureC": 29,
+      "temperatureC": 30,
       "lat": 48.6294,
       "lng": 2.4413,
       "traffic": "NORMAL"
