@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-19T23:43:49.138308+00:00",
-  "nextUpdateAt": "2026-08-20T00:13:49.138308+00:00",
+  "generatedAt": "2026-08-20T00:44:30.291810+00:00",
+  "nextUpdateAt": "2026-08-20T01:14:30.291810+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
@@ -11,15 +11,15 @@
       "traffic": "NORMAL"
     },
     "Lyon": {
-      "weather": "DRY",
-      "temperatureC": 29,
+      "weather": "LIGHT_RAIN",
+      "temperatureC": 28,
       "lat": 45.764,
       "lng": 4.8357,
       "traffic": "NORMAL"
     },
     "Marseille": {
       "weather": "DRY",
-      "temperatureC": 28,
+      "temperatureC": 27,
       "lat": 43.2965,
       "lng": 5.3698,
       "traffic": "NORMAL"
@@ -40,21 +40,21 @@
     },
     "Nice": {
       "weather": "DRY",
-      "temperatureC": 25,
+      "temperatureC": 24,
       "lat": 43.7102,
       "lng": 7.262,
       "traffic": "NORMAL"
     },
     "Nantes": {
       "weather": "DRY",
-      "temperatureC": 19,
+      "temperatureC": 18,
       "lat": 47.2184,
       "lng": -1.5536,
       "traffic": "NORMAL"
     },
     "Strasbourg": {
       "weather": "DRY",
-      "temperatureC": 23,
+      "temperatureC": 22,
       "lat": 48.5734,
       "lng": 7.7521,
       "traffic": "NORMAL"
@@ -68,14 +68,14 @@
     },
     "Montpellier": {
       "weather": "DRY",
-      "temperatureC": 26,
+      "temperatureC": 25,
       "lat": 43.6108,
       "lng": 3.8767,
       "traffic": "NORMAL"
     },
     "Versailles": {
       "weather": "DRY",
-      "temperatureC": 17,
+      "temperatureC": 16,
       "lat": 48.8049,
       "lng": 2.1204,
       "traffic": "NORMAL"
