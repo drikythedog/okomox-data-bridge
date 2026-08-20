@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-20T23:17:55.825891+00:00",
-  "nextUpdateAt": "2026-08-20T23:47:55.825891+00:00",
+  "generatedAt": "2026-08-20T23:47:27.905056+00:00",
+  "nextUpdateAt": "2026-08-21T00:17:27.905056+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
@@ -19,7 +19,7 @@
     },
     "Marseille": {
       "weather": "DRY",
-      "temperatureC": 26,
+      "temperatureC": 27,
       "lat": 43.2965,
       "lng": 5.3698,
       "traffic": "NORMAL"
@@ -40,7 +40,7 @@
     },
     "Nice": {
       "weather": "DRY",
-      "temperatureC": 23,
+      "temperatureC": 24,
       "lat": 43.7102,
       "lng": 7.262,
       "traffic": "NORMAL"
@@ -61,14 +61,14 @@
     },
     "Lille": {
       "weather": "DRY",
-      "temperatureC": 16,
+      "temperatureC": 15,
       "lat": 50.6292,
       "lng": 3.0573,
       "traffic": "NORMAL"
     },
     "Montpellier": {
       "weather": "LIGHT_RAIN",
-      "temperatureC": 23,
+      "temperatureC": 22,
       "lat": 43.6108,
       "lng": 3.8767,
       "traffic": "NORMAL"
@@ -82,7 +82,7 @@
     },
     "Cergy": {
       "weather": "DRY",
-      "temperatureC": 17,
+      "temperatureC": 18,
       "lat": 49.0367,
       "lng": 2.0717,
       "traffic": "NORMAL"
