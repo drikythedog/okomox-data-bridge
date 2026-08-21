@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-21T23:15:29.276434+00:00",
-  "nextUpdateAt": "2026-08-21T23:45:29.276434+00:00",
+  "generatedAt": "2026-08-21T23:45:16.231468+00:00",
+  "nextUpdateAt": "2026-08-22T00:15:16.231468+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
-      "temperatureC": 17,
+      "temperatureC": 16,
       "lat": 48.8566,
       "lng": 2.3522,
       "traffic": "NORMAL"
@@ -33,14 +33,14 @@
     },
     "Bordeaux": {
       "weather": "DRY",
-      "temperatureC": 18,
+      "temperatureC": 17,
       "lat": 44.8378,
       "lng": -0.5792,
       "traffic": "NORMAL"
     },
     "Nice": {
       "weather": "DRY",
-      "temperatureC": 22,
+      "temperatureC": 21,
       "lat": 43.7102,
       "lng": 7.262,
       "traffic": "NORMAL"
