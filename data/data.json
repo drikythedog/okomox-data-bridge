@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-21T21:45:50.505700+00:00",
-  "nextUpdateAt": "2026-08-21T22:15:50.505700+00:00",
+  "generatedAt": "2026-08-21T22:14:48.120130+00:00",
+  "nextUpdateAt": "2026-08-21T22:44:48.120130+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
@@ -89,7 +89,7 @@
     },
     "Evry": {
       "weather": "DRY",
-      "temperatureC": 16,
+      "temperatureC": 18,
       "lat": 48.6294,
       "lng": 2.4413,
       "traffic": "NORMAL"
