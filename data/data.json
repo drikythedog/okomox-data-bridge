@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-22T13:49:30.325089+00:00",
-  "nextUpdateAt": "2026-08-22T14:19:30.325089+00:00",
+  "generatedAt": "2026-08-22T14:12:50.187243+00:00",
+  "nextUpdateAt": "2026-08-22T14:42:50.187243+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
@@ -26,14 +26,14 @@
     },
     "Toulouse": {
       "weather": "DRY",
-      "temperatureC": 26,
+      "temperatureC": 27,
       "lat": 43.6047,
       "lng": 1.4442,
       "traffic": "NORMAL"
     },
     "Bordeaux": {
       "weather": "DRY",
-      "temperatureC": 26,
+      "temperatureC": 27,
       "lat": 44.8378,
       "lng": -0.5792,
       "traffic": "NORMAL"
