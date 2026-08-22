@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-22T14:12:50.187243+00:00",
-  "nextUpdateAt": "2026-08-22T14:42:50.187243+00:00",
+  "generatedAt": "2026-08-22T14:44:38.673608+00:00",
+  "nextUpdateAt": "2026-08-22T15:14:38.673608+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
@@ -54,7 +54,7 @@
     },
     "Strasbourg": {
       "weather": "DRY",
-      "temperatureC": 21,
+      "temperatureC": 22,
       "lat": 48.5734,
       "lng": 7.7521,
       "traffic": "NORMAL"
