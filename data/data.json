@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-22T05:24:38.062555+00:00",
-  "nextUpdateAt": "2026-08-22T05:54:38.062555+00:00",
+  "generatedAt": "2026-08-22T05:50:56.090396+00:00",
+  "nextUpdateAt": "2026-08-22T06:20:56.090396+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
@@ -75,7 +75,7 @@
     },
     "Versailles": {
       "weather": "DRY",
-      "temperatureC": 18,
+      "temperatureC": 11,
       "lat": 48.8049,
       "lng": 2.1204,
       "traffic": "NORMAL"
