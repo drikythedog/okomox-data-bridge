@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-22T04:57:23.513098+00:00",
-  "nextUpdateAt": "2026-08-22T05:27:23.513098+00:00",
+  "generatedAt": "2026-08-22T05:24:38.062555+00:00",
+  "nextUpdateAt": "2026-08-22T05:54:38.062555+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
@@ -40,7 +40,7 @@
     },
     "Nice": {
       "weather": "DRY",
-      "temperatureC": 19,
+      "temperatureC": 20,
       "lat": 43.7102,
       "lng": 7.262,
       "traffic": "NORMAL"
@@ -68,14 +68,14 @@
     },
     "Montpellier": {
       "weather": "DRY",
-      "temperatureC": 17,
+      "temperatureC": 18,
       "lat": 43.6108,
       "lng": 3.8767,
       "traffic": "NORMAL"
     },
     "Versailles": {
       "weather": "DRY",
-      "temperatureC": 11,
+      "temperatureC": 18,
       "lat": 48.8049,
       "lng": 2.1204,
       "traffic": "NORMAL"
