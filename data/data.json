@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-23T14:46:41.803412+00:00",
-  "nextUpdateAt": "2026-08-23T15:16:41.803412+00:00",
+  "generatedAt": "2026-08-23T15:14:13.771191+00:00",
+  "nextUpdateAt": "2026-08-23T15:44:13.771191+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
@@ -82,7 +82,7 @@
     },
     "Cergy": {
       "weather": "DRY",
-      "temperatureC": 18,
+      "temperatureC": 24,
       "lat": 49.0367,
       "lng": 2.0717,
       "traffic": "NORMAL"
