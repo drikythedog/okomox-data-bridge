@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-23T22:13:01.292568+00:00",
-  "nextUpdateAt": "2026-08-23T22:43:01.292568+00:00",
+  "generatedAt": "2026-08-23T22:44:53.423573+00:00",
+  "nextUpdateAt": "2026-08-23T23:14:53.423573+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
-      "temperatureC": 19,
+      "temperatureC": 18,
       "lat": 48.8566,
       "lng": 2.3522,
       "traffic": "NORMAL"
@@ -61,7 +61,7 @@
     },
     "Lille": {
       "weather": "DRY",
-      "temperatureC": 15,
+      "temperatureC": 14,
       "lat": 50.6292,
       "lng": 3.0573,
       "traffic": "NORMAL"
@@ -96,7 +96,7 @@
     },
     "Creteil": {
       "weather": "DRY",
-      "temperatureC": 19,
+      "temperatureC": 18,
       "lat": 48.7903,
       "lng": 2.4555,
       "traffic": "NORMAL"
