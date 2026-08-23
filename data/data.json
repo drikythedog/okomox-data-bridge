@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-23T14:14:57.450576+00:00",
-  "nextUpdateAt": "2026-08-23T14:44:57.450576+00:00",
+  "generatedAt": "2026-08-23T14:46:41.803412+00:00",
+  "nextUpdateAt": "2026-08-23T15:16:41.803412+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
@@ -19,7 +19,7 @@
     },
     "Marseille": {
       "weather": "DRY",
-      "temperatureC": 29,
+      "temperatureC": 28,
       "lat": 43.2965,
       "lng": 5.3698,
       "traffic": "NORMAL"
@@ -82,14 +82,14 @@
     },
     "Cergy": {
       "weather": "DRY",
-      "temperatureC": 23,
+      "temperatureC": 18,
       "lat": 49.0367,
       "lng": 2.0717,
       "traffic": "NORMAL"
     },
     "Evry": {
       "weather": "DRY",
-      "temperatureC": 18,
+      "temperatureC": 24,
       "lat": 48.6294,
       "lng": 2.4413,
       "traffic": "NORMAL"
