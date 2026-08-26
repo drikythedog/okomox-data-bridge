@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-26T04:31:31.066384+00:00",
-  "nextUpdateAt": "2026-08-26T05:01:31.066384+00:00",
+  "generatedAt": "2026-08-26T05:25:48.020144+00:00",
+  "nextUpdateAt": "2026-08-26T05:55:48.020144+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
@@ -47,7 +47,7 @@
     },
     "Nantes": {
       "weather": "DRY",
-      "temperatureC": 18,
+      "temperatureC": 17,
       "lat": 47.2184,
       "lng": -1.5536,
       "traffic": "NORMAL"
