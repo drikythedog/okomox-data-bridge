@@ -1,25 +1,25 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-26T00:17:00.631538+00:00",
-  "nextUpdateAt": "2026-09-26T00:47:00.631538+00:00",
+  "generatedAt": "2026-09-26T05:14:06.543109+00:00",
+  "nextUpdateAt": "2026-09-26T05:44:06.543109+00:00",
   "cities": {
     "Paris": {
       "weather": "DRY",
-      "temperatureC": 18,
+      "temperatureC": 16,
       "lat": 48.8566,
       "lng": 2.3522,
       "traffic": "NORMAL"
     },
     "Lyon": {
       "weather": "DRY",
-      "temperatureC": 16,
+      "temperatureC": 13,
       "lat": 45.764,
       "lng": 4.8357,
       "traffic": "NORMAL"
     },
     "Marseille": {
       "weather": "DRY",
-      "temperatureC": 21,
+      "temperatureC": 20,
       "lat": 43.2965,
       "lng": 5.3698,
       "traffic": "NORMAL"
@@ -40,63 +40,63 @@
     },
     "Nice": {
       "weather": "DRY",
-      "temperatureC": 21,
+      "temperatureC": 20,
       "lat": 43.7102,
       "lng": 7.262,
       "traffic": "NORMAL"
     },
     "Nantes": {
       "weather": "DRY",
-      "temperatureC": 16,
+      "temperatureC": 15,
       "lat": 47.2184,
       "lng": -1.5536,
       "traffic": "NORMAL"
     },
     "Strasbourg": {
       "weather": "DRY",
-      "temperatureC": 13,
+      "temperatureC": 10,
       "lat": 48.5734,
       "lng": 7.7521,
       "traffic": "NORMAL"
     },
     "Lille": {
       "weather": "DRY",
-      "temperatureC": 17,
+      "temperatureC": 15,
       "lat": 50.6292,
       "lng": 3.0573,
       "traffic": "NORMAL"
     },
     "Montpellier": {
       "weather": "DRY",
-      "temperatureC": 18,
+      "temperatureC": 15,
       "lat": 43.6108,
       "lng": 3.8767,
       "traffic": "NORMAL"
     },
     "Versailles": {
       "weather": "DRY",
-      "temperatureC": 15,
+      "temperatureC": 14,
       "lat": 48.8049,
       "lng": 2.1204,
       "traffic": "NORMAL"
     },
     "Cergy": {
       "weather": "DRY",
-      "temperatureC": 16,
+      "temperatureC": 15,
       "lat": 49.0367,
       "lng": 2.0717,
       "traffic": "NORMAL"
     },
     "Evry": {
       "weather": "DRY",
-      "temperatureC": 18,
+      "temperatureC": 14,
       "lat": 48.6294,
       "lng": 2.4413,
       "traffic": "NORMAL"
     },
     "Creteil": {
       "weather": "DRY",
-      "temperatureC": 19,
+      "temperatureC": 16,
       "lat": 48.7903,
       "lng": 2.4555,
       "traffic": "NORMAL"
