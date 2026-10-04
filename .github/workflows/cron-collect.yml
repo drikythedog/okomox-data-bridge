@@ -41,7 +41,10 @@ jobs:
         run: |
           git config user.name "okomox-bot"
           git config user.email "bot@okomox.com"
-          git add data/data.json
+          # 04/10/2026 : copie à la racine pour GitHub Pages (URL attendue par l'app :
+          # https://drikythedog.github.io/okomox-data-bridge/data.json)
+          cp data/data.json data.json
+          git add data/data.json data.json
           if git diff --cached --quiet; then
             echo "Aucun changement de données, skip commit."
           else
