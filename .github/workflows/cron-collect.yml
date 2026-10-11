@@ -1,0 +1,95 @@
+name: Collect météo & trafic
+# Exécute collect.py toutes les 30 minutes + commit/push data/data.json
+# Si les secrets FTP sont configurés, envoie aussi data.json par FTP (et rien d'autre).
+
+on:
+  schedule:
+    # GitHub Actions CRON UTC. Toutes les 30 minutes.
+    # Note : la latence GitHub peut décaler de quelques minutes (best-effort).
+    - cron: '*/30 * * * *'
+  workflow_dispatch: {}  # permet déclenchement manuel via UI GitHub
+
+# Permissions minimales : commit data/.
+permissions:
+  contents: write
+
+# Évite les runs concurrents si un cron prend trop de temps.
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run collect.py
+        run: python collect.py
+
+      - name: Show generated data.json (head)
+        run: head -30 data/data.json
+
+      - name: Commit & push data/data.json if changed
+        run: |
+          git config user.name "okomox-bot"
+          git config user.email "bot@okomox.com"
+          # 04/10/2026 : copie à la racine pour GitHub Pages (URL attendue par l'app :
+          # https://drikythedog.github.io/okomox-data-bridge/data.json)
+          cp data/data.json data.json
+          git add data/data.json data.json
+          if git diff --cached --quiet; then
+            echo "Aucun changement de données, skip commit."
+          else
+            git commit -m "chore(data): MAJ auto $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi
+
+      # =====================================================================
+      # Upload FTP optionnel — actif uniquement si les secrets sont configurés
+      # Settings → Secrets and variables → Actions → New secret :
+      #   FTP_HOST   = (voir le gestionnaire de mots de passe)
+      #   FTP_USER   = (voir le gestionnaire de mots de passe)
+      #   FTP_PASS   = (voir le gestionnaire de mots de passe)
+      # Seul data.json est envoyé (jamais robots.txt ni .htaccess), pour ne
+      # jamais écraser les fichiers d'un autre site hébergé sur le même FTP.
+      # Si FTP_HOST est vide, le step est skip via env (secrets interdit dans if).
+      # =====================================================================
+      - name: Check FTP secrets
+        id: check_ftp
+        env:
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+        run: |
+          if [ -n "$FTP_HOST" ]; then
+            echo "has_ftp=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_ftp=false" >> $GITHUB_OUTPUT
+            echo "Skip FTP upload (FTP_HOST secret non configuré)."
+          fi
+
+      - name: Préparer l'envoi FTP (data.json uniquement)
+        if: steps.check_ftp.outputs.has_ftp == 'true'
+        run: |
+          mkdir -p ftp_upload
+          cp data/data.json ftp_upload/data.json
+
+      - name: Upload FTP (data.json uniquement)
+        if: steps.check_ftp.outputs.has_ftp == 'true'
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASS }}
+          local-dir: ./ftp_upload/
+          server-dir: /
+          dangerous-clean-slate: false
+          exclude: |
+            **/.git*
+            **/.git*/**

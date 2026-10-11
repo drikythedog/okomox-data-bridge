@@ -1,0 +1,6 @@
+<IfModule mod_headers.c>
+  Header set X-Robots-Tag "noindex, nofollow"
+</IfModule>
+<Files "data.json">
+  Header set Content-Type "application/json; charset=utf-8"
+</Files>
