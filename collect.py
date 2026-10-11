@@ -49,10 +49,13 @@ CITIES: dict[str, tuple[float, float]] = {
 }
 
 # URL Open-Meteo (gratuit, illimité, pas de clé). Format JSON natif.
+# Lot I 12/10/2026 : current + prévision horaire 36 h (rétrocompat : champs plats inchangés).
 OPEN_METEO_URL = (
     "https://api.open-meteo.com/v1/forecast"
     "?latitude={lat}&longitude={lng}"
     "&current=temperature_2m,precipitation,weather_code"
+    "&hourly=temperature_2m,precipitation,weather_code"
+    "&forecast_hours=36"
     "&timezone=Europe%2FParis"
 )
 
@@ -122,8 +125,32 @@ def weather_code_to_okomox(code: int, precip_mm: float) -> str:
 # COLLECTE MÉTÉO (Open-Meteo)
 # ============================================================================
 
+def build_hourly_slots(hourly_block: dict[str, Any] | None) -> list[dict[str, Any]]:
+    """Série horaire Open-Meteo → slots {at, weather, temperatureC}. Vide si absent."""
+    if not hourly_block:
+        return []
+    times = hourly_block.get("time") or []
+    temps = hourly_block.get("temperature_2m") or []
+    precips = hourly_block.get("precipitation") or []
+    codes = hourly_block.get("weather_code") or []
+    out: list[dict[str, Any]] = []
+    for i, t in enumerate(times):
+        if not t:
+            continue
+        temp = int(round(temps[i])) if i < len(temps) and temps[i] is not None else 18
+        precip = float(precips[i]) if i < len(precips) and precips[i] is not None else 0.0
+        code = int(codes[i]) if i < len(codes) and codes[i] is not None else 0
+        # Open-Meteo renvoie "2026-10-12T14:00" en Europe/Paris (timezone=) — l'app parse en LocalDateTime Paris.
+        out.append({
+            "at": t,
+            "weather": weather_code_to_okomox(code, precip),
+            "temperatureC": temp,
+        })
+    return out
+
+
 def fetch_city_weather(name: str, lat: float, lng: float) -> dict[str, Any]:
-    """Récupère météo + température pour une ville. Defaults neutres si échec."""
+    """Récupère météo + température (+ hourly 36 h) pour une ville. Defaults neutres si échec."""
     url = OPEN_METEO_URL.format(lat=lat, lng=lng)
     data = http_get_json(url)
     if not data or "current" not in data:
@@ -135,14 +162,21 @@ def fetch_city_weather(name: str, lat: float, lng: float) -> dict[str, Any]:
     precip = float(current.get("precipitation", 0))
     code = int(current.get("weather_code", 0))
     weather = weather_code_to_okomox(code, precip)
+    hourly = build_hourly_slots(data.get("hourly"))
 
-    print(f"  ✓ {name:12} {weather:10} {temp}°C (precip {precip}mm code {code})")
-    return {
+    print(
+        f"  ✓ {name:12} {weather:10} {temp}°C "
+        f"(precip {precip}mm code {code}, hourly={len(hourly)})"
+    )
+    result: dict[str, Any] = {
         "weather": weather,
         "temperatureC": temp,
         "lat": lat,
         "lng": lng,
     }
+    if hourly:
+        result["hourly"] = hourly
+    return result
 
 
 def collect_all_cities() -> dict[str, dict[str, Any]]:
@@ -319,16 +353,21 @@ def main() -> int:
     sytadin_idf = fetch_sytadin_summary()
     enrich_cities_with_traffic(cities, highways, sytadin_idf)
 
+    # GitHub Actions throttle les cron « */30 » : en pratique ~3–4 runs/jour.
+    # nextUpdateAt honnête = +6 h (plus de +30 min mensonger). Les apps anciennes ignorent le champ.
+    next_update = start + timedelta(hours=6)
     payload = {
-        "version": 1,
+        "version": 2,
         "generatedAt": start.isoformat(),
-        "nextUpdateAt": (start + timedelta(minutes=30)).isoformat(),
+        "nextUpdateAt": next_update.isoformat(),
         "cities": cities,
         "highways": highways,
         "_meta": {
             "sources": ["Open-Meteo", "Bison Futé RSS", "Sytadin RSS"],
             "cityCount": len(cities),
             "highwayCount": len(highways),
+            "hourlyForecastHours": 36,
+            "nextUpdateNote": "GitHub scheduled workflows are throttled; expect ~6h between publishes",
         },
     }
 
