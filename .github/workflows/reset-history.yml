@@ -1,0 +1,54 @@
+name: Remise à zéro de l'historique (une seule fois)
+# À lancer UNE SEULE FOIS à la main (onglet Actions → « Run workflow »),
+# avant de passer le dépôt en public. Remplace tout l'historique de main par
+# un commit unique contenant les fichiers actuels. Ce fichier se retire de
+# lui-même du nouveau commit.
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+jobs:
+  reset:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout (historique complet)
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Créer un commit unique sans historique
+        run: |
+          git config user.name "okomox-bot"
+          git config user.email "bot@okomox.com"
+          git checkout --orphan nouveau-main
+          git rm -q --cached .github/workflows/reset-history.yml
+          rm -f .github/workflows/reset-history.yml
+          git add -A
+
+      - name: Vérifier qu'aucune donnée sensible ne reste
+        run: |
+          FOUND=$(git grep --cached -I -l -i -E 'okomo2783657|passwd|BEGIN [A-Z ]*PRIVATE KEY|password[[:space:]]*[:=][[:space:]]*[^$[:space:]]' || true)
+          if [ -n "$FOUND" ]; then
+            echo "Données sensibles trouvées dans :"
+            echo "$FOUND"
+            git grep --cached -I -n -i -E 'okomo2783657|passwd|BEGIN [A-Z ]*PRIVATE KEY|password[[:space:]]*[:=][[:space:]]*[^$[:space:]]' || true
+            exit 1
+          fi
+          echo "Aucune donnée sensible trouvée."
+
+      - name: Commit et remplacement de main
+        run: |
+          git commit -q -m "chore: historique remis à zéro avant passage en public"
+          git push --force origin nouveau-main:main
+          git fetch -q origin main
+          echo "Nouveau commit : $(git rev-parse origin/main)"
+          echo "Nombre de commits sur main : $(git rev-list --count origin/main)"

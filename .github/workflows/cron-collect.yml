@@ -1,6 +1,6 @@
 name: Collect météo & trafic
 # Exécute collect.py toutes les 30 minutes + commit/push data/data.json
-# Si secrets FTP configurés, upload aussi vers LWS (okomox.site/data.json).
+# Si les secrets FTP sont configurés, envoie aussi data.json par FTP (et rien d'autre).
 
 on:
   schedule:
@@ -55,9 +55,11 @@ jobs:
       # =====================================================================
       # Upload FTP optionnel — actif uniquement si les secrets sont configurés
       # Settings → Secrets and variables → Actions → New secret :
-      #   FTP_HOST   = ftp.okomox.com
-      #   FTP_USER   = (voir tableau LWS)
-      #   FTP_PASS   = (mot de passe FTP LWS)
+      #   FTP_HOST   = (voir le gestionnaire de mots de passe)
+      #   FTP_USER   = (voir le gestionnaire de mots de passe)
+      #   FTP_PASS   = (voir le gestionnaire de mots de passe)
+      # Seul data.json est envoyé (jamais robots.txt ni .htaccess), pour ne
+      # jamais écraser les fichiers d'un autre site hébergé sur le même FTP.
       # Si FTP_HOST est vide, le step est skip via env (secrets interdit dans if).
       # =====================================================================
       - name: Check FTP secrets
@@ -72,14 +74,20 @@ jobs:
             echo "Skip FTP upload (FTP_HOST secret non configuré)."
           fi
 
-      - name: Upload FTP vers LWS (okomox.site/data.json)
+      - name: Préparer l'envoi FTP (data.json uniquement)
+        if: steps.check_ftp.outputs.has_ftp == 'true'
+        run: |
+          mkdir -p ftp_upload
+          cp data/data.json ftp_upload/data.json
+
+      - name: Upload FTP (data.json uniquement)
         if: steps.check_ftp.outputs.has_ftp == 'true'
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASS }}
-          local-dir: ./data/
+          local-dir: ./ftp_upload/
           server-dir: /
           dangerous-clean-slate: false
           exclude: |

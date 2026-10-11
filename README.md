@@ -72,13 +72,17 @@ Enums alignés sur `app/src/main/java/com/okomox/app/calc/RideCalcContext.kt` :
 ## 🚀 Setup
 
 ### GitHub Pages (canonical URL)
-1. Settings → Pages → Source: `Deploy from a branch` → `main` / `data/`
+1. Settings → Pages → Source: `Deploy from a branch` → `main` / `/ (root)` (le workflow copie `data/data.json` à la racine)
 2. URL canonical : `https://drikythedog.github.io/okomox-data-bridge/data.json`
 
 ### Upload FTP LWS (alias `okomox.site/data.json`) — optionnel
 1. Activer domaine `okomox.site` dans panel LWS (5 min)
 2. Ajouter secrets GitHub Actions : `FTP_HOST`, `FTP_USER`, `FTP_PASS`
 3. Le workflow uploadera automatiquement à chaque mise à jour
+
+## 🔓 Données publiques
+
+Ce dépôt ne contient que des données publiques de météo et de trafic (Open-Meteo, Bison Futé, Sytadin) et le script qui les collecte. Il ne contient aucune donnée personnelle, aucune donnée de chauffeur, aucun identifiant ni mot de passe. Les éventuels identifiants FTP sont stockés uniquement dans les secrets GitHub Actions, jamais dans les fichiers.
 
 ## 📝 License
 
