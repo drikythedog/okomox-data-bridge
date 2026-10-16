@@ -82,6 +82,42 @@ class T(unittest.TestCase):
         self.assertIn("trafficAt", lyon)
         self.assertNotIn("traffic", self.p["cities"]["Nice"])
 
+    def test_traficolor_real_dirs(self):
+        # 16/10/2026 : vrais dossiers DIR ; le plus récent de chaque dossier ; ville par département du capteur.
+        def site(sid, v):
+            return (f'<siteMeasurements><measurementSiteReference targetClass="MeasurementSiteRecord" id="{sid}"/>'
+                    f'<measuredValue><measuredValue><basicData><trafficStatus><trafficStatusValue>{v}'
+                    f'</trafficStatusValue></trafficStatus></basicData></measuredValue></measuredValue></siteMeasurements>')
+        def doc(*sites):
+            return f'<d2LogicalModel {NS}><payloadPublication>{"".join(sites)}</payloadPublication></d2LogicalModel>'
+        old = doc(*[site(f"MB333.{i}", "impossible") for i in range(6)])
+        new = doc(*[site(f"MB333.{i}", "freeFlow") for i in range(6)], site("M7777.B1", "congested"))
+        dirmc = doc(*[site(f"MML34.{i}", "heavy") for i in range(5)], *[site(f"MYP63.{i}", "freeFlow") for i in range(5)],
+                    site("MYP63.X", "unknown"))
+        lille = doc(*[site(f"TA00{i}", "congested") for i in range(5)])
+        pages = {
+            "TRAFICOLOR-DIR/": '<a href="/x/">p</a><a href="ALIENOR/">a</a><a href="TraficDirmc/">d</a>'
+                               '<a href="TraficLille/">l</a><a href="TRAFIC_TraficStBrieuc/">s</a>',
+            "ALIENOR/": '<a href="ALIENOR_DataTRT_20261016_115940.xml">o</a><a href="ALIENOR_DataTRT_20261016_164640.xml">n</a>',
+            "TraficDirmc/": '<a href="TraficDirmc_DataTRT_20261016_164930.xml">d</a>',
+            "TraficLille/": '<a href="TraficLille_DataTRT_20261016_165126.xml">l</a>',
+            "TRAFIC_TraficStBrieuc/": '<a href="TraficStBrieuc_DataTRT_20261016_165200.xml">s</a>',
+            "_115940.xml": old, "_164640.xml": new, "_164930.xml": dirmc, "_165126.xml": lille,
+            "_165200.xml": doc(*[site(f"22N0012T045_{i}D", "congested") for i in range(9)]),
+        }
+        get = lambda u: next((v for k, v in pages.items() if u.endswith(k)), None) if u.startswith("https") else None
+        out, src = c.collect_traficolor(get)
+        self.assertEqual(out["Bordeaux"]["traffic"], "FLUID")          # fichier récent, pas l'ancien ; M7777 ignoré
+        self.assertEqual(out["Bordeaux"]["trafficDetail"]["mesures"], 6)
+        self.assertEqual(out["Montpellier"]["traffic"], "DENSE")       # 100 % ralenti, rien de saturé
+        self.assertEqual(out["Clermont-Ferrand"]["traffic"], "FLUID")  # « unknown » ignoré
+        self.assertEqual(out["Lille"]["traffic"], "BLOCKED")
+        self.assertEqual(set(out), {"Bordeaux", "Montpellier", "Clermont-Ferrand", "Lille"})
+        self.assertTrue(src["ok"]); self.assertEqual(src["files"], 4)
+        self.assertEqual(c.site_department("44A0011T340_06D"), "44")
+        self.assertEqual(c.site_department("#MZo57.1"), "57")
+        self.assertIsNone(c.site_department("TA0023020800"))
+
     def test_shares(self):
         self.assertEqual(c.traffic_from_shares(Counter(fluide=4))[0], None)
         self.assertEqual(c.traffic_from_shares(Counter(fluide=7, ralenti=3))[0], "DENSE")

@@ -6,7 +6,7 @@ Génère data/data.json :
   avec prévision horaire 36 h, rafales et probabilité de pluie ;
 - synthèse par RÉGION et synthèse NATIONALE ;
 - vigilance Météo-France par département (si la clé METEOFRANCE_API_KEY est configurée) ;
-- trafic MESURÉ par agglomération (Bison Futé TRAFICOLOR, données ouvertes, 21 agglomérations),
+- trafic MESURÉ par agglomération (Bison Futé TRAFICOLOR, données ouvertes, 17 villes via 14 dossiers DIR),
   complété par les événements signalés (Bison Futé RSS, Sytadin) quand ces flux répondent.
 
 Règle d'or (audit du 16/10/2026) : on ne publie JAMAIS une valeur inventée.
@@ -131,6 +131,30 @@ TRAFICOLOR_INDEXES = [
     "http://tipi.bison-fute.gouv.fr/bison-fute-ouvert/publicationsDIR/TRAFICOLOR-DIR/",
 ]
 TRAFICOLOR_MAX_FILES = 40
+TRAFICOLOR_FILES_PER_DIR = 1   # le fichier le plus récent de chaque dossier (publication toutes les 1 à 6 min)
+
+# 16/10/2026 — dossiers réels de TRAFICOLOR-DIR (noms de code des DIR) -> {département: villes okomox}.
+# Le département se lit dans l'identifiant du capteur (MB333.B1 -> 33, MZE54.12 -> 54, 44A0011T340 -> 44).
+# « * » = villes de tout le fichier quand l'identifiant ne porte pas de département (Lille).
+# Relevé sur les fichiers du 16/10/2026 ; un dossier absent d'ici passe par la lecture par nom (TRAFICOLOR_AGGLOS).
+TRAFICOLOR_DIRS: dict[str, dict[str, list[str]]] = {
+    "ALIENOR":            {"33": ["Bordeaux"]},                       # rocade de Bordeaux (MB133/MB233/MB333)
+    "TraficBreizhNantes": {"44": ["Nantes"]},
+    "TraficBreizhRennes": {"35": ["Rennes"]},
+    "TraficCaen":         {"14": ["Caen"]},
+    "TraficRouen":        {"76": ["Rouen"]},
+    "TraficDirmc":        {"34": ["Montpellier"], "63": ["Clermont-Ferrand"]},
+    "TraficErato":        {"31": ["Toulouse"]},
+    "TraficGentiane":     {"38": ["Grenoble"]},
+    "TraficHyrondelle":   {"42": ["Saint-Etienne"], "69": ["Lyon"]},
+    "TraficLille":        {"*": ["Lille"]},
+    "TraficLimoges":      {"87": ["Limoges"], "86": ["Poitiers"]},
+    "TraficLyon":         {"69": ["Lyon"]},
+    "TraficMarius":       {"13": ["Marseille"]},
+    "TraficMyrabel":      {"54": ["Nancy"], "57": ["Metz"]},
+    # Sans ville okomox couverte : TRAFIC_TraficStBrieuc (22), TRAFIC_TraficTriskell56 (29/56).
+    "TRAFIC_TraficStBrieuc": {}, "TRAFIC_TraficTriskell56": {},
+}
 
 # Agglomération TRAFICOLOR (noms sans accents, majuscules) -> villes okomox qu'elle couvre.
 TRAFICOLOR_AGGLOS: dict[str, list[str]] = {
@@ -423,6 +447,57 @@ def parse_traficolor_xml(xml_text: str, file_hint: str = "") -> tuple[dict[str, 
     return counts, diag
 
 
+def site_department(site_id: str) -> str | None:
+    """Département d'un capteur TRAFICOLOR d'après son identifiant, sinon None.
+    MB333.B1 / MZE54.12 / MbW87.A1 -> 33 / 54 / 87 ; 44A0011T340_06D -> 44 ; M7777.B1 -> 77 ; TA0023020800 -> None."""
+    sid = (site_id or "").strip().lstrip("#")
+    m = re.fullmatch(r"M[A-Za-z0-9]{2}(\d{2})", sid.split(".")[0])
+    if m:
+        return m.group(1)
+    m = re.match(r"(\d{2})[A-Z]\d", sid)
+    return m.group(1) if m else None
+
+
+def parse_traficolor_by_department(xml_text: str, dept_map: dict[str, list[str]],
+                                   file_hint: str = "") -> tuple[dict[str, Counter], dict[str, Any]]:
+    """DATEX II TRAFICOLOR : un état par <siteMeasurements>, rattaché à une ville okomox par le
+    département du capteur (dept_map). Les états « unknown » et les capteurs hors carte sont ignorés.
+    Retourne (compteurs par ville, diagnostic)."""
+    diag: dict[str, Any] = {"file": file_hint.rsplit("/", 1)[-1], "states": 0, "attributed": 0}
+    try:
+        root = ET.fromstring(xml_text)
+    except ET.ParseError as e:
+        diag["error"] = f"XML illisible : {e}"
+        return {}, diag
+    counts: dict[str, Counter] = {}
+    depts: Counter = Counter()
+    for el in root.iter():
+        name = _local(el.tag)
+        if name.lower() == "publicationtime" and el.text and "publicationTime" not in diag:
+            diag["publicationTime"] = el.text.strip()
+        if name != "siteMeasurements":
+            continue
+        ref = next((c for c in el if _local(c.tag) == "measurementSiteReference"), None)
+        site = (ref.get("id") or ref.text or "") if ref is not None else ""
+        for st in el.iter():
+            if _local(st.tag) != "trafficStatusValue" or not st.text:
+                continue
+            cls = STATUS_CLASSES.get(re.sub(r"[\s_\-]", "", _fold(st.text)))
+            if not cls:
+                continue
+            diag["states"] += 1
+            dept = site_department(site)
+            depts[dept or "?"] += 1
+            cities = dept_map[dept] if dept in dept_map else dept_map.get("*", [])
+            if cities:
+                diag["attributed"] += 1
+            for city in cities:
+                counts.setdefault(city, Counter())[cls] += 1
+    diag["departments"] = dict(depts.most_common(6))
+    diag["cities"] = sorted(counts)
+    return counts, diag
+
+
 def traffic_from_shares(c: Counter) -> tuple[str | None, dict[str, Any]]:
     """Compteurs d'états -> (TrafficCondition, détail en %). Au moins 5 mesures, sinon inconnu.
     Seuils (à recalibrer après quelques jours de données) :
@@ -451,47 +526,63 @@ def collect_traficolor(get_text=http_get_text) -> tuple[dict[str, dict[str, Any]
     """Trafic mesuré par agglomération -> {ville: {traffic, trafficDetail, trafficSource}}."""
     print("\n🚦 Trafic mesuré (Bison Futé TRAFICOLOR)…")
     source: dict[str, Any] = {"name": "Bison Futé TRAFICOLOR", "ok": False, "files": 0, "diagnostic": []}
-    files: list[str] = []
+    # 16/10/2026 : le plus récent de CHAQUE dossier (avant : les 40 premiers liens de l'index, tous
+    # pris dans le premier dossier ALIENOR et les plus anciens -> aucune autre agglomération lue).
+    files: list[tuple[str, str]] = []   # (url, nom du dossier ; "" à la racine)
     for idx in TRAFICOLOR_INDEXES:
         html = get_text(idx)
         if not html:
             continue
         f, dirs = list_traficolor_files(html, idx)
-        files.extend(f)
+        files.extend((u, "") for u in sorted(f)[-TRAFICOLOR_FILES_PER_DIR:])
         for d in dirs[:30]:
             sub = get_text(d)
             if sub:
-                files.extend(list_traficolor_files(sub, d)[0])
+                name = d.rstrip("/").rsplit("/", 1)[-1]
+                files.extend((u, name) for u in sorted(list_traficolor_files(sub, d)[0])[-TRAFICOLOR_FILES_PER_DIR:])
         if files:
             break
     files = list(dict.fromkeys(files))[:TRAFICOLOR_MAX_FILES]
     if not files:
         print("  ⚠ TRAFICOLOR : index illisible ou vide — trafic mesuré INCONNU")
         return {}, source
-    totals: dict[str, Counter] = {}
-    for url in files:
+    city_totals: dict[str, Counter] = {}
+    city_label: dict[str, str] = {}
+    agglos_seen: set[str] = set()
+    for url, dirname in files:
         xml = get_text(url)
         if not xml:
             continue
         source["files"] += 1
-        counts, diag = parse_traficolor_xml(xml, url)
+        if dirname in TRAFICOLOR_DIRS:
+            counts, diag = parse_traficolor_by_department(xml, TRAFICOLOR_DIRS[dirname], url)
+            diag["dir"] = dirname
+            for city, c in counts.items():
+                city_totals.setdefault(city, Counter()).update(c)
+                city_label.setdefault(city, dirname)
+            if counts:
+                agglos_seen.add(dirname)
+        else:
+            counts, diag = parse_traficolor_xml(xml, url)
+            for agglo, c in counts.items():
+                agglos_seen.add(agglo)
+                for city in TRAFICOLOR_AGGLOS.get(agglo, []):
+                    city_totals.setdefault(city, Counter()).update(c)
+                    city_label.setdefault(city, agglo.title())
         source["diagnostic"].append(diag)
-        for agglo, c in counts.items():
-            totals.setdefault(agglo, Counter()).update(c)
-    source["diagnostic"] = source["diagnostic"][:8]
+    source["diagnostic"] = source["diagnostic"][:24]
     out: dict[str, dict[str, Any]] = {}
-    for agglo, c in totals.items():
+    for city, c in sorted(city_totals.items()):
+        if city not in CITIES:
+            continue
         status, detail = traffic_from_shares(c)
         if not status:
             continue
-        for city in TRAFICOLOR_AGGLOS.get(agglo, []):
-            if city in out and out[city]["trafficDetail"]["mesures"] >= detail["mesures"]:
-                continue
-            out[city] = {"traffic": status, "trafficDetail": detail,
-                         "trafficSource": f"Bison Futé TRAFICOLOR ({agglo.title()})"}
-            print(f"  ✓ {city:16} {status:8} {detail}")
+        out[city] = {"traffic": status, "trafficDetail": detail,
+                     "trafficSource": f"Bison Futé TRAFICOLOR ({city_label[city]})"}
+        print(f"  ✓ {city:16} {status:8} {detail}")
     source["ok"] = bool(out)
-    source["agglomerations"] = sorted(totals)
+    source["agglomerations"] = sorted(agglos_seen)
     return out, source
 
 
