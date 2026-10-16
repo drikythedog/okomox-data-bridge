@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Données reçues par okomox</title>
+<meta name="description" content="Les informations publiques que l'application okomox télécharge : météo, vigilance et trafic, ville par ville.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --night: #091228; --night-deep: #050a18; --panel: #0f1b38; --line: #1d2b52;
+    --title: #eef3ff; --text: #c3cde3; --muted: #8b97b5; --accent: #6ea2ff;
+    /* Trafic : échelle propre (le vert et le rouge sont réservés au verdict d'une course). */
+    --t-fluid: #6ea2ff; --t-normal: #8b97b5; --t-dense: #ffb547; --t-blocked: #ff7a45; --t-unknown: #3a4a72;
+    --w-dry: #ffd166; --w-light: #7cc6ff; --w-heavy: #3d8bff; --w-extreme: #c792ff;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  html { background: var(--night-deep); }
+  body {
+    margin: 0; min-height: 100vh; background: var(--night-deep) linear-gradient(180deg, var(--night) 0, var(--night-deep) 900px) no-repeat;
+    color: var(--text); font: 400 16px/1.55 Inter, system-ui, sans-serif; font-feature-settings: "tnum" 1;
+  }
+  a { color: var(--accent); }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
+
+  header.top { padding: 40px 0 8px; }
+  .brand { font-weight: 800; font-size: 22px; letter-spacing: -0.02em; color: var(--title); }
+  .brand .o1 { color: #ffc93c; } .brand .o2 { color: #20e879; } .brand .o3 { color: #ff4d5a; }
+  h1 { color: var(--title); font-size: clamp(30px, 5vw, 48px); line-height: 1.08; letter-spacing: -0.03em;
+       margin: 18px 0 12px; font-weight: 800; max-width: 18ch; }
+  .lede { max-width: 62ch; margin: 0 0 6px; }
+  .fresh { color: var(--muted); font-size: 14px; margin: 14px 0 0; }
+  .fresh strong { color: var(--title); font-weight: 600; }
+
+  /* La carte : l'élément marquant de la page. */
+  .stage { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 32px; margin: 28px 0 8px; align-items: start; }
+  .mapbox { position: relative; background: radial-gradient(ellipse at 45% 40%, #12224a 0%, transparent 70%); border-radius: 20px; }
+  svg.map { width: 100%; height: auto; display: block; }
+  .map .land { fill: #10204a; stroke: #2a3d70; stroke-width: 1.2; }
+  .map .dot { stroke: var(--night); stroke-width: 1.5; cursor: pointer; transition: r .15s; }
+  .map .dot:hover, .map .dot.sel { r: 9; }
+  .map .lbl { fill: var(--muted); font-size: 10.5px; pointer-events: none; }
+  .map .lbl.big { fill: var(--text); font-weight: 600; font-size: 12px; }
+  .toggle { display: inline-flex; background: var(--panel); border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 4px; }
+  .toggle button { font: 600 14px Inter, sans-serif; color: var(--muted); background: none; border: 0; border-radius: 999px; padding: 8px 16px; cursor: pointer; }
+  .toggle button[aria-pressed="true"] { background: var(--accent); color: var(--night-deep); }
+  .legend { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: 14px 0 0; font-size: 13px; color: var(--muted); padding: 0; list-style: none; }
+  .legend li::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: var(--c); margin-right: 6px; vertical-align: -1px; }
+
+  .detail { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 20px; min-height: 220px; }
+  .detail h2 { margin: 0; color: var(--title); font-size: 24px; letter-spacing: -0.02em; }
+  .detail .region { color: var(--muted); font-size: 14px; margin: 2px 0 14px; }
+  .facts { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 18px; margin: 0; }
+  .facts dt { color: var(--muted); font-size: 13px; }
+  .facts dd { margin: 2px 0 0; color: var(--title); font-weight: 600; font-size: 17px; }
+  .bar { display: flex; height: 10px; border-radius: 6px; overflow: hidden; background: var(--t-unknown); margin: 6px 0 4px; }
+  .bar span { display: block; height: 100%; }
+  .note { color: var(--muted); font-size: 13px; margin: 14px 0 0; }
+
+  section.band { margin: 56px 0 0; }
+  section.band > h2 { color: var(--title); font-size: 26px; letter-spacing: -0.02em; margin: 0 0 6px; }
+  section.band > p.sub { margin: 0 0 18px; max-width: 64ch; color: var(--muted); }
+
+  .national { display: flex; flex-wrap: wrap; gap: 28px 48px; padding: 20px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .national div { min-width: 140px; }
+  .national b { display: block; color: var(--title); font-size: 30px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; }
+  .national span { color: var(--muted); font-size: 14px; }
+
+  .regions { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 0 28px; }
+  .reg { padding: 14px 0; border-bottom: 1px solid var(--line); }
+  .reg h3 { margin: 0; color: var(--title); font-size: 16px; font-weight: 600; }
+  .reg p { margin: 2px 0 0; font-size: 14px; }
+  .chip { display: inline-block; font-size: 12px; font-weight: 600; padding: 1px 8px; border-radius: 999px; margin-left: 6px; color: var(--night-deep); background: var(--c); vertical-align: 2px; }
+
+  .tools { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 0 0 12px; }
+  .tools input { font: 400 15px Inter, sans-serif; color: var(--title); background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; width: min(320px, 100%); }
+  .tablewrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 14px; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; min-width: 640px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  th { color: var(--muted); font-weight: 500; position: sticky; top: 0; background: var(--panel); }
+  td:first-child { color: var(--title); font-weight: 600; }
+  tbody tr { cursor: pointer; }
+  tbody tr:hover, tbody tr.sel { background: rgba(110, 162, 255, .08); }
+  .dotc { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: var(--c); margin-right: 7px; }
+
+  .sources { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0 28px; }
+  .src { padding: 14px 0; border-bottom: 1px solid var(--line); }
+  .src h3 { margin: 0; color: var(--title); font-size: 16px; font-weight: 600; }
+  .src p { margin: 2px 0 0; font-size: 14px; }
+  .ok { color: var(--accent); } .ko { color: var(--t-dense); }
+
+  .promise { margin: 56px 0 0; padding: 24px; border: 1px solid var(--line); border-radius: 16px; max-width: 760px; }
+  .promise h2 { color: var(--title); margin: 0 0 8px; font-size: 22px; }
+  .promise p { margin: 0 0 8px; }
+  footer { color: var(--muted); font-size: 13px; padding: 40px 0 48px; }
+  .error { color: var(--t-dense); }
+  @media (max-width: 860px) { .stage { grid-template-columns: 1fr; } }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand" aria-label="okomox"><span class="o1">o</span>k<span class="o2">o</span>m<span class="o3">o</span>x</div>
+    <h1>Ce que l'application reçoit, ville par ville</h1>
+    <p class="lede">okomox télécharge un seul fichier public, plusieurs fois par jour : la météo, les alertes de vigilance et l'état du trafic de <span id="n-cities">nombreuses</span> villes. Cette page montre ce fichier tel quel.</p>
+    <p class="fresh" id="fresh">Chargement des données…</p>
+  </header>
+
+  <div class="stage">
+    <div>
+      <div class="toggle" role="group" aria-label="Afficher sur la carte">
+        <button type="button" data-mode="traffic" aria-pressed="true">Trafic</button>
+        <button type="button" data-mode="weather" aria-pressed="false">Météo</button>
+      </div>
+      <div class="mapbox"><svg class="map" id="map" viewBox="0 0 520 520" role="img" aria-label="Carte des villes suivies"></svg></div>
+      <ul class="legend" id="legend"></ul>
+    </div>
+    <aside class="detail" id="detail" aria-live="polite">
+      <h2>Choisissez une ville</h2>
+      <p class="region">Touchez un point de la carte ou une ligne du tableau.</p>
+    </aside>
+  </div>
+
+  <section class="band" aria-labelledby="h-nat">
+    <h2 id="h-nat">En France</h2>
+    <p class="sub">Synthèse nationale de la dernière collecte.</p>
+    <div class="national" id="national"></div>
+  </section>
+
+  <section class="band" aria-labelledby="h-reg">
+    <h2 id="h-reg">Par région</h2>
+    <p class="sub">Le temps le plus marqué, l'écart de température, et le trafic le plus chargé mesuré dans la région.</p>
+    <div class="regions" id="regions"></div>
+  </section>
+
+  <section class="band" aria-labelledby="h-city">
+    <h2 id="h-city">Toutes les villes</h2>
+    <div class="tools">
+      <label for="q" class="sr">Rechercher une ville</label>
+      <input id="q" type="search" placeholder="Rechercher une ville ou une région" autocomplete="off">
+    </div>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Ville</th><th>Région</th><th>Météo</th><th>Temp.</th><th>Rafales</th><th>Pluie 3 h</th><th>Trafic</th><th>Vigilance</th></tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="h-src">
+    <h2 id="h-src">Sources</h2>
+    <p class="sub">État de chaque source lors de la dernière collecte. Une source muette ne remplace jamais une donnée par une valeur inventée.</p>
+    <div class="sources" id="sources"></div>
+  </section>
+
+  <section class="promise">
+    <h2>Dans l'autre sens, rien ne part</h2>
+    <p>Le téléphone télécharge ce fichier ; il n'envoie rien. Les courses, la position, les kilomètres et les réglages du chauffeur restent sur son téléphone.</p>
+    <p>Un trafic absent signifie « pas de mesure récente » : l'application utilise alors sa propre estimation, selon l'heure et les trajets déjà faits par le chauffeur, et ignore toute mesure de plus de 90 minutes.</p>
+  </section>
+
+  <footer>
+    <p id="attrib">Météo : Open-Meteo (CC BY 4.0). Vigilance : Météo-France. Trafic : Bison Futé / DIR (Licence Ouverte 2.0).</p>
+    <p>Fichier brut : <a href="data.json">data.json</a> · okomox, application Android pour chauffeurs VTC.</p>
+  </footer>
+</div>
+
+<script>
+(function () {
+  var TRAFFIC = {
+    FLUID:   { label: 'Fluide',  c: 'var(--t-fluid)' },
+    NORMAL:  { label: 'Normal',  c: 'var(--t-normal)' },
+    DENSE:   { label: 'Dense',   c: 'var(--t-dense)' },
+    BLOCKED: { label: 'Bloqué',  c: 'var(--t-blocked)' },
+    NONE:    { label: 'Pas de mesure', c: 'var(--t-unknown)' }
+  };
+  var WEATHER = {
+    DRY:        { label: 'Sec',          c: 'var(--w-dry)' },
+    LIGHT_RAIN: { label: 'Pluie légère', c: 'var(--w-light)' },
+    HEAVY_RAIN: { label: 'Pluie forte',  c: 'var(--w-heavy)' },
+    EXTREME:    { label: 'Orage',        c: 'var(--w-extreme)' },
+    NONE:       { label: 'Indisponible', c: 'var(--t-unknown)' }
+  };
+  var VIG = { vert: '#6ea2ff', jaune: '#ffd166', orange: '#ffb547', rouge: '#ff7a45' };
+  var BIG = ['Paris', 'Lyon', 'Marseille', 'Toulouse', 'Bordeaux', 'Lille', 'Nantes', 'Strasbourg', 'Nice', 'Rennes', 'Montpellier'];
+  var mode = 'traffic', data = null, selected = null;
+
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (m) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[m]; }); }
+  function trafficOf(c) { return TRAFFIC[c.traffic] ? c.traffic : 'NONE'; }
+  function weatherOf(c) { return c.weatherUnavailable ? 'NONE' : (WEATHER[c.weather] ? c.weather : 'NONE'); }
+  function colorOf(c) { return mode === 'traffic' ? TRAFFIC[trafficOf(c)].c : WEATHER[weatherOf(c)].c; }
+  function fmtTime(iso) {
+    if (!iso) return '—';
+    var d = new Date(iso); if (isNaN(d)) return '—';
+    return d.toLocaleString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit' });
+  }
+  function ago(iso) {
+    var d = new Date(iso); if (isNaN(d)) return '';
+    var m = Math.round((Date.now() - d.getTime()) / 60000);
+    if (m < 60) return 'il y a ' + Math.max(m, 1) + ' min';
+    var h = Math.floor(m / 60); return 'il y a ' + h + ' h' + (m % 60 ? ' ' + (m % 60) : '');
+  }
+
+  var FRANCE = [[51.09,2.54],[50.73,1.6],[50.06,1.38],[49.7,0.2],[49.43,0.07],[49.35,-0.4],[49.4,-1.1],[49.68,-1.27],[49.65,-1.94],[48.65,-1.57],[48.84,-3.0],[48.68,-4.4],[48.3,-4.77],[47.8,-4.37],[47.6,-3.0],[47.27,-2.5],[46.8,-2.15],[46.2,-1.3],[45.6,-1.2],[44.6,-1.25],[43.65,-1.45],[43.37,-1.79],[43.0,-0.7],[42.7,0.7],[42.45,2.0],[42.43,3.17],[43.2,3.2],[43.45,4.0],[43.4,4.9],[43.1,5.9],[43.4,6.9],[43.75,7.5],[44.2,7.67],[44.9,6.9],[45.3,7.1],[45.95,6.8],[46.4,6.2],[46.9,6.43],[47.5,7.0],[47.6,7.55],[48.3,7.6],[49.0,8.2],[49.15,6.7],[49.5,5.8],[49.8,4.85],[50.1,4.2],[50.3,4.0],[50.6,3.3],[50.8,2.6]];
+  var CORSE = [[43.0,9.45],[42.7,9.45],[42.3,9.55],[41.85,9.4],[41.38,9.2],[41.6,8.8],[41.95,8.6],[42.35,8.6],[42.65,8.9],[42.95,9.3]];
+  // Projection simple de la métropole + Corse (lat 41–51.2, lng −5–9.8).
+  function proj(lat, lng) {
+    var x = (lng + 5.2) / 15.2 * 470 + 25;
+    var y = (51.4 - lat) / 10.6 * 470 + 25;
+    return [x, y];
+  }
+
+  function drawMap() {
+    var svg = document.getElementById('map'), cities = data.cities, out = '';
+    // Contour simplifié de la métropole et de la Corse (repère visuel, pas une carte précise).
+    [FRANCE, CORSE].forEach(function (poly) {
+      out += '<polygon class="land" points="' + poly.map(function (q) { var p = proj(q[0], q[1]); return p[0].toFixed(1) + ',' + p[1].toFixed(1); }).join(' ') + '"></polygon>';
+    });
+    var names = Object.keys(cities).sort(function (a, b) { return BIG.indexOf(b) - BIG.indexOf(a); });
+    names.forEach(function (n) {
+      var c = cities[n], p = proj(c.lat, c.lng), big = BIG.indexOf(n) >= 0;
+      out += '<circle class="dot' + (n === selected ? ' sel' : '') + '" tabindex="0" role="button" aria-label="' + esc(n) + '" data-n="' + esc(n) +
+        '" cx="' + p[0].toFixed(1) + '" cy="' + p[1].toFixed(1) + '" r="' + (big ? 8 : 6) + '" fill="' + colorOf(c) + '"></circle>';
+      // Paris : étiquette au-dessus, à gauche, pour ne pas couvrir les points d'Île-de-France.
+      var lx = n === 'Paris' ? p[0] - 44 : p[0] + 10, ly = n === 'Paris' ? p[1] - 14 : p[1] + 4;
+      if (big) out += '<text class="lbl big" x="' + lx.toFixed(1) + '" y="' + ly.toFixed(1) + '">' + esc(n) + '</text>';
+    });
+    svg.innerHTML = out;
+    var leg = mode === 'traffic' ? TRAFFIC : WEATHER;
+    document.getElementById('legend').innerHTML = Object.keys(leg).map(function (k) {
+      return '<li style="--c:' + leg[k].c + '">' + leg[k].label + '</li>';
+    }).join('');
+  }
+
+  function bar(d) {
+    if (!d) return '';
+    var parts = [['fluidePct', 'var(--t-fluid)'], ['ralentiPct', 'var(--t-dense)'], ['saturePct', 'var(--t-blocked)'], ['bloquePct', '#d94f2b']];
+    return '<div class="bar" aria-hidden="true">' + parts.map(function (p) { return '<span style="width:' + (d[p[0]] || 0) + '%;background:' + p[1] + '"></span>'; }).join('') + '</div>' +
+      '<p class="note">' + d.mesures + ' tronçons mesurés : ' + (d.fluidePct || 0) + ' % fluides, ' + (d.ralentiPct || 0) + ' % ralentis, ' +
+      (d.saturePct || 0) + ' % saturés, ' + (d.bloquePct || 0) + ' % bloqués.</p>';
+  }
+
+  function showCity(n) {
+    selected = n; var c = data.cities[n]; if (!c) return;
+    var t = TRAFFIC[trafficOf(c)], w = WEATHER[weatherOf(c)];
+    var vig = c.vigilance && c.vigilance.level >= 2 ? c.vigilance.color + (c.vigilance.phenomena.length ? ' (' + c.vigilance.phenomena.map(function (p) { return p.phenomenon; }).join(', ') + ')' : '') : (c.vigilance ? 'vert' : '—');
+    document.getElementById('detail').innerHTML =
+      '<h2>' + esc(n) + '</h2><p class="region">' + esc(c.region || '') + (c.dept ? ', département ' + esc(c.dept) : '') + '</p>' +
+      '<dl class="facts">' +
+      '<div><dt>Météo</dt><dd>' + w.label + (c.weatherUnavailable ? '' : ', ' + c.temperatureC + ' °C') + '</dd></div>' +
+      '<div><dt>Trafic</dt><dd>' + t.label + '</dd></div>' +
+      '<div><dt>Rafales</dt><dd>' + (c.windGustKmh != null ? c.windGustKmh + ' km/h' : '—') + '</dd></div>' +
+      '<div><dt>Risque de pluie (3 h)</dt><dd>' + (c.precipProbabilityNext3h != null ? c.precipProbabilityNext3h + ' %' : '—') + '</dd></div>' +
+      '<div><dt>Vigilance</dt><dd>' + esc(vig) + '</dd></div>' +
+      '<div><dt>Trafic mesuré</dt><dd>' + (c.trafficAt ? ago(c.trafficAt) : 'non') + '</dd></div>' +
+      '</dl>' + bar(c.trafficDetail) +
+      (c.trafficSource ? '<p class="note">Source : ' + esc(c.trafficSource) + '.</p>' : '<p class="note">Pas de mesure de trafic publique pour cette ville : l\'application utilise son estimation.</p>');
+    drawMap(); markRow();
+  }
+
+  function renderNational() {
+    var n = data.national || {}, el = document.getElementById('national');
+    var rain = n.weatherCounts ? (n.weatherCounts.LIGHT_RAIN || 0) + (n.weatherCounts.HEAVY_RAIN || 0) + (n.weatherCounts.EXTREME || 0) : null;
+    var dense = n.trafficCounts ? (n.trafficCounts.DENSE || 0) + (n.trafficCounts.BLOCKED || 0) : 0;
+    var vig = n.vigilanceOrangeRouge ? n.vigilanceOrangeRouge.length : null;
+    el.innerHTML =
+      '<div><b>' + (n.cityCount || 0) + '</b><span>villes suivies</span></div>' +
+      '<div><b>' + (rain == null ? '—' : rain) + '</b><span>sous la pluie ou l\'orage</span></div>' +
+      '<div><b>' + (n.temperatureMinC != null ? n.temperatureMinC + ' à ' + n.temperatureMaxC + ' °C' : '—') + '</b><span>du plus froid au plus chaud</span></div>' +
+      '<div><b>' + (n.trafficMeasuredCities || 0) + '</b><span>villes au trafic mesuré, dont ' + dense + ' chargées</span></div>' +
+      '<div><b>' + (vig == null ? '—' : vig) + '</b><span>' + (vig == null ? 'vigilance non reçue' : 'départements en vigilance orange ou rouge') + '</span></div>';
+  }
+
+  function renderRegions() {
+    var r = data.regions || {};
+    document.getElementById('regions').innerHTML = Object.keys(r).sort().map(function (k) {
+      var g = r[k], w = WEATHER[g.weather] || WEATHER.NONE, t = g.trafficWorst ? TRAFFIC[g.trafficWorst] : null;
+      return '<div class="reg"><h3>' + esc(k) + (g.vigilanceMax && g.vigilanceMax !== 'vert' ? '<span class="chip" style="--c:' + (VIG[g.vigilanceMax] || '#8b97b5') + '">vigilance ' + esc(g.vigilanceMax) + '</span>' : '') + '</h3>' +
+        '<p>' + w.label + (g.temperatureMinC != null ? ', ' + g.temperatureMinC + ' à ' + g.temperatureMaxC + ' °C' : '') + (g.windGustMaxKmh != null ? ', rafales ' + g.windGustMaxKmh + ' km/h' : '') + '</p>' +
+        '<p style="color:var(--muted)">' + (t ? 'Trafic : ' + t.label.toLowerCase() : 'Trafic : pas de mesure') + ' · ' + g.cities.length + ' villes</p></div>';
+    }).join('');
+  }
+
+  function renderRows() {
+    var q = (document.getElementById('q').value || '').toLowerCase();
+    var cities = data.cities;
+    document.getElementById('rows').innerHTML = Object.keys(cities).sort(function (a, b) { return a.localeCompare(b, 'fr'); }).filter(function (n) {
+      return !q || n.toLowerCase().indexOf(q) >= 0 || (cities[n].region || '').toLowerCase().indexOf(q) >= 0;
+    }).map(function (n) {
+      var c = cities[n], t = TRAFFIC[trafficOf(c)], w = WEATHER[weatherOf(c)];
+      var v = c.vigilance ? c.vigilance.color : '—';
+      return '<tr tabindex="0" data-n="' + esc(n) + '"><td>' + esc(n) + '</td><td>' + esc(c.region || '') + '</td>' +
+        '<td><span class="dotc" style="--c:' + w.c + '"></span>' + w.label + '</td>' +
+        '<td>' + (c.weatherUnavailable ? '—' : c.temperatureC + ' °C') + '</td>' +
+        '<td>' + (c.windGustKmh != null ? c.windGustKmh + ' km/h' : '—') + '</td>' +
+        '<td>' + (c.precipProbabilityNext3h != null ? c.precipProbabilityNext3h + ' %' : '—') + '</td>' +
+        '<td><span class="dotc" style="--c:' + t.c + '"></span>' + t.label + '</td><td>' + esc(v) + '</td></tr>';
+    }).join('');
+    markRow();
+  }
+  function markRow() {
+    Array.prototype.forEach.call(document.querySelectorAll('#rows tr'), function (tr) { tr.classList.toggle('sel', tr.getAttribute('data-n') === selected); });
+  }
+
+  function renderSources() {
+    var s = (data._meta && data._meta.sources) || [];
+    document.getElementById('sources').innerHTML = s.map(function (x) {
+      if (typeof x === 'string') return '<div class="src"><h3>' + esc(x) + '</h3></div>';
+      var detail = [];
+      if (x.cities != null) detail.push(x.cities + ' villes');
+      if (x.departments != null && x.ok) detail.push(x.departments + ' départements');
+      if (x.agglomerations && x.agglomerations.length) detail.push(x.agglomerations.length + ' agglomérations');
+      if (x.items != null && x.ok) detail.push(x.items + ' messages');
+      if (x.plan) detail.push(x.plan);
+      if (x.note) detail.push(x.note);
+      return '<div class="src"><h3>' + esc(x.name) + '</h3><p class="' + (x.ok ? 'ok' : 'ko') + '">' + (x.ok ? 'A répondu' : 'Muette lors de cette collecte') + '</p>' +
+        (detail.length ? '<p>' + esc(detail.join(', ')) + '</p>' : '') + '</div>';
+    }).join('');
+    if (data._meta && data._meta.attribution) document.getElementById('attrib').textContent = data._meta.attribution;
+  }
+
+  function render() {
+    var n = Object.keys(data.cities || {}).length;
+    document.getElementById('n-cities').textContent = n;
+    document.getElementById('fresh').innerHTML = 'Dernière collecte : <strong>' + esc(fmtTime(data.generatedAt)) + '</strong> (' + esc(ago(data.generatedAt)) + ').';
+    drawMap(); renderNational(); renderRegions(); renderRows(); renderSources();
+    showCity(selected || 'Paris');
+  }
+
+  document.querySelector('.toggle').addEventListener('click', function (e) {
+    var b = e.target.closest('button'); if (!b) return;
+    mode = b.getAttribute('data-mode');
+    Array.prototype.forEach.call(this.querySelectorAll('button'), function (x) { x.setAttribute('aria-pressed', String(x === b)); });
+    drawMap();
+  });
+  function pick(e) {
+    var el = e.target.closest('[data-n]'); if (!el) return;
+    if (e.type === 'keydown' && e.key !== 'Enter' && e.key !== ' ') return;
+    if (e.type === 'keydown') e.preventDefault();
+    showCity(el.getAttribute('data-n'));
+    if (el.tagName === 'TR' && window.matchMedia('(max-width: 860px)').matches) document.getElementById('detail').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  ['click', 'keydown'].forEach(function (t) {
+    document.getElementById('map').addEventListener(t, pick);
+    document.getElementById('rows').addEventListener(t, pick);
+  });
+  document.getElementById('q').addEventListener('input', renderRows);
+
+  function load(urls) {
+    if (!urls.length) { document.getElementById('fresh').innerHTML = '<span class="error">Le fichier de données ne répond pas. Réessayez dans quelques minutes.</span>'; return; }
+    fetch(urls[0], { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (j) { data = j; render(); })
+      .catch(function () { load(urls.slice(1)); });
+  }
+  load(['data.json', 'data/data.json']);
+})();
+</script>
+<style>.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }</style>
+</body>
+</html>

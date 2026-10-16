@@ -1,12 +1,14 @@
 name: Collect météo & trafic
-# Exécute collect.py toutes les 30 minutes + commit/push data/data.json
+# Exécute collect.py deux fois par heure (:07 et :37) + commit/push data/data.json
 # Si les secrets FTP sont configurés, envoie aussi data.json par FTP (et rien d'autre).
 
 on:
   schedule:
     # GitHub Actions CRON UTC. Toutes les 30 minutes.
     # Note : la latence GitHub peut décaler de quelques minutes (best-effort).
-    - cron: '*/30 * * * *'
+    # 16/10/2026 : minutes décalées (:07 et :37). GitHub retarde ou abandonne les tâches
+    # planifiées en début d'heure lors des pics de charge et recommande une autre minute que :00.
+    - cron: '7,37 * * * *'
   workflow_dispatch: {}  # permet déclenchement manuel via UI GitHub
 
 # Permissions minimales : commit data/.
@@ -31,7 +33,15 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Tests hors ligne
+        run: python -m unittest discover -s tests
+
       - name: Run collect.py
+        env:
+          # Facultatifs (Settings → Secrets and variables → Actions). Sans eux : API Open-Meteo
+          # gratuite (usage non commercial) et pas de vigilance Météo-France.
+          OPEN_METEO_API_KEY: ${{ secrets.OPEN_METEO_API_KEY }}
+          METEOFRANCE_API_KEY: ${{ secrets.METEOFRANCE_API_KEY }}
         run: python collect.py
 
       - name: Show generated data.json (head)

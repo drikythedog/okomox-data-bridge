@@ -2,6 +2,21 @@
 
 Passerelle de données météo et trafic pour l'application Okomox.
 
+## Version 3 (16/10/2026)
+
+- **50 villes** (les 14 historiques, pôles VTC d'Île-de-France dont Roissy-CDG et Orly, préfectures de région, grandes villes), **13 régions** (`regions`) et une **synthèse nationale** (`national`).
+- Météo : rafales (`windGustKmh`), risque de pluie à 3 h (`precipProbabilityNext3h`), prévision horaire 36 h ; appels Open-Meteo groupés (3 appels au lieu de 14).
+- Vigilance Météo-France par département (`vigilance`) si le secret `METEOFRANCE_API_KEY` est configuré.
+- Trafic **mesuré** par agglomération : Bison Futé TRAFICOLOR (données ouvertes, 21 agglomérations), avec le détail en % de tronçons fluides / ralentis / saturés / bloqués (`trafficDetail`) et la source (`trafficSource`). Les événements signalés (RSS) ne servent plus qu'à aggraver.
+- Jamais de valeur inventée : météo illisible → `weatherUnavailable: true` ; trafic non mesuré → pas de champ `traffic`.
+- Page publique non référencée `index.html` (« Ce que l'application reçoit ») : carte, régions, villes, état des sources.
+- Tests hors ligne : `python -m unittest discover -s tests` (lancés par le workflow avant chaque collecte).
+- Collecte à :07 et :37 (GitHub retarde les tâches planifiées en début d'heure).
+
+### Licences à respecter
+- **Open-Meteo** : l'API gratuite est réservée au **non commercial**. Pour okomox (abonnement payant), prendre l'offre commerciale et mettre la clé dans `OPEN_METEO_API_KEY`. Attribution CC BY 4.0 obligatoire (faite dans `_meta.attribution` et sur la page).
+- **Météo-France Vigilance** et **Bison Futé** : Licence Ouverte 2.0, mention de la source (faite).
+
 ## 🎯 Mission
 
 Collecter automatiquement les conditions météo et trafic de **14 grandes villes françaises** + autoroutes (Bison Futé) + IDF (Sytadin), agréger dans un fichier JSON unique, le publier toutes les **30 minutes** sur GitHub Pages et sur `https://okomox.site/data.json`.
