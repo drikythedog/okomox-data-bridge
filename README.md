@@ -47,6 +47,12 @@ Calculateur V8.2 → verdict ajusté selon météo + trafic
 }
 ```
 
+**Trafic (16/10/2026)** : le champ `traffic` d'une ville n'est publié que si une source a SIGNALÉ
+un problème (DENSE / BLOCKED) qui la concerne, avec `trafficAt` (heure de la mesure). Absent = inconnu :
+l'app Okomox (vc163+) utilise alors son trafic local et ignore tout état de plus de 90 min. Avant, toutes
+les villes valaient « NORMAL » en permanence (sources muettes + bug Sytadin). `_meta.trafficSources`
+indique si Bison Futé et Sytadin ont répondu.
+
 Enums alignés sur `app/src/main/java/com/okomox/app/calc/RideCalcContext.kt` :
 - `WeatherCondition` : DRY / LIGHT_RAIN / HEAVY_RAIN / EXTREME
 - `TrafficCondition` : FLUID / NORMAL / DENSE / BLOCKED

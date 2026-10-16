@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -205,8 +206,9 @@ TRAFFIC_KEYWORDS = {
 
 # Autoroutes à tracker (matching dans le titre/description du RSS).
 HIGHWAYS = ["A1", "A4", "A6", "A7", "A8", "A9", "A10", "A11", "A13", "A14",
-            "A15", "A16", "A20", "A26", "A31", "A35", "A36", "A40", "A43", "A61", "A62",
-            "A63", "A75", "A89"]
+            "A15", "A16", "A20", "A22", "A25", "A26", "A31", "A35", "A36", "A40", "A43",
+            "A46", "A47", "A50", "A55", "A61", "A62", "A63", "A64", "A75", "A83", "A86",
+            "A89", "A630"]  # 16/10/2026 : + autoroutes utilisées par les villes mais jamais suivies
 
 
 def classify_traffic(text: str) -> str:
@@ -219,20 +221,35 @@ def classify_traffic(text: str) -> str:
     return "NORMAL"  # défaut neutre
 
 
-def collect_highways() -> dict[str, dict[str, Any]]:
-    """Récupère le RSS Bison Futé et extrait l'état par autoroute."""
+def _fold(text: str) -> str:
+    """Majuscules sans accents (comparaison de noms de lieux)."""
+    import unicodedata
+    return "".join(ch for ch in unicodedata.normalize("NFD", text.upper()) if unicodedata.category(ch) != "Mn")
+
+
+def collect_highways() -> tuple[dict[str, dict[str, Any]], dict[str, Any]]:
+    """Récupère le RSS Bison Futé et extrait les ÉVÉNEMENTS par autoroute.
+
+    16/10/2026 (audit météo/trafic) : une autoroute sans événement n'est plus déclarée « NORMAL »
+    (on n'en sait rien) mais `status: null`. Seuls DENSE / BLOCKED signalés par la source comptent.
+    Retourne (autoroutes, état de la source).
+    """
     print("\n🛣  Collecte trafic autoroutes (Bison Futé)...")
-    result: dict[str, dict[str, Any]] = {h: {"status": "NORMAL", "comment": None} for h in HIGHWAYS}
+    result: dict[str, dict[str, Any]] = {h: {"status": None, "comment": None} for h in HIGHWAYS}
+    source = {"name": "Bison Futé RSS", "ok": False, "items": 0, "events": []}
 
     rss = http_get_text(BISON_FUTE_RSS)
     if not rss:
-        print("  ⚠ Bison Futé indisponible — tous défauts NORMAL")
-        return result
+        print("  ⚠ Bison Futé indisponible — trafic autoroutes INCONNU (aucun NORMAL inventé)")
+        return result, source
 
     try:
         root = ET.fromstring(rss)
         items = root.findall(".//item")
+        source["ok"] = True
+        source["items"] = len(items)
         print(f"  → {len(items)} items RSS reçus")
+        severity = [None, "DENSE", "BLOCKED"]
 
         for item in items:
             title_el = item.find("title")
@@ -241,52 +258,59 @@ def collect_highways() -> dict[str, dict[str, Any]]:
             desc = (desc_el.text or "") if desc_el is not None else ""
             full = f"{title} {desc}"
             full_upper = full.upper()
-
-            # Cherche quelle autoroute est mentionnée
+            status = classify_traffic(full)
+            if status not in ("DENSE", "BLOCKED"):
+                continue
             for hw in HIGHWAYS:
-                if hw in full_upper:
-                    status = classify_traffic(full)
-                    # Update seulement si plus sévère que ce qu'on a déjà
-                    severity = ["FLUID", "NORMAL", "DENSE", "BLOCKED"]
+                # Mot entier : « A1 » ne doit pas capter « A13 ».
+                if re.search(rf"\b{hw}\b", full_upper):
+                    source["events"].append({"hw": hw, "status": status, "text": _fold(full)})
                     if severity.index(status) > severity.index(result[hw]["status"]):
-                        result[hw] = {
-                            "status": status,
-                            "comment": title.strip()[:120] if title else None,
-                        }
+                        result[hw] = {"status": status, "comment": title.strip()[:120] or None}
                         print(f"  ✓ {hw} : {status} ({title[:60]})")
     except ET.ParseError as e:
+        source["ok"] = False
         print(f"  ⚠ Bison Futé RSS parse error : {e}")
 
-    return result
+    return result, source
 
 
 # ============================================================================
 # COLLECTE TRAFIC IDF (Sytadin)
 # ============================================================================
 
-def fetch_sytadin_summary() -> str:
-    """Récupère un résumé global trafic IDF. Surcharge les villes IDF si dispo."""
+def fetch_sytadin_summary() -> tuple[str | None, dict[str, Any]]:
+    """Résumé global trafic IDF : DENSE / BLOCKED si signalé, sinon None (inconnu).
+
+    16/10/2026 : correction d'un bug — `if (title_el or desc_el)` valait toujours Faux (un élément XML
+    sans enfant est « faux » en Python) : le texte lu était vide, donc toujours NORMAL.
+    """
     print("\n🚦 Collecte trafic IDF (Sytadin)...")
+    source = {"name": "Sytadin RSS", "ok": False, "items": 0}
     rss = http_get_text(SYTADIN_RSS)
     if not rss:
-        print("  ⚠ Sytadin indisponible")
-        return "NORMAL"
+        print("  ⚠ Sytadin indisponible — trafic IDF INCONNU")
+        return None, source
 
     try:
         root = ET.fromstring(rss)
         items = root.findall(".//item")
+        source["ok"] = True
+        source["items"] = len(items)
         for item in items[:5]:  # 5 premiers items les plus récents
             title_el = item.find("title")
             desc_el = item.find("description")
-            text = ((title_el.text or "") + " " + (desc_el.text or "")) if (title_el or desc_el) else ""
-            status = classify_traffic(text)
+            title = (title_el.text or "") if title_el is not None else ""
+            desc = (desc_el.text or "") if desc_el is not None else ""
+            status = classify_traffic(f"{title} {desc}")
             if status in ("DENSE", "BLOCKED"):
                 print(f"  ✓ IDF status agrégé : {status}")
-                return status
-        return "NORMAL"
+                return status, source
+        return None, source
     except ET.ParseError as e:
+        source["ok"] = False
         print(f"  ⚠ Sytadin RSS parse error : {e}")
-        return "NORMAL"
+        return None, source
 
 
 # ============================================================================
@@ -313,30 +337,51 @@ CITY_HIGHWAYS = {
 }
 
 
+# Noms qui rattachent un événement d'autoroute à une ville (texte sans accents, majuscules).
+CITY_PLACE_NAMES = {
+    "Paris": ["PARIS", "PERIPHERIQUE", "ILE-DE-FRANCE", "ILE DE FRANCE"],
+    "Versailles": ["VERSAILLES"], "Cergy": ["CERGY", "PONTOISE"], "Evry": ["EVRY"],
+    "Creteil": ["CRETEIL"], "Lyon": ["LYON"], "Marseille": ["MARSEILLE"], "Toulouse": ["TOULOUSE"],
+    "Bordeaux": ["BORDEAUX"], "Nice": ["NICE"], "Nantes": ["NANTES"], "Strasbourg": ["STRASBOURG"],
+    "Lille": ["LILLE"], "Montpellier": ["MONTPELLIER"],
+}
+
+
 def enrich_cities_with_traffic(
     cities: dict[str, dict[str, Any]],
-    highways: dict[str, dict[str, Any]],
-    sytadin_idf: str,
+    events: list[dict[str, Any]],
+    sytadin_idf: str | None,
+    observed_at: str,
 ) -> None:
-    """Ajoute le champ 'traffic' à chaque ville selon les autoroutes proches + Sytadin pour IDF."""
-    severity = ["FLUID", "NORMAL", "DENSE", "BLOCKED"]
+    """Ajoute 'traffic' + 'trafficAt' aux villes pour lesquelles une source a SIGNALÉ un problème.
+
+    16/10/2026 (audit météo/trafic) :
+    - sans signalement, la ville n'a PAS de champ 'traffic' (inconnu). L'app Okomox (vc163+) utilise
+      alors son trafic local (heure + vitesses mesurées) ; les anciennes versions lisent l'absence
+      comme NORMAL, exactement comme avant ;
+    - un événement d'autoroute ne compte pour une ville que s'il est sur une de ses autoroutes ET
+      qu'il nomme la ville (avant : un bouchon A6 à Wissous rendait Lyon « dense ») ;
+    - 'trafficAt' = heure de la mesure : l'app ignore un état de plus de 90 min.
+    """
+    severity = [None, "DENSE", "BLOCKED"]
     idf_cities = {"Paris", "Versailles", "Cergy", "Evry", "Creteil"}
 
     for city, info in cities.items():
-        relevant_hws = CITY_HIGHWAYS.get(city, [])
-        # Trafic max sur les autoroutes proches
-        max_status = "NORMAL"
-        for hw in relevant_hws:
-            hw_status = highways.get(hw, {}).get("status", "NORMAL")
-            if severity.index(hw_status) > severity.index(max_status):
-                max_status = hw_status
+        worst: str | None = None
+        hws = set(CITY_HIGHWAYS.get(city, []))
+        names = CITY_PLACE_NAMES.get(city, [_fold(city)])
+        for ev in events:
+            if ev["hw"] in hws and any(n in ev["text"] for n in names):
+                if severity.index(ev["status"]) > severity.index(worst):
+                    worst = ev["status"]
+        if city in idf_cities and sytadin_idf in severity and severity.index(sytadin_idf) > severity.index(worst):
+            worst = sytadin_idf
 
-        # Si ville IDF, on prend le pire entre autoroutes et Sytadin global
-        if city in idf_cities:
-            if severity.index(sytadin_idf) > severity.index(max_status):
-                max_status = sytadin_idf
-
-        info["traffic"] = max_status
+        info.pop("traffic", None)
+        info.pop("trafficAt", None)
+        if worst is not None:
+            info["traffic"] = worst
+            info["trafficAt"] = observed_at
 
 
 # ============================================================================
@@ -349,9 +394,9 @@ def main() -> int:
     print(f"=== okomox-data-bridge collect @ {start.isoformat()} ===\n")
 
     cities = collect_all_cities()
-    highways = collect_highways()
-    sytadin_idf = fetch_sytadin_summary()
-    enrich_cities_with_traffic(cities, highways, sytadin_idf)
+    highways, bison_source = collect_highways()
+    sytadin_idf, sytadin_source = fetch_sytadin_summary()
+    enrich_cities_with_traffic(cities, bison_source.pop("events"), sytadin_idf, datetime.now(timezone.utc).isoformat())
 
     # GitHub Actions throttle les cron « */30 » : en pratique ~3–4 runs/jour.
     # nextUpdateAt honnête = +6 h (plus de +30 min mensonger). Les apps anciennes ignorent le champ.
@@ -368,6 +413,9 @@ def main() -> int:
             "highwayCount": len(highways),
             "hourlyForecastHours": 36,
             "nextUpdateNote": "GitHub scheduled workflows are throttled; expect ~6h between publishes",
+            # 16/10/2026 : état réel des sources trafic (diagnostic) ; « traffic » absent = inconnu.
+            "trafficSources": [bison_source, sytadin_source],
+            "trafficNote": "city 'traffic' only when a source reported DENSE/BLOCKED; absent = unknown",
         },
     }
 
