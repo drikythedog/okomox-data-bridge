@@ -1,7 +1,7 @@
 {
  "version": 3,
- "generatedAt": "2026-10-24T21:49:50.743266+00:00",
- "nextUpdateAt": "2026-10-25T03:49:50.743266+00:00",
+ "generatedAt": "2026-10-25T00:13:07.319406+00:00",
+ "nextUpdateAt": "2026-10-25T06:13:07.319406+00:00",
  "cities": {
   "Paris": {
    "lat": 48.8566,
@@ -9,28 +9,10 @@
    "dept": "75",
    "region": "Île-de-France",
    "weather": "LIGHT_RAIN",
-   "temperatureC": 13,
-   "precipitationMm": 0.0,
-   "windGustKmh": 55,
+   "temperatureC": 15,
+   "precipitationMm": 0.1,
+   "windGustKmh": 59,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 13,
-     "precipProbability": 50
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 13,
-     "precipProbability": 8
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 14,
-     "precipProbability": 13
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "LIGHT_RAIN",
@@ -184,7 +166,7 @@
     {
      "at": "2026-10-26T03:00",
      "weather": "DRY",
-     "temperatureC": 9,
+     "temperatureC": 10,
      "precipProbability": 0
     },
     {
@@ -208,7 +190,7 @@
     {
      "at": "2026-10-26T07:00",
      "weather": "DRY",
-     "temperatureC": 10,
+     "temperatureC": 9,
      "precipProbability": 0
     },
     {
@@ -228,9 +210,27 @@
      "weather": "DRY",
      "temperatureC": 9,
      "precipProbability": 3
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 10,
+     "precipProbability": 8
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 10,
+     "precipProbability": 20
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 11,
+     "precipProbability": 38
     }
    ],
-   "precipProbabilityNext3h": 50
+   "precipProbabilityNext3h": 95
   },
   "Lyon": {
    "lat": 45.764,
@@ -239,27 +239,9 @@
    "region": "Auvergne-Rhône-Alpes",
    "weather": "LIGHT_RAIN",
    "temperatureC": 10,
-   "precipitationMm": 0.1,
-   "windGustKmh": 17,
+   "precipitationMm": 0.0,
+   "windGustKmh": 22,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 11,
-     "precipProbability": 100
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 10,
-     "precipProbability": 100
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 10,
-     "precipProbability": 100
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "LIGHT_RAIN",
@@ -268,26 +250,26 @@
     },
     {
      "at": "2026-10-25T03:00",
-     "weather": "LIGHT_RAIN",
+     "weather": "DRY",
      "temperatureC": 10,
      "precipProbability": 5
     },
     {
      "at": "2026-10-25T04:00",
-     "weather": "LIGHT_RAIN",
+     "weather": "DRY",
      "temperatureC": 10,
      "precipProbability": 3
     },
     {
      "at": "2026-10-25T05:00",
      "weather": "DRY",
-     "temperatureC": 11,
+     "temperatureC": 10,
      "precipProbability": 0
     },
     {
      "at": "2026-10-25T06:00",
      "weather": "DRY",
-     "temperatureC": 11,
+     "temperatureC": 10,
      "precipProbability": 3
     },
     {
@@ -317,7 +299,7 @@
     {
      "at": "2026-10-25T11:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 12,
+     "temperatureC": 13,
      "precipProbability": 30
     },
     {
@@ -329,13 +311,13 @@
     {
      "at": "2026-10-25T13:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 14,
+     "temperatureC": 13,
      "precipProbability": 78
     },
     {
      "at": "2026-10-25T14:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 14,
+     "temperatureC": 13,
      "precipProbability": 83
     },
     {
@@ -346,7 +328,7 @@
     },
     {
      "at": "2026-10-25T16:00",
-     "weather": "LIGHT_RAIN",
+     "weather": "DRY",
      "temperatureC": 14,
      "precipProbability": 63
     },
@@ -389,7 +371,7 @@
     {
      "at": "2026-10-25T23:00",
      "weather": "DRY",
-     "temperatureC": 11,
+     "temperatureC": 10,
      "precipProbability": 0
     },
     {
@@ -425,7 +407,7 @@
     {
      "at": "2026-10-26T05:00",
      "weather": "DRY",
-     "temperatureC": 7,
+     "temperatureC": 6,
      "precipProbability": 0
     },
     {
@@ -437,19 +419,19 @@
     {
      "at": "2026-10-26T07:00",
      "weather": "DRY",
-     "temperatureC": 6,
+     "temperatureC": 5,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T08:00",
      "weather": "DRY",
-     "temperatureC": 5,
+     "temperatureC": 4,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T09:00",
      "weather": "DRY",
-     "temperatureC": 4,
+     "temperatureC": 5,
      "precipProbability": 0
     },
     {
@@ -457,9 +439,37 @@
      "weather": "DRY",
      "temperatureC": 5,
      "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 6,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "DRY",
+     "temperatureC": 8,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "DRY",
+     "temperatureC": 10,
+     "precipProbability": 0
     }
    ],
-   "precipProbabilityNext3h": 100
+   "precipProbabilityNext3h": 68,
+   "traffic": "FLUID",
+   "trafficAt": "2026-10-25T00:13:45.007154+00:00",
+   "trafficSource": "Bison Futé TRAFICOLOR (TraficHyrondelle)",
+   "trafficDetail": {
+    "mesures": 220,
+    "fluidePct": 100,
+    "ralentiPct": 0,
+    "saturePct": 0,
+    "bloquePct": 0
+   }
   },
   "Marseille": {
    "lat": 43.2965,
@@ -469,26 +479,8 @@
    "weather": "DRY",
    "temperatureC": 14,
    "precipitationMm": 0.0,
-   "windGustKmh": 6,
+   "windGustKmh": 8,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "DRY",
-     "temperatureC": 15,
-     "precipProbability": 0
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "DRY",
-     "temperatureC": 14,
-     "precipProbability": 0
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "DRY",
-     "temperatureC": 14,
-     "precipProbability": 0
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "DRY",
@@ -516,7 +508,7 @@
     {
      "at": "2026-10-25T06:00",
      "weather": "DRY",
-     "temperatureC": 14,
+     "temperatureC": 15,
      "precipProbability": 0
     },
     {
@@ -686,9 +678,37 @@
      "weather": "DRY",
      "temperatureC": 12,
      "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 13,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "DRY",
+     "temperatureC": 14,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "DRY",
+     "temperatureC": 16,
+     "precipProbability": 0
     }
    ],
-   "precipProbabilityNext3h": 0
+   "precipProbabilityNext3h": 0,
+   "traffic": "FLUID",
+   "trafficAt": "2026-10-25T00:13:45.007154+00:00",
+   "trafficSource": "Bison Futé TRAFICOLOR (TraficMarius)",
+   "trafficDetail": {
+    "mesures": 178,
+    "fluidePct": 99,
+    "ralentiPct": 0,
+    "saturePct": 1,
+    "bloquePct": 0
+   }
   },
   "Toulouse": {
    "lat": 43.6047,
@@ -698,26 +718,8 @@
    "weather": "DRY",
    "temperatureC": 13,
    "precipitationMm": 0.0,
-   "windGustKmh": 13,
+   "windGustKmh": 15,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "DRY",
-     "temperatureC": 14,
-     "precipProbability": 0
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "DRY",
-     "temperatureC": 13,
-     "precipProbability": 0
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "DRY",
-     "temperatureC": 13,
-     "precipProbability": 0
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "DRY",
@@ -834,7 +836,7 @@
     },
     {
      "at": "2026-10-25T21:00",
-     "weather": "DRY",
+     "weather": "LIGHT_RAIN",
      "temperatureC": 16,
      "precipProbability": 0
     },
@@ -859,65 +861,93 @@
     {
      "at": "2026-10-26T01:00",
      "weather": "DRY",
-     "temperatureC": 14,
+     "temperatureC": 15,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T02:00",
      "weather": "DRY",
-     "temperatureC": 13,
+     "temperatureC": 14,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T03:00",
      "weather": "DRY",
-     "temperatureC": 12,
+     "temperatureC": 14,
      "precipProbability": 3
     },
     {
      "at": "2026-10-26T04:00",
      "weather": "DRY",
-     "temperatureC": 12,
+     "temperatureC": 14,
      "precipProbability": 3
     },
     {
      "at": "2026-10-26T05:00",
      "weather": "DRY",
-     "temperatureC": 12,
+     "temperatureC": 14,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T06:00",
      "weather": "DRY",
-     "temperatureC": 12,
+     "temperatureC": 14,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T07:00",
      "weather": "DRY",
-     "temperatureC": 12,
+     "temperatureC": 14,
      "precipProbability": 5
     },
     {
      "at": "2026-10-26T08:00",
      "weather": "DRY",
-     "temperatureC": 12,
+     "temperatureC": 14,
      "precipProbability": 5
     },
     {
      "at": "2026-10-26T09:00",
      "weather": "DRY",
-     "temperatureC": 13,
+     "temperatureC": 14,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T10:00",
      "weather": "DRY",
-     "temperatureC": 13,
+     "temperatureC": 14,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 14,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "DRY",
+     "temperatureC": 16,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "DRY",
+     "temperatureC": 17,
      "precipProbability": 0
     }
    ],
-   "precipProbabilityNext3h": 0
+   "precipProbabilityNext3h": 0,
+   "traffic": "FLUID",
+   "trafficAt": "2026-10-25T00:13:45.007154+00:00",
+   "trafficSource": "Bison Futé TRAFICOLOR (TraficErato)",
+   "trafficDetail": {
+    "mesures": 85,
+    "fluidePct": 99,
+    "ralentiPct": 1,
+    "saturePct": 0,
+    "bloquePct": 0
+   }
   },
   "Bordeaux": {
    "lat": 44.8378,
@@ -925,28 +955,10 @@
    "dept": "33",
    "region": "Nouvelle-Aquitaine",
    "weather": "DRY",
-   "temperatureC": 15,
+   "temperatureC": 16,
    "precipitationMm": 0.0,
-   "windGustKmh": 24,
+   "windGustKmh": 27,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "DRY",
-     "temperatureC": 15,
-     "precipProbability": 3
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "DRY",
-     "temperatureC": 15,
-     "precipProbability": 0
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "DRY",
-     "temperatureC": 16,
-     "precipProbability": 0
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "DRY",
@@ -1112,7 +1124,7 @@
     {
      "at": "2026-10-26T05:00",
      "weather": "DRY",
-     "temperatureC": 10,
+     "temperatureC": 11,
      "precipProbability": 5
     },
     {
@@ -1124,7 +1136,7 @@
     {
      "at": "2026-10-26T07:00",
      "weather": "DRY",
-     "temperatureC": 11,
+     "temperatureC": 12,
      "precipProbability": 3
     },
     {
@@ -1144,9 +1156,37 @@
      "weather": "DRY",
      "temperatureC": 13,
      "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 14,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "DRY",
+     "temperatureC": 16,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "DRY",
+     "temperatureC": 18,
+     "precipProbability": 0
     }
    ],
-   "precipProbabilityNext3h": 3
+   "precipProbabilityNext3h": 0,
+   "traffic": "FLUID",
+   "trafficAt": "2026-10-25T00:13:45.007154+00:00",
+   "trafficSource": "Bison Futé TRAFICOLOR (ALIENOR)",
+   "trafficDetail": {
+    "mesures": 151,
+    "fluidePct": 99,
+    "ralentiPct": 1,
+    "saturePct": 0,
+    "bloquePct": 0
+   }
   },
   "Nice": {
    "lat": 43.7102,
@@ -1156,26 +1196,8 @@
    "weather": "DRY",
    "temperatureC": 12,
    "precipitationMm": 0.0,
-   "windGustKmh": 20,
+   "windGustKmh": 19,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "DRY",
-     "temperatureC": 13,
-     "precipProbability": 0
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "DRY",
-     "temperatureC": 12,
-     "precipProbability": 0
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "DRY",
-     "temperatureC": 12,
-     "precipProbability": 0
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "DRY",
@@ -1341,13 +1363,13 @@
     {
      "at": "2026-10-26T05:00",
      "weather": "DRY",
-     "temperatureC": 10,
+     "temperatureC": 11,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T06:00",
      "weather": "DRY",
-     "temperatureC": 10,
+     "temperatureC": 11,
      "precipProbability": 0
     },
     {
@@ -1359,7 +1381,7 @@
     {
      "at": "2026-10-26T08:00",
      "weather": "DRY",
-     "temperatureC": 10,
+     "temperatureC": 11,
      "precipProbability": 0
     },
     {
@@ -1372,6 +1394,24 @@
      "at": "2026-10-26T10:00",
      "weather": "DRY",
      "temperatureC": 14,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 17,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "DRY",
+     "temperatureC": 18,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "DRY",
+     "temperatureC": 19,
      "precipProbability": 0
     }
    ],
@@ -1383,31 +1423,13 @@
    "dept": "44",
    "region": "Pays de la Loire",
    "weather": "DRY",
-   "temperatureC": 16,
+   "temperatureC": 17,
    "precipitationMm": 0.0,
-   "windGustKmh": 72,
+   "windGustKmh": 74,
    "hourly": [
     {
-     "at": "2026-10-24T23:00",
-     "weather": "DRY",
-     "temperatureC": 16,
-     "precipProbability": 0
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "DRY",
-     "temperatureC": 17,
-     "precipProbability": 0
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 17,
-     "precipProbability": 0
-    },
-    {
      "at": "2026-10-25T02:00",
-     "weather": "DRY",
+     "weather": "LIGHT_RAIN",
      "temperatureC": 17,
      "precipProbability": 0
     },
@@ -1602,9 +1624,37 @@
      "weather": "DRY",
      "temperatureC": 13,
      "precipProbability": 18
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 14,
+     "precipProbability": 13
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 14,
+     "precipProbability": 8
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "DRY",
+     "temperatureC": 15,
+     "precipProbability": 0
     }
    ],
-   "precipProbabilityNext3h": 0
+   "precipProbabilityNext3h": 23,
+   "traffic": "FLUID",
+   "trafficAt": "2026-10-25T00:13:45.007154+00:00",
+   "trafficSource": "Bison Futé TRAFICOLOR (TraficBreizhNantes)",
+   "trafficDetail": {
+    "mesures": 193,
+    "fluidePct": 99,
+    "ralentiPct": 1,
+    "saturePct": 0,
+    "bloquePct": 0
+   }
   },
   "Strasbourg": {
    "lat": 48.5734,
@@ -1613,27 +1663,9 @@
    "region": "Grand Est",
    "weather": "LIGHT_RAIN",
    "temperatureC": 9,
-   "precipitationMm": 0.3,
-   "windGustKmh": 38,
+   "precipitationMm": 0.2,
+   "windGustKmh": 56,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 10,
-     "precipProbability": 98
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 9,
-     "precipProbability": 100
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 9,
-     "precipProbability": 100
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "LIGHT_RAIN",
@@ -1649,7 +1681,7 @@
     {
      "at": "2026-10-25T04:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 10,
+     "temperatureC": 9,
      "precipProbability": 100
     },
     {
@@ -1661,7 +1693,7 @@
     {
      "at": "2026-10-25T06:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 11,
+     "temperatureC": 10,
      "precipProbability": 98
     },
     {
@@ -1738,7 +1770,7 @@
     },
     {
      "at": "2026-10-25T19:00",
-     "weather": "DRY",
+     "weather": "LIGHT_RAIN",
      "temperatureC": 13,
      "precipProbability": 8
     },
@@ -1763,7 +1795,7 @@
     {
      "at": "2026-10-25T23:00",
      "weather": "DRY",
-     "temperatureC": 11,
+     "temperatureC": 10,
      "precipProbability": 3
     },
     {
@@ -1787,13 +1819,13 @@
     {
      "at": "2026-10-26T03:00",
      "weather": "DRY",
-     "temperatureC": 8,
+     "temperatureC": 9,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T04:00",
      "weather": "DRY",
-     "temperatureC": 8,
+     "temperatureC": 9,
      "precipProbability": 3
     },
     {
@@ -1830,6 +1862,24 @@
      "at": "2026-10-26T10:00",
      "weather": "DRY",
      "temperatureC": 8,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 9,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "DRY",
+     "temperatureC": 11,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "DRY",
+     "temperatureC": 12,
      "precipProbability": 0
     }
    ],
@@ -1841,38 +1891,20 @@
    "dept": "59",
    "region": "Hauts-de-France",
    "weather": "LIGHT_RAIN",
-   "temperatureC": 11,
+   "temperatureC": 14,
    "precipitationMm": 0.4,
-   "windGustKmh": 68,
+   "windGustKmh": 63,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 11,
-     "precipProbability": 100
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 12,
-     "precipProbability": 100
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 12,
-     "precipProbability": 100
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 13,
+     "temperatureC": 14,
      "precipProbability": 100
     },
     {
      "at": "2026-10-25T03:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 14,
+     "temperatureC": 15,
      "precipProbability": 100
     },
     {
@@ -1884,30 +1916,30 @@
     {
      "at": "2026-10-25T05:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 12,
+     "temperatureC": 13,
      "precipProbability": 100
     },
     {
      "at": "2026-10-25T06:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 11,
-     "precipProbability": 74
+     "temperatureC": 12,
+     "precipProbability": 71
     },
     {
      "at": "2026-10-25T07:00",
      "weather": "DRY",
      "temperatureC": 11,
-     "precipProbability": 37
+     "precipProbability": 31
     },
     {
      "at": "2026-10-25T08:00",
      "weather": "DRY",
-     "temperatureC": 10,
-     "precipProbability": 10
+     "temperatureC": 11,
+     "precipProbability": 2
     },
     {
      "at": "2026-10-25T09:00",
-     "weather": "DRY",
+     "weather": "LIGHT_RAIN",
      "temperatureC": 10,
      "precipProbability": 0
     },
@@ -1926,50 +1958,50 @@
     {
      "at": "2026-10-25T12:00",
      "weather": "DRY",
-     "temperatureC": 12,
+     "temperatureC": 13,
      "precipProbability": 0
     },
     {
      "at": "2026-10-25T13:00",
      "weather": "DRY",
      "temperatureC": 13,
-     "precipProbability": 1
+     "precipProbability": 0
     },
     {
      "at": "2026-10-25T14:00",
      "weather": "DRY",
      "temperatureC": 13,
-     "precipProbability": 2
+     "precipProbability": 0
     },
     {
      "at": "2026-10-25T15:00",
      "weather": "DRY",
      "temperatureC": 13,
-     "precipProbability": 4
+     "precipProbability": 3
     },
     {
      "at": "2026-10-25T16:00",
      "weather": "DRY",
      "temperatureC": 12,
-     "precipProbability": 5
+     "precipProbability": 6
     },
     {
      "at": "2026-10-25T17:00",
      "weather": "DRY",
      "temperatureC": 12,
-     "precipProbability": 6
+     "precipProbability": 8
     },
     {
      "at": "2026-10-25T18:00",
      "weather": "DRY",
      "temperatureC": 11,
-     "precipProbability": 5
+     "precipProbability": 6
     },
     {
      "at": "2026-10-25T19:00",
      "weather": "DRY",
      "temperatureC": 10,
-     "precipProbability": 2
+     "precipProbability": 3
     },
     {
      "at": "2026-10-25T20:00",
@@ -1986,7 +2018,7 @@
     {
      "at": "2026-10-25T22:00",
      "weather": "DRY",
-     "temperatureC": 8,
+     "temperatureC": 9,
      "precipProbability": 0
     },
     {
@@ -2016,7 +2048,7 @@
     {
      "at": "2026-10-26T03:00",
      "weather": "DRY",
-     "temperatureC": 7,
+     "temperatureC": 8,
      "precipProbability": 0
     },
     {
@@ -2035,31 +2067,49 @@
      "at": "2026-10-26T06:00",
      "weather": "DRY",
      "temperatureC": 9,
-     "precipProbability": 0
+     "precipProbability": 2
     },
     {
      "at": "2026-10-26T07:00",
-     "weather": "DRY",
+     "weather": "LIGHT_RAIN",
      "temperatureC": 9,
-     "precipProbability": 1
+     "precipProbability": 5
     },
     {
      "at": "2026-10-26T08:00",
      "weather": "DRY",
-     "temperatureC": 9,
-     "precipProbability": 2
+     "temperatureC": 10,
+     "precipProbability": 8
     },
     {
      "at": "2026-10-26T09:00",
      "weather": "DRY",
      "temperatureC": 9,
-     "precipProbability": 2
+     "precipProbability": 8
     },
     {
      "at": "2026-10-26T10:00",
      "weather": "DRY",
      "temperatureC": 10,
-     "precipProbability": 2
+     "precipProbability": 8
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 11,
+     "precipProbability": 10
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "DRY",
+     "temperatureC": 11,
+     "precipProbability": 17
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "DRY",
+     "temperatureC": 12,
+     "precipProbability": 26
     }
    ],
    "precipProbabilityNext3h": 100
@@ -2069,29 +2119,11 @@
    "lng": 3.8767,
    "dept": "34",
    "region": "Occitanie",
-   "weather": "LIGHT_RAIN",
+   "weather": "DRY",
    "temperatureC": 13,
    "precipitationMm": 0.0,
-   "windGustKmh": 11,
+   "windGustKmh": 10,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 13,
-     "precipProbability": 38
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 13,
-     "precipProbability": 38
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "DRY",
-     "temperatureC": 13,
-     "precipProbability": 53
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "DRY",
@@ -2257,31 +2289,31 @@
     {
      "at": "2026-10-26T05:00",
      "weather": "DRY",
-     "temperatureC": 12,
+     "temperatureC": 10,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T06:00",
      "weather": "DRY",
-     "temperatureC": 11,
+     "temperatureC": 9,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T07:00",
      "weather": "DRY",
-     "temperatureC": 10,
+     "temperatureC": 8,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T08:00",
      "weather": "DRY",
-     "temperatureC": 8,
+     "temperatureC": 7,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T09:00",
      "weather": "DRY",
-     "temperatureC": 8,
+     "temperatureC": 7,
      "precipProbability": 0
     },
     {
@@ -2289,9 +2321,37 @@
      "weather": "DRY",
      "temperatureC": 10,
      "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 14,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "DRY",
+     "temperatureC": 16,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "DRY",
+     "temperatureC": 18,
+     "precipProbability": 0
     }
    ],
-   "precipProbabilityNext3h": 53
+   "precipProbabilityNext3h": 25,
+   "traffic": "FLUID",
+   "trafficAt": "2026-10-25T00:13:45.007154+00:00",
+   "trafficSource": "Bison Futé TRAFICOLOR (TraficDirmc)",
+   "trafficDetail": {
+    "mesures": 8,
+    "fluidePct": 100,
+    "ralentiPct": 0,
+    "saturePct": 0,
+    "bloquePct": 0
+   }
   },
   "Versailles": {
    "lat": 48.8049,
@@ -2299,31 +2359,13 @@
    "dept": "78",
    "region": "Île-de-France",
    "weather": "LIGHT_RAIN",
-   "temperatureC": 12,
+   "temperatureC": 14,
    "precipitationMm": 0.0,
-   "windGustKmh": 64,
+   "windGustKmh": 66,
    "hourly": [
     {
-     "at": "2026-10-24T23:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 12,
-     "precipProbability": 38
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 12,
-     "precipProbability": 3
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 13,
-     "precipProbability": 8
-    },
-    {
      "at": "2026-10-25T02:00",
-     "weather": "DRY",
+     "weather": "LIGHT_RAIN",
      "temperatureC": 14,
      "precipProbability": 40
     },
@@ -2504,7 +2546,7 @@
     {
      "at": "2026-10-26T08:00",
      "weather": "DRY",
-     "temperatureC": 8,
+     "temperatureC": 7,
      "precipProbability": 0
     },
     {
@@ -2518,9 +2560,27 @@
      "weather": "DRY",
      "temperatureC": 8,
      "precipProbability": 5
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 9,
+     "precipProbability": 13
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 10,
+     "precipProbability": 30
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 10,
+     "precipProbability": 43
     }
    ],
-   "precipProbabilityNext3h": 38
+   "precipProbabilityNext3h": 98
   },
   "Cergy": {
    "lat": 49.0367,
@@ -2528,32 +2588,14 @@
    "dept": "95",
    "region": "Île-de-France",
    "weather": "DRY",
-   "temperatureC": 14,
+   "temperatureC": 15,
    "precipitationMm": 0.0,
-   "windGustKmh": 62,
+   "windGustKmh": 60,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 13,
-     "precipProbability": 38
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "DRY",
-     "temperatureC": 14,
-     "precipProbability": 8
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "DRY",
-     "temperatureC": 15,
-     "precipProbability": 20
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "DRY",
-     "temperatureC": 16,
+     "temperatureC": 15,
      "precipProbability": 58
     },
     {
@@ -2589,7 +2631,7 @@
     {
      "at": "2026-10-25T08:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 13,
+     "temperatureC": 12,
      "precipProbability": 88
     },
     {
@@ -2691,7 +2733,7 @@
     {
      "at": "2026-10-26T01:00",
      "weather": "DRY",
-     "temperatureC": 9,
+     "temperatureC": 10,
      "precipProbability": 0
     },
     {
@@ -2733,13 +2775,13 @@
     {
      "at": "2026-10-26T08:00",
      "weather": "DRY",
-     "temperatureC": 9,
+     "temperatureC": 8,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T09:00",
      "weather": "DRY",
-     "temperatureC": 9,
+     "temperatureC": 8,
      "precipProbability": 3
     },
     {
@@ -2747,9 +2789,27 @@
      "weather": "DRY",
      "temperatureC": 9,
      "precipProbability": 3
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 10,
+     "precipProbability": 13
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 11,
+     "precipProbability": 25
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 11,
+     "precipProbability": 58
     }
    ],
-   "precipProbabilityNext3h": 38
+   "precipProbabilityNext3h": 100
   },
   "Evry": {
    "lat": 48.6294,
@@ -2757,28 +2817,10 @@
    "dept": "91",
    "region": "Île-de-France",
    "weather": "LIGHT_RAIN",
-   "temperatureC": 12,
+   "temperatureC": 14,
    "precipitationMm": 0.0,
-   "windGustKmh": 65,
+   "windGustKmh": 66,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 12,
-     "precipProbability": 70
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 13,
-     "precipProbability": 10
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 13,
-     "precipProbability": 10
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "LIGHT_RAIN",
@@ -2926,13 +2968,13 @@
     {
      "at": "2026-10-26T02:00",
      "weather": "DRY",
-     "temperatureC": 8,
+     "temperatureC": 9,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T03:00",
      "weather": "DRY",
-     "temperatureC": 8,
+     "temperatureC": 9,
      "precipProbability": 0
     },
     {
@@ -2944,7 +2986,7 @@
     {
      "at": "2026-10-26T05:00",
      "weather": "DRY",
-     "temperatureC": 9,
+     "temperatureC": 8,
      "precipProbability": 0
     },
     {
@@ -2976,9 +3018,27 @@
      "weather": "DRY",
      "temperatureC": 8,
      "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 9,
+     "precipProbability": 13
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 10,
+     "precipProbability": 10
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 11,
+     "precipProbability": 23
     }
    ],
-   "precipProbabilityNext3h": 70
+   "precipProbabilityNext3h": 88
   },
   "Creteil": {
    "lat": 48.7903,
@@ -2986,28 +3046,10 @@
    "dept": "94",
    "region": "Île-de-France",
    "weather": "LIGHT_RAIN",
-   "temperatureC": 13,
-   "precipitationMm": 0.0,
-   "windGustKmh": 62,
+   "temperatureC": 14,
+   "precipitationMm": 0.1,
+   "windGustKmh": 66,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 13,
-     "precipProbability": 63
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 13,
-     "precipProbability": 8
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 14,
-     "precipProbability": 8
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "LIGHT_RAIN",
@@ -3058,7 +3100,7 @@
     },
     {
      "at": "2026-10-25T10:00",
-     "weather": "DRY",
+     "weather": "LIGHT_RAIN",
      "temperatureC": 13,
      "precipProbability": 45
     },
@@ -3155,25 +3197,25 @@
     {
      "at": "2026-10-26T02:00",
      "weather": "DRY",
-     "temperatureC": 9,
+     "temperatureC": 10,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T03:00",
      "weather": "DRY",
-     "temperatureC": 9,
+     "temperatureC": 10,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T04:00",
      "weather": "DRY",
-     "temperatureC": 9,
+     "temperatureC": 10,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T05:00",
      "weather": "DRY",
-     "temperatureC": 9,
+     "temperatureC": 10,
      "precipProbability": 0
     },
     {
@@ -3197,7 +3239,7 @@
     {
      "at": "2026-10-26T09:00",
      "weather": "DRY",
-     "temperatureC": 9,
+     "temperatureC": 8,
      "precipProbability": 0
     },
     {
@@ -3205,9 +3247,27 @@
      "weather": "DRY",
      "temperatureC": 9,
      "precipProbability": 3
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 10,
+     "precipProbability": 10
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 10,
+     "precipProbability": 15
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 11,
+     "precipProbability": 33
     }
    ],
-   "precipProbabilityNext3h": 63
+   "precipProbabilityNext3h": 98
   },
   "Roissy-CDG": {
    "lat": 49.0097,
@@ -3215,28 +3275,10 @@
    "dept": "95",
    "region": "Île-de-France",
    "weather": "LIGHT_RAIN",
-   "temperatureC": 12,
-   "precipitationMm": 0.0,
+   "temperatureC": 14,
+   "precipitationMm": 0.2,
    "windGustKmh": 59,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 12,
-     "precipProbability": 73
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 12,
-     "precipProbability": 13
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "DRY",
-     "temperatureC": 13,
-     "precipProbability": 25
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "LIGHT_RAIN",
@@ -3246,7 +3288,7 @@
     {
      "at": "2026-10-25T03:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 14,
+     "temperatureC": 15,
      "precipProbability": 98
     },
     {
@@ -3390,13 +3432,13 @@
     {
      "at": "2026-10-26T03:00",
      "weather": "DRY",
-     "temperatureC": 8,
+     "temperatureC": 9,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T04:00",
      "weather": "DRY",
-     "temperatureC": 8,
+     "temperatureC": 9,
      "precipProbability": 0
     },
     {
@@ -3434,9 +3476,27 @@
      "weather": "DRY",
      "temperatureC": 9,
      "precipProbability": 8
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 9,
+     "precipProbability": 8
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 10,
+     "precipProbability": 20
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 10,
+     "precipProbability": 40
     }
    ],
-   "precipProbabilityNext3h": 73
+   "precipProbabilityNext3h": 98
   },
   "Orly": {
    "lat": 48.7262,
@@ -3444,28 +3504,10 @@
    "dept": "94",
    "region": "Île-de-France",
    "weather": "LIGHT_RAIN",
-   "temperatureC": 12,
+   "temperatureC": 14,
    "precipitationMm": 0.1,
-   "windGustKmh": 66,
+   "windGustKmh": 67,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 12,
-     "precipProbability": 53
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 12,
-     "precipProbability": 3
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 13,
-     "precipProbability": 8
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "LIGHT_RAIN",
@@ -3663,9 +3705,27 @@
      "weather": "DRY",
      "temperatureC": 8,
      "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 9,
+     "precipProbability": 13
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "DRY",
+     "temperatureC": 10,
+     "precipProbability": 15
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 10,
+     "precipProbability": 33
     }
    ],
-   "precipProbabilityNext3h": 53
+   "precipProbabilityNext3h": 98
   },
   "La Defense": {
    "lat": 48.892,
@@ -3673,31 +3733,13 @@
    "dept": "92",
    "region": "Île-de-France",
    "weather": "LIGHT_RAIN",
-   "temperatureC": 13,
+   "temperatureC": 15,
    "precipitationMm": 0.0,
-   "windGustKmh": 62,
+   "windGustKmh": 63,
    "hourly": [
     {
-     "at": "2026-10-24T23:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 13,
-     "precipProbability": 45
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 13,
-     "precipProbability": 5
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "DRY",
-     "temperatureC": 14,
-     "precipProbability": 13
-    },
-    {
      "at": "2026-10-25T02:00",
-     "weather": "DRY",
+     "weather": "LIGHT_RAIN",
      "temperatureC": 15,
      "precipProbability": 45
     },
@@ -3848,7 +3890,7 @@
     {
      "at": "2026-10-26T03:00",
      "weather": "DRY",
-     "temperatureC": 9,
+     "temperatureC": 10,
      "precipProbability": 0
     },
     {
@@ -3866,7 +3908,7 @@
     {
      "at": "2026-10-26T06:00",
      "weather": "DRY",
-     "temperatureC": 10,
+     "temperatureC": 9,
      "precipProbability": 0
     },
     {
@@ -3890,43 +3932,43 @@
     {
      "at": "2026-10-26T10:00",
      "weather": "DRY",
-     "temperatureC": 10,
+     "temperatureC": 9,
      "precipProbability": 3
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 10,
+     "precipProbability": 10
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 10,
+     "precipProbability": 23
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 11,
+     "precipProbability": 38
     }
    ],
-   "precipProbabilityNext3h": 45
+   "precipProbabilityNext3h": 95
   },
   "Saint-Denis": {
    "lat": 48.9362,
    "lng": 2.3574,
    "dept": "93",
    "region": "Île-de-France",
-   "weather": "DRY",
-   "temperatureC": 13,
+   "weather": "LIGHT_RAIN",
+   "temperatureC": 15,
    "precipitationMm": 0.0,
-   "windGustKmh": 60,
+   "windGustKmh": 61,
    "hourly": [
     {
-     "at": "2026-10-24T23:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 13,
-     "precipProbability": 55
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "DRY",
-     "temperatureC": 14,
-     "precipProbability": 10
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "DRY",
-     "temperatureC": 14,
-     "precipProbability": 18
-    },
-    {
      "at": "2026-10-25T02:00",
-     "weather": "DRY",
+     "weather": "LIGHT_RAIN",
      "temperatureC": 15,
      "precipProbability": 50
     },
@@ -3987,7 +4029,7 @@
     {
      "at": "2026-10-25T12:00",
      "weather": "DRY",
-     "temperatureC": 15,
+     "temperatureC": 14,
      "precipProbability": 0
     },
     {
@@ -4005,7 +4047,7 @@
     {
      "at": "2026-10-25T15:00",
      "weather": "DRY",
-     "temperatureC": 15,
+     "temperatureC": 16,
      "precipProbability": 0
     },
     {
@@ -4107,13 +4149,13 @@
     {
      "at": "2026-10-26T08:00",
      "weather": "DRY",
-     "temperatureC": 10,
+     "temperatureC": 9,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T09:00",
      "weather": "DRY",
-     "temperatureC": 10,
+     "temperatureC": 9,
      "precipProbability": 0
     },
     {
@@ -4121,9 +4163,27 @@
      "weather": "DRY",
      "temperatureC": 10,
      "precipProbability": 3
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 10,
+     "precipProbability": 8
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 11,
+     "precipProbability": 20
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 11,
+     "precipProbability": 38
     }
    ],
-   "precipProbabilityNext3h": 55
+   "precipProbabilityNext3h": 98
   },
   "Marne-la-Vallee": {
    "lat": 48.8708,
@@ -4131,28 +4191,10 @@
    "dept": "77",
    "region": "Île-de-France",
    "weather": "LIGHT_RAIN",
-   "temperatureC": 12,
-   "precipitationMm": 0.0,
-   "windGustKmh": 73,
+   "temperatureC": 13,
+   "precipitationMm": 0.2,
+   "windGustKmh": 79,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 11,
-     "precipProbability": 83
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 12,
-     "precipProbability": 18
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 12,
-     "precipProbability": 15
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "LIGHT_RAIN",
@@ -4312,19 +4354,19 @@
     {
      "at": "2026-10-26T04:00",
      "weather": "DRY",
-     "temperatureC": 7,
+     "temperatureC": 8,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T05:00",
      "weather": "DRY",
-     "temperatureC": 7,
+     "temperatureC": 8,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T06:00",
      "weather": "DRY",
-     "temperatureC": 7,
+     "temperatureC": 8,
      "precipProbability": 0
     },
     {
@@ -4350,9 +4392,27 @@
      "weather": "DRY",
      "temperatureC": 8,
      "precipProbability": 5
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 8,
+     "precipProbability": 3
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 9,
+     "precipProbability": 8
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 10,
+     "precipProbability": 25
     }
    ],
-   "precipProbabilityNext3h": 83
+   "precipProbabilityNext3h": 95
   },
   "Rennes": {
    "lat": 48.1173,
@@ -4362,26 +4422,8 @@
    "weather": "DRY",
    "temperatureC": 16,
    "precipitationMm": 0.0,
-   "windGustKmh": 63,
+   "windGustKmh": 61,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "DRY",
-     "temperatureC": 16,
-     "precipProbability": 0
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "DRY",
-     "temperatureC": 16,
-     "precipProbability": 0
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "DRY",
-     "temperatureC": 16,
-     "precipProbability": 3
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "DRY",
@@ -4390,7 +4432,7 @@
     },
     {
      "at": "2026-10-25T03:00",
-     "weather": "LIGHT_RAIN",
+     "weather": "DRY",
      "temperatureC": 16,
      "precipProbability": 25
     },
@@ -4552,13 +4594,13 @@
     },
     {
      "at": "2026-10-26T06:00",
-     "weather": "DRY",
+     "weather": "LIGHT_RAIN",
      "temperatureC": 10,
      "precipProbability": 25
     },
     {
      "at": "2026-10-26T07:00",
-     "weather": "DRY",
+     "weather": "LIGHT_RAIN",
      "temperatureC": 10,
      "precipProbability": 48
     },
@@ -4576,46 +4618,56 @@
     },
     {
      "at": "2026-10-26T10:00",
-     "weather": "LIGHT_RAIN",
+     "weather": "DRY",
      "temperatureC": 12,
      "precipProbability": 73
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 12,
+     "precipProbability": 60
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 12,
+     "precipProbability": 30
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "DRY",
+     "temperatureC": 14,
+     "precipProbability": 10
     }
    ],
-   "precipProbabilityNext3h": 3
+   "precipProbabilityNext3h": 78,
+   "traffic": "FLUID",
+   "trafficAt": "2026-10-25T00:13:45.007154+00:00",
+   "trafficSource": "Bison Futé TRAFICOLOR (TraficBreizhRennes)",
+   "trafficDetail": {
+    "mesures": 177,
+    "fluidePct": 98,
+    "ralentiPct": 2,
+    "saturePct": 0,
+    "bloquePct": 0
+   }
   },
   "Brest": {
    "lat": 48.3904,
    "lng": -4.4861,
    "dept": "29",
    "region": "Bretagne",
-   "weather": "DRY",
+   "weather": "LIGHT_RAIN",
    "temperatureC": 16,
-   "precipitationMm": 0.0,
-   "windGustKmh": 73,
+   "precipitationMm": 0.3,
+   "windGustKmh": 76,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "DRY",
-     "temperatureC": 16,
-     "precipProbability": 10
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "DRY",
-     "temperatureC": 16,
-     "precipProbability": 33
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 16,
-     "precipProbability": 58
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "LIGHT_RAIN",
      "temperatureC": 16,
-     "precipProbability": 88
+     "precipProbability": 85
     },
     {
      "at": "2026-10-25T03:00",
@@ -4626,26 +4678,26 @@
     {
      "at": "2026-10-25T04:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 14,
+     "temperatureC": 13,
      "precipProbability": 100
     },
     {
      "at": "2026-10-25T05:00",
      "weather": "LIGHT_RAIN",
      "temperatureC": 13,
-     "precipProbability": 95
+     "precipProbability": 93
     },
     {
      "at": "2026-10-25T06:00",
      "weather": "LIGHT_RAIN",
      "temperatureC": 13,
-     "precipProbability": 35
+     "precipProbability": 33
     },
     {
      "at": "2026-10-25T07:00",
      "weather": "DRY",
      "temperatureC": 13,
-     "precipProbability": 13
+     "precipProbability": 8
     },
     {
      "at": "2026-10-25T08:00",
@@ -4759,25 +4811,25 @@
      "at": "2026-10-26T02:00",
      "weather": "DRY",
      "temperatureC": 13,
-     "precipProbability": 13
+     "precipProbability": 20
     },
     {
      "at": "2026-10-26T03:00",
      "weather": "DRY",
      "temperatureC": 13,
-     "precipProbability": 28
+     "precipProbability": 33
     },
     {
      "at": "2026-10-26T04:00",
-     "weather": "DRY",
+     "weather": "LIGHT_RAIN",
      "temperatureC": 13,
-     "precipProbability": 48
+     "precipProbability": 50
     },
     {
      "at": "2026-10-26T05:00",
-     "weather": "LIGHT_RAIN",
+     "weather": "DRY",
      "temperatureC": 13,
-     "precipProbability": 65
+     "precipProbability": 70
     },
     {
      "at": "2026-10-26T06:00",
@@ -4787,59 +4839,59 @@
     },
     {
      "at": "2026-10-26T07:00",
-     "weather": "DRY",
+     "weather": "LIGHT_RAIN",
      "temperatureC": 14,
      "precipProbability": 83
     },
     {
      "at": "2026-10-26T08:00",
-     "weather": "LIGHT_RAIN",
+     "weather": "DRY",
      "temperatureC": 15,
-     "precipProbability": 88
+     "precipProbability": 83
     },
     {
      "at": "2026-10-26T09:00",
      "weather": "DRY",
      "temperatureC": 15,
-     "precipProbability": 75
+     "precipProbability": 70
     },
     {
      "at": "2026-10-26T10:00",
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 15,
+     "precipProbability": 43
+    },
+    {
+     "at": "2026-10-26T11:00",
      "weather": "DRY",
      "temperatureC": 15,
-     "precipProbability": 33
+     "precipProbability": 15
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 16,
+     "precipProbability": 10
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "DRY",
+     "temperatureC": 16,
+     "precipProbability": 3
     }
    ],
-   "precipProbabilityNext3h": 58
+   "precipProbabilityNext3h": 100
   },
   "Rouen": {
    "lat": 49.4432,
    "lng": 1.0999,
    "dept": "76",
    "region": "Normandie",
-   "weather": "DRY",
-   "temperatureC": 15,
-   "precipitationMm": 0.0,
+   "weather": "LIGHT_RAIN",
+   "temperatureC": 16,
+   "precipitationMm": 0.1,
    "windGustKmh": 59,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 14,
-     "precipProbability": 25
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "DRY",
-     "temperatureC": 15,
-     "precipProbability": 53
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 15,
-     "precipProbability": 90
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "LIGHT_RAIN",
@@ -4861,30 +4913,30 @@
     {
      "at": "2026-10-25T05:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 15,
+     "temperatureC": 14,
      "precipProbability": 100
     },
     {
      "at": "2026-10-25T06:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 12,
+     "temperatureC": 13,
      "precipProbability": 98
     },
     {
      "at": "2026-10-25T07:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 12,
+     "weather": "DRY",
+     "temperatureC": 13,
      "precipProbability": 65
     },
     {
      "at": "2026-10-25T08:00",
      "weather": "DRY",
-     "temperatureC": 12,
+     "temperatureC": 13,
      "precipProbability": 38
     },
     {
      "at": "2026-10-25T09:00",
-     "weather": "LIGHT_RAIN",
+     "weather": "DRY",
      "temperatureC": 12,
      "precipProbability": 25
     },
@@ -4903,7 +4955,7 @@
     {
      "at": "2026-10-25T12:00",
      "weather": "DRY",
-     "temperatureC": 13,
+     "temperatureC": 14,
      "precipProbability": 48
     },
     {
@@ -4945,7 +4997,7 @@
     {
      "at": "2026-10-25T19:00",
      "weather": "DRY",
-     "temperatureC": 12,
+     "temperatureC": 13,
      "precipProbability": 0
     },
     {
@@ -4963,7 +5015,7 @@
     {
      "at": "2026-10-25T22:00",
      "weather": "DRY",
-     "temperatureC": 11,
+     "temperatureC": 10,
      "precipProbability": 0
     },
     {
@@ -4981,7 +5033,7 @@
     {
      "at": "2026-10-26T01:00",
      "weather": "DRY",
-     "temperatureC": 10,
+     "temperatureC": 9,
      "precipProbability": 0
     },
     {
@@ -5023,7 +5075,7 @@
     {
      "at": "2026-10-26T08:00",
      "weather": "DRY",
-     "temperatureC": 9,
+     "temperatureC": 8,
      "precipProbability": 3
     },
     {
@@ -5034,12 +5086,40 @@
     },
     {
      "at": "2026-10-26T10:00",
-     "weather": "DRY",
+     "weather": "LIGHT_RAIN",
      "temperatureC": 9,
      "precipProbability": 35
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 9,
+     "precipProbability": 45
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 10,
+     "precipProbability": 80
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 10,
+     "precipProbability": 75
     }
    ],
-   "precipProbabilityNext3h": 90
+   "precipProbabilityNext3h": 100,
+   "traffic": "FLUID",
+   "trafficAt": "2026-10-25T00:13:45.007154+00:00",
+   "trafficSource": "Bison Futé TRAFICOLOR (TraficRouen)",
+   "trafficDetail": {
+    "mesures": 62,
+    "fluidePct": 98,
+    "ralentiPct": 2,
+    "saturePct": 0,
+    "bloquePct": 0
+   }
   },
   "Caen": {
    "lat": 49.1829,
@@ -5047,28 +5127,10 @@
    "dept": "14",
    "region": "Normandie",
    "weather": "LIGHT_RAIN",
-   "temperatureC": 16,
-   "precipitationMm": 0.0,
-   "windGustKmh": 56,
+   "temperatureC": 17,
+   "precipitationMm": 0.4,
+   "windGustKmh": 73,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 16,
-     "precipProbability": 3
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 16,
-     "precipProbability": 38
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 17,
-     "precipProbability": 78
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "LIGHT_RAIN",
@@ -5090,19 +5152,19 @@
     {
      "at": "2026-10-25T05:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 13,
+     "temperatureC": 14,
      "precipProbability": 100
     },
     {
      "at": "2026-10-25T06:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 12,
+     "temperatureC": 13,
      "precipProbability": 95
     },
     {
      "at": "2026-10-25T07:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 12,
+     "weather": "DRY",
+     "temperatureC": 13,
      "precipProbability": 35
     },
     {
@@ -5138,7 +5200,7 @@
     {
      "at": "2026-10-25T13:00",
      "weather": "DRY",
-     "temperatureC": 14,
+     "temperatureC": 15,
      "precipProbability": 0
     },
     {
@@ -5162,7 +5224,7 @@
     {
      "at": "2026-10-25T17:00",
      "weather": "DRY",
-     "temperatureC": 14,
+     "temperatureC": 15,
      "precipProbability": 0
     },
     {
@@ -5174,7 +5236,7 @@
     {
      "at": "2026-10-25T19:00",
      "weather": "DRY",
-     "temperatureC": 12,
+     "temperatureC": 13,
      "precipProbability": 0
     },
     {
@@ -5204,13 +5266,13 @@
     {
      "at": "2026-10-26T00:00",
      "weather": "DRY",
-     "temperatureC": 9,
+     "temperatureC": 10,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T01:00",
      "weather": "DRY",
-     "temperatureC": 9,
+     "temperatureC": 11,
      "precipProbability": 0
     },
     {
@@ -5228,13 +5290,13 @@
     {
      "at": "2026-10-26T04:00",
      "weather": "DRY",
-     "temperatureC": 10,
+     "temperatureC": 9,
      "precipProbability": 3
     },
     {
      "at": "2026-10-26T05:00",
      "weather": "DRY",
-     "temperatureC": 9,
+     "temperatureC": 8,
      "precipProbability": 5
     },
     {
@@ -5258,7 +5320,7 @@
     {
      "at": "2026-10-26T09:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 9,
+     "temperatureC": 10,
      "precipProbability": 60
     },
     {
@@ -5266,9 +5328,27 @@
      "weather": "LIGHT_RAIN",
      "temperatureC": 10,
      "precipProbability": 83
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 10,
+     "precipProbability": 68
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "DRY",
+     "temperatureC": 11,
+     "precipProbability": 60
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "DRY",
+     "temperatureC": 12,
+     "precipProbability": 40
     }
    ],
-   "precipProbabilityNext3h": 78
+   "precipProbabilityNext3h": 100
   },
   "Le Havre": {
    "lat": 49.4944,
@@ -5276,28 +5356,10 @@
    "dept": "76",
    "region": "Normandie",
    "weather": "LIGHT_RAIN",
-   "temperatureC": 15,
-   "precipitationMm": 0.0,
-   "windGustKmh": 81,
+   "temperatureC": 17,
+   "precipitationMm": 0.3,
+   "windGustKmh": 89,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 15,
-     "precipProbability": 85
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 16,
-     "precipProbability": 83
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 16,
-     "precipProbability": 100
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "LIGHT_RAIN",
@@ -5307,7 +5369,7 @@
     {
      "at": "2026-10-25T03:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 16,
+     "temperatureC": 17,
      "precipProbability": 100
     },
     {
@@ -5324,7 +5386,7 @@
     },
     {
      "at": "2026-10-25T06:00",
-     "weather": "LIGHT_RAIN",
+     "weather": "DRY",
      "temperatureC": 14,
      "precipProbability": 70
     },
@@ -5332,7 +5394,7 @@
      "at": "2026-10-25T07:00",
      "weather": "DRY",
      "temperatureC": 14,
-     "precipProbability": 50
+     "precipProbability": 48
     },
     {
      "at": "2026-10-25T08:00",
@@ -5344,49 +5406,49 @@
      "at": "2026-10-25T09:00",
      "weather": "DRY",
      "temperatureC": 14,
-     "precipProbability": 20
+     "precipProbability": 13
     },
     {
      "at": "2026-10-25T10:00",
      "weather": "DRY",
      "temperatureC": 14,
-     "precipProbability": 15
+     "precipProbability": 5
     },
     {
      "at": "2026-10-25T11:00",
      "weather": "DRY",
      "temperatureC": 14,
-     "precipProbability": 20
+     "precipProbability": 3
     },
     {
      "at": "2026-10-25T12:00",
      "weather": "DRY",
      "temperatureC": 14,
-     "precipProbability": 18
+     "precipProbability": 5
     },
     {
      "at": "2026-10-25T13:00",
      "weather": "DRY",
      "temperatureC": 15,
-     "precipProbability": 3
+     "precipProbability": 0
     },
     {
      "at": "2026-10-25T14:00",
      "weather": "DRY",
      "temperatureC": 15,
-     "precipProbability": 5
+     "precipProbability": 0
     },
     {
      "at": "2026-10-25T15:00",
      "weather": "DRY",
      "temperatureC": 15,
-     "precipProbability": 5
+     "precipProbability": 0
     },
     {
      "at": "2026-10-25T16:00",
      "weather": "DRY",
      "temperatureC": 15,
-     "precipProbability": 3
+     "precipProbability": 0
     },
     {
      "at": "2026-10-25T17:00",
@@ -5439,7 +5501,7 @@
     {
      "at": "2026-10-26T01:00",
      "weather": "DRY",
-     "temperatureC": 13,
+     "temperatureC": 12,
      "precipProbability": 0
     },
     {
@@ -5451,7 +5513,7 @@
     {
      "at": "2026-10-26T03:00",
      "weather": "DRY",
-     "temperatureC": 11,
+     "temperatureC": 12,
      "precipProbability": 0
     },
     {
@@ -5469,32 +5531,50 @@
     {
      "at": "2026-10-26T06:00",
      "weather": "DRY",
-     "temperatureC": 11,
-     "precipProbability": 5
+     "temperatureC": 10,
+     "precipProbability": 3
     },
     {
      "at": "2026-10-26T07:00",
      "weather": "DRY",
      "temperatureC": 10,
-     "precipProbability": 13
+     "precipProbability": 10
     },
     {
      "at": "2026-10-26T08:00",
      "weather": "LIGHT_RAIN",
      "temperatureC": 10,
-     "precipProbability": 38
+     "precipProbability": 35
     },
     {
      "at": "2026-10-26T09:00",
      "weather": "LIGHT_RAIN",
      "temperatureC": 10,
-     "precipProbability": 53
+     "precipProbability": 48
     },
     {
      "at": "2026-10-26T10:00",
      "weather": "LIGHT_RAIN",
      "temperatureC": 10,
-     "precipProbability": 78
+     "precipProbability": 68
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 11,
+     "precipProbability": 88
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 11,
+     "precipProbability": 88
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 12,
+     "precipProbability": 88
     }
    ],
    "precipProbabilityNext3h": 100
@@ -5505,32 +5585,14 @@
    "dept": "21",
    "region": "Bourgogne-Franche-Comté",
    "weather": "LIGHT_RAIN",
-   "temperatureC": 9,
-   "precipitationMm": 0.2,
-   "windGustKmh": 51,
+   "temperatureC": 8,
+   "precipitationMm": 0.0,
+   "windGustKmh": 58,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 9,
-     "precipProbability": 100
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 8,
-     "precipProbability": 100
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 8,
-     "precipProbability": 100
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 9,
+     "temperatureC": 8,
      "precipProbability": 58
     },
     {
@@ -5547,25 +5609,25 @@
     },
     {
      "at": "2026-10-25T05:00",
-     "weather": "DRY",
+     "weather": "LIGHT_RAIN",
      "temperatureC": 9,
      "precipProbability": 35
     },
     {
      "at": "2026-10-25T06:00",
-     "weather": "LIGHT_RAIN",
+     "weather": "DRY",
      "temperatureC": 9,
      "precipProbability": 38
     },
     {
      "at": "2026-10-25T07:00",
      "weather": "DRY",
-     "temperatureC": 10,
+     "temperatureC": 9,
      "precipProbability": 43
     },
     {
      "at": "2026-10-25T08:00",
-     "weather": "DRY",
+     "weather": "LIGHT_RAIN",
      "temperatureC": 10,
      "precipProbability": 63
     },
@@ -5590,25 +5652,25 @@
     {
      "at": "2026-10-25T12:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 10,
+     "temperatureC": 11,
      "precipProbability": 100
     },
     {
      "at": "2026-10-25T13:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 11,
+     "temperatureC": 14,
      "precipProbability": 100
     },
     {
      "at": "2026-10-25T14:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 13,
+     "temperatureC": 12,
      "precipProbability": 90
     },
     {
      "at": "2026-10-25T15:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 12,
+     "temperatureC": 13,
      "precipProbability": 30
     },
     {
@@ -5674,7 +5736,7 @@
     {
      "at": "2026-10-26T02:00",
      "weather": "DRY",
-     "temperatureC": 9,
+     "temperatureC": 8,
      "precipProbability": 0
     },
     {
@@ -5692,7 +5754,7 @@
     {
      "at": "2026-10-26T05:00",
      "weather": "DRY",
-     "temperatureC": 6,
+     "temperatureC": 7,
      "precipProbability": 0
     },
     {
@@ -5710,13 +5772,13 @@
     {
      "at": "2026-10-26T08:00",
      "weather": "DRY",
-     "temperatureC": 4,
+     "temperatureC": 5,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T09:00",
      "weather": "DRY",
-     "temperatureC": 4,
+     "temperatureC": 5,
      "precipProbability": 0
     },
     {
@@ -5724,9 +5786,27 @@
      "weather": "DRY",
      "temperatureC": 6,
      "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 8,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "DRY",
+     "temperatureC": 10,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "DRY",
+     "temperatureC": 11,
+     "precipProbability": 0
     }
    ],
-   "precipProbabilityNext3h": 100
+   "precipProbabilityNext3h": 58
   },
   "Besancon": {
    "lat": 47.2378,
@@ -5736,42 +5816,24 @@
    "weather": "LIGHT_RAIN",
    "temperatureC": 9,
    "precipitationMm": 0.1,
-   "windGustKmh": 41,
+   "windGustKmh": 56,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 9,
-     "precipProbability": 100
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 9,
-     "precipProbability": 100
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 9,
-     "precipProbability": 100
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 10,
+     "temperatureC": 9,
      "precipProbability": 98
     },
     {
      "at": "2026-10-25T03:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 11,
+     "temperatureC": 10,
      "precipProbability": 53
     },
     {
      "at": "2026-10-25T04:00",
      "weather": "DRY",
-     "temperatureC": 12,
+     "temperatureC": 11,
      "precipProbability": 43
     },
     {
@@ -5782,19 +5844,19 @@
     },
     {
      "at": "2026-10-25T06:00",
-     "weather": "LIGHT_RAIN",
+     "weather": "DRY",
      "temperatureC": 13,
      "precipProbability": 58
     },
     {
      "at": "2026-10-25T07:00",
-     "weather": "LIGHT_RAIN",
+     "weather": "DRY",
      "temperatureC": 13,
      "precipProbability": 53
     },
     {
      "at": "2026-10-25T08:00",
-     "weather": "DRY",
+     "weather": "LIGHT_RAIN",
      "temperatureC": 14,
      "precipProbability": 45
     },
@@ -5819,13 +5881,13 @@
     {
      "at": "2026-10-25T12:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 15,
+     "temperatureC": 14,
      "precipProbability": 100
     },
     {
      "at": "2026-10-25T13:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 15,
+     "temperatureC": 14,
      "precipProbability": 100
     },
     {
@@ -5837,7 +5899,7 @@
     {
      "at": "2026-10-25T15:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 14,
+     "temperatureC": 12,
      "precipProbability": 98
     },
     {
@@ -5866,7 +5928,7 @@
     },
     {
      "at": "2026-10-25T20:00",
-     "weather": "LIGHT_RAIN",
+     "weather": "DRY",
      "temperatureC": 11,
      "precipProbability": 0
     },
@@ -5879,7 +5941,7 @@
     {
      "at": "2026-10-25T22:00",
      "weather": "DRY",
-     "temperatureC": 10,
+     "temperatureC": 11,
      "precipProbability": 0
     },
     {
@@ -5903,13 +5965,13 @@
     {
      "at": "2026-10-26T02:00",
      "weather": "DRY",
-     "temperatureC": 9,
+     "temperatureC": 8,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T03:00",
      "weather": "DRY",
-     "temperatureC": 9,
+     "temperatureC": 8,
      "precipProbability": 0
     },
     {
@@ -5921,25 +5983,25 @@
     {
      "at": "2026-10-26T05:00",
      "weather": "DRY",
-     "temperatureC": 8,
+     "temperatureC": 7,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T06:00",
      "weather": "DRY",
-     "temperatureC": 7,
+     "temperatureC": 6,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T07:00",
      "weather": "DRY",
-     "temperatureC": 6,
+     "temperatureC": 5,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T08:00",
      "weather": "DRY",
-     "temperatureC": 5,
+     "temperatureC": 4,
      "precipProbability": 0
     },
     {
@@ -5953,9 +6015,27 @@
      "weather": "DRY",
      "temperatureC": 7,
      "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 10,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "DRY",
+     "temperatureC": 12,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "DRY",
+     "temperatureC": 12,
+     "precipProbability": 0
     }
    ],
-   "precipProbabilityNext3h": 100
+   "precipProbabilityNext3h": 98
   },
   "Orleans": {
    "lat": 47.903,
@@ -5963,28 +6043,10 @@
    "dept": "45",
    "region": "Centre-Val de Loire",
    "weather": "LIGHT_RAIN",
-   "temperatureC": 13,
+   "temperatureC": 14,
    "precipitationMm": 0.0,
-   "windGustKmh": 61,
+   "windGustKmh": 67,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 12,
-     "precipProbability": 28
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 13,
-     "precipProbability": 5
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 14,
-     "precipProbability": 3
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "LIGHT_RAIN",
@@ -6012,7 +6074,7 @@
     {
      "at": "2026-10-25T06:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 16,
+     "temperatureC": 15,
      "precipProbability": 78
     },
     {
@@ -6030,7 +6092,7 @@
     {
      "at": "2026-10-25T09:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 16,
+     "temperatureC": 14,
      "precipProbability": 100
     },
     {
@@ -6048,7 +6110,7 @@
     {
      "at": "2026-10-25T12:00",
      "weather": "DRY",
-     "temperatureC": 13,
+     "temperatureC": 14,
      "precipProbability": 10
     },
     {
@@ -6114,7 +6176,7 @@
     {
      "at": "2026-10-25T23:00",
      "weather": "DRY",
-     "temperatureC": 10,
+     "temperatureC": 11,
      "precipProbability": 0
     },
     {
@@ -6132,7 +6194,7 @@
     {
      "at": "2026-10-26T02:00",
      "weather": "DRY",
-     "temperatureC": 9,
+     "temperatureC": 10,
      "precipProbability": 0
     },
     {
@@ -6144,7 +6206,7 @@
     {
      "at": "2026-10-26T04:00",
      "weather": "DRY",
-     "temperatureC": 9,
+     "temperatureC": 8,
      "precipProbability": 0
     },
     {
@@ -6168,7 +6230,7 @@
     {
      "at": "2026-10-26T08:00",
      "weather": "DRY",
-     "temperatureC": 7,
+     "temperatureC": 8,
      "precipProbability": 0
     },
     {
@@ -6182,9 +6244,27 @@
      "weather": "DRY",
      "temperatureC": 8,
      "precipProbability": 5
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 10,
+     "precipProbability": 5
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "DRY",
+     "temperatureC": 10,
+     "precipProbability": 25
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "DRY",
+     "temperatureC": 11,
+     "precipProbability": 30
     }
    ],
-   "precipProbabilityNext3h": 28
+   "precipProbabilityNext3h": 30
   },
   "Tours": {
    "lat": 47.3941,
@@ -6192,28 +6272,10 @@
    "dept": "37",
    "region": "Centre-Val de Loire",
    "weather": "LIGHT_RAIN",
-   "temperatureC": 14,
-   "precipitationMm": 0.2,
-   "windGustKmh": 50,
+   "temperatureC": 15,
+   "precipitationMm": 0.0,
+   "windGustKmh": 54,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 14,
-     "precipProbability": 0
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 14,
-     "precipProbability": 3
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 15,
-     "precipProbability": 3
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "LIGHT_RAIN",
@@ -6222,14 +6284,14 @@
     },
     {
      "at": "2026-10-25T03:00",
-     "weather": "LIGHT_RAIN",
+     "weather": "DRY",
      "temperatureC": 16,
      "precipProbability": 3
     },
     {
      "at": "2026-10-25T04:00",
-     "weather": "DRY",
-     "temperatureC": 16,
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 17,
      "precipProbability": 15
     },
     {
@@ -6271,7 +6333,7 @@
     {
      "at": "2026-10-25T11:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 13,
+     "temperatureC": 14,
      "precipProbability": 43
     },
     {
@@ -6349,7 +6411,7 @@
     {
      "at": "2026-10-26T00:00",
      "weather": "DRY",
-     "temperatureC": 11,
+     "temperatureC": 10,
      "precipProbability": 0
     },
     {
@@ -6391,13 +6453,13 @@
     {
      "at": "2026-10-26T07:00",
      "weather": "DRY",
-     "temperatureC": 9,
+     "temperatureC": 8,
      "precipProbability": 3
     },
     {
      "at": "2026-10-26T08:00",
      "weather": "DRY",
-     "temperatureC": 9,
+     "temperatureC": 8,
      "precipProbability": 8
     },
     {
@@ -6411,9 +6473,27 @@
      "weather": "DRY",
      "temperatureC": 9,
      "precipProbability": 8
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 10,
+     "precipProbability": 15
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "DRY",
+     "temperatureC": 11,
+     "precipProbability": 13
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "DRY",
+     "temperatureC": 12,
+     "precipProbability": 8
     }
    ],
-   "precipProbabilityNext3h": 3
+   "precipProbabilityNext3h": 15
   },
   "Ajaccio": {
    "lat": 41.9192,
@@ -6423,26 +6503,8 @@
    "weather": "DRY",
    "temperatureC": 13,
    "precipitationMm": 0.0,
-   "windGustKmh": 10,
+   "windGustKmh": 11,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "DRY",
-     "temperatureC": 13,
-     "precipProbability": 0
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "DRY",
-     "temperatureC": 14,
-     "precipProbability": 0
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "DRY",
-     "temperatureC": 13,
-     "precipProbability": 0
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "DRY",
@@ -6470,13 +6532,13 @@
     {
      "at": "2026-10-25T06:00",
      "weather": "DRY",
-     "temperatureC": 12,
+     "temperatureC": 11,
      "precipProbability": 0
     },
     {
      "at": "2026-10-25T07:00",
      "weather": "DRY",
-     "temperatureC": 12,
+     "temperatureC": 11,
      "precipProbability": 0
     },
     {
@@ -6512,7 +6574,7 @@
     {
      "at": "2026-10-25T13:00",
      "weather": "DRY",
-     "temperatureC": 20,
+     "temperatureC": 19,
      "precipProbability": 0
     },
     {
@@ -6524,13 +6586,13 @@
     {
      "at": "2026-10-25T15:00",
      "weather": "DRY",
-     "temperatureC": 20,
+     "temperatureC": 19,
      "precipProbability": 0
     },
     {
      "at": "2026-10-25T16:00",
      "weather": "DRY",
-     "temperatureC": 20,
+     "temperatureC": 19,
      "precipProbability": 0
     },
     {
@@ -6554,25 +6616,25 @@
     {
      "at": "2026-10-25T20:00",
      "weather": "DRY",
-     "temperatureC": 18,
+     "temperatureC": 17,
      "precipProbability": 23
     },
     {
      "at": "2026-10-25T21:00",
-     "weather": "LIGHT_RAIN",
+     "weather": "DRY",
      "temperatureC": 17,
      "precipProbability": 23
     },
     {
      "at": "2026-10-25T22:00",
-     "weather": "LIGHT_RAIN",
+     "weather": "DRY",
      "temperatureC": 18,
      "precipProbability": 25
     },
     {
      "at": "2026-10-25T23:00",
      "weather": "DRY",
-     "temperatureC": 18,
+     "temperatureC": 19,
      "precipProbability": 28
     },
     {
@@ -6639,6 +6701,24 @@
      "at": "2026-10-26T10:00",
      "weather": "DRY",
      "temperatureC": 18,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 20,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "DRY",
+     "temperatureC": 21,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "DRY",
+     "temperatureC": 21,
      "precipProbability": 0
     }
    ],
@@ -6650,32 +6730,14 @@
    "dept": "2B",
    "region": "Corse",
    "weather": "DRY",
-   "temperatureC": 16,
+   "temperatureC": 14,
    "precipitationMm": 0.0,
-   "windGustKmh": 20,
+   "windGustKmh": 17,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "DRY",
-     "temperatureC": 16,
-     "precipProbability": 0
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "DRY",
-     "temperatureC": 16,
-     "precipProbability": 0
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "DRY",
-     "temperatureC": 15,
-     "precipProbability": 0
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "DRY",
-     "temperatureC": 15,
+     "temperatureC": 14,
      "precipProbability": 0
     },
     {
@@ -6705,19 +6767,19 @@
     {
      "at": "2026-10-25T07:00",
      "weather": "DRY",
-     "temperatureC": 15,
+     "temperatureC": 14,
      "precipProbability": 0
     },
     {
      "at": "2026-10-25T08:00",
      "weather": "DRY",
-     "temperatureC": 15,
+     "temperatureC": 14,
      "precipProbability": 0
     },
     {
      "at": "2026-10-25T09:00",
      "weather": "DRY",
-     "temperatureC": 16,
+     "temperatureC": 15,
      "precipProbability": 0
     },
     {
@@ -6747,7 +6809,7 @@
     {
      "at": "2026-10-25T14:00",
      "weather": "DRY",
-     "temperatureC": 21,
+     "temperatureC": 20,
      "precipProbability": 0
     },
     {
@@ -6760,7 +6822,7 @@
      "at": "2026-10-25T16:00",
      "weather": "DRY",
      "temperatureC": 20,
-     "precipProbability": 0
+     "precipProbability": 3
     },
     {
      "at": "2026-10-25T17:00",
@@ -6771,62 +6833,62 @@
     {
      "at": "2026-10-25T18:00",
      "weather": "DRY",
-     "temperatureC": 19,
+     "temperatureC": 20,
      "precipProbability": 0
     },
     {
      "at": "2026-10-25T19:00",
      "weather": "DRY",
      "temperatureC": 19,
-     "precipProbability": 3
+     "precipProbability": 0
     },
     {
      "at": "2026-10-25T20:00",
      "weather": "DRY",
      "temperatureC": 18,
-     "precipProbability": 3
+     "precipProbability": 5
     },
     {
      "at": "2026-10-25T21:00",
      "weather": "DRY",
      "temperatureC": 20,
-     "precipProbability": 3
+     "precipProbability": 10
     },
     {
      "at": "2026-10-25T22:00",
      "weather": "DRY",
      "temperatureC": 19,
-     "precipProbability": 3
+     "precipProbability": 23
     },
     {
      "at": "2026-10-25T23:00",
      "weather": "DRY",
      "temperatureC": 19,
-     "precipProbability": 10
+     "precipProbability": 33
     },
     {
      "at": "2026-10-26T00:00",
      "weather": "DRY",
      "temperatureC": 19,
-     "precipProbability": 8
+     "precipProbability": 25
     },
     {
      "at": "2026-10-26T01:00",
      "weather": "DRY",
      "temperatureC": 18,
-     "precipProbability": 3
+     "precipProbability": 13
     },
     {
      "at": "2026-10-26T02:00",
      "weather": "DRY",
      "temperatureC": 18,
-     "precipProbability": 0
+     "precipProbability": 8
     },
     {
      "at": "2026-10-26T03:00",
      "weather": "DRY",
      "temperatureC": 18,
-     "precipProbability": 0
+     "precipProbability": 3
     },
     {
      "at": "2026-10-26T04:00",
@@ -6869,6 +6931,24 @@
      "weather": "DRY",
      "temperatureC": 20,
      "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 21,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "DRY",
+     "temperatureC": 21,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "DRY",
+     "temperatureC": 22,
+     "precipProbability": 0
     }
    ],
    "precipProbabilityNext3h": 0
@@ -6878,33 +6958,15 @@
    "lng": 5.7245,
    "dept": "38",
    "region": "Auvergne-Rhône-Alpes",
-   "weather": "DRY",
-   "temperatureC": 10,
-   "precipitationMm": 0.0,
-   "windGustKmh": 6,
+   "weather": "LIGHT_RAIN",
+   "temperatureC": 9,
+   "precipitationMm": 0.1,
+   "windGustKmh": 8,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "DRY",
-     "temperatureC": 10,
-     "precipProbability": 25
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "DRY",
-     "temperatureC": 10,
-     "precipProbability": 48
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "DRY",
-     "temperatureC": 10,
-     "precipProbability": 43
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 10,
+     "temperatureC": 9,
      "precipProbability": 73
     },
     {
@@ -6922,18 +6984,18 @@
     {
      "at": "2026-10-25T05:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 9,
+     "temperatureC": 10,
      "precipProbability": 48
     },
     {
      "at": "2026-10-25T06:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 9,
+     "temperatureC": 10,
      "precipProbability": 38
     },
     {
      "at": "2026-10-25T07:00",
-     "weather": "DRY",
+     "weather": "LIGHT_RAIN",
      "temperatureC": 9,
      "precipProbability": 18
     },
@@ -6952,7 +7014,7 @@
     {
      "at": "2026-10-25T10:00",
      "weather": "DRY",
-     "temperatureC": 11,
+     "temperatureC": 10,
      "precipProbability": 0
     },
     {
@@ -6964,49 +7026,49 @@
     {
      "at": "2026-10-25T12:00",
      "weather": "DRY",
-     "temperatureC": 14,
+     "temperatureC": 13,
      "precipProbability": 40
     },
     {
      "at": "2026-10-25T13:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 16,
+     "temperatureC": 13,
      "precipProbability": 90
     },
     {
      "at": "2026-10-25T14:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 15,
+     "temperatureC": 13,
      "precipProbability": 100
     },
     {
      "at": "2026-10-25T15:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 15,
+     "temperatureC": 13,
      "precipProbability": 100
     },
     {
      "at": "2026-10-25T16:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 15,
+     "temperatureC": 13,
      "precipProbability": 100
     },
     {
      "at": "2026-10-25T17:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 15,
+     "temperatureC": 13,
      "precipProbability": 100
     },
     {
      "at": "2026-10-25T18:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 14,
+     "temperatureC": 13,
      "precipProbability": 98
     },
     {
      "at": "2026-10-25T19:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 14,
+     "weather": "DRY",
+     "temperatureC": 13,
      "precipProbability": 93
     },
     {
@@ -7018,7 +7080,7 @@
     {
      "at": "2026-10-25T21:00",
      "weather": "DRY",
-     "temperatureC": 15,
+     "temperatureC": 14,
      "precipProbability": 23
     },
     {
@@ -7036,7 +7098,7 @@
     {
      "at": "2026-10-26T00:00",
      "weather": "DRY",
-     "temperatureC": 13,
+     "temperatureC": 12,
      "precipProbability": 0
     },
     {
@@ -7048,19 +7110,19 @@
     {
      "at": "2026-10-26T02:00",
      "weather": "DRY",
-     "temperatureC": 12,
+     "temperatureC": 11,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T03:00",
      "weather": "DRY",
-     "temperatureC": 11,
+     "temperatureC": 10,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T04:00",
      "weather": "DRY",
-     "temperatureC": 10,
+     "temperatureC": 9,
      "precipProbability": 0
     },
     {
@@ -7096,45 +7158,55 @@
     {
      "at": "2026-10-26T10:00",
      "weather": "DRY",
-     "temperatureC": 8,
+     "temperatureC": 9,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 10,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "DRY",
+     "temperatureC": 12,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "DRY",
+     "temperatureC": 13,
      "precipProbability": 0
     }
    ],
-   "precipProbabilityNext3h": 48
+   "precipProbabilityNext3h": 80,
+   "traffic": "FLUID",
+   "trafficAt": "2026-10-25T00:13:45.007154+00:00",
+   "trafficSource": "Bison Futé TRAFICOLOR (TraficGentiane)",
+   "trafficDetail": {
+    "mesures": 26,
+    "fluidePct": 100,
+    "ralentiPct": 0,
+    "saturePct": 0,
+    "bloquePct": 0
+   }
   },
   "Saint-Etienne": {
    "lat": 45.4397,
    "lng": 4.3872,
    "dept": "42",
    "region": "Auvergne-Rhône-Alpes",
-   "weather": "LIGHT_RAIN",
-   "temperatureC": 10,
+   "weather": "DRY",
+   "temperatureC": 11,
    "precipitationMm": 0.0,
-   "windGustKmh": 20,
+   "windGustKmh": 25,
    "hourly": [
     {
-     "at": "2026-10-24T23:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 10,
-     "precipProbability": 98
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 11,
-     "precipProbability": 100
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 11,
-     "precipProbability": 88
-    },
-    {
      "at": "2026-10-25T02:00",
-     "weather": "LIGHT_RAIN",
+     "weather": "DRY",
      "temperatureC": 11,
-     "precipProbability": 43
+     "precipProbability": 5
     },
     {
      "at": "2026-10-25T03:00",
@@ -7175,7 +7247,7 @@
     {
      "at": "2026-10-25T09:00",
      "weather": "DRY",
-     "temperatureC": 12,
+     "temperatureC": 13,
      "precipProbability": 0
     },
     {
@@ -7194,30 +7266,30 @@
      "at": "2026-10-25T12:00",
      "weather": "DRY",
      "temperatureC": 14,
-     "precipProbability": 8
+     "precipProbability": 15
     },
     {
      "at": "2026-10-25T13:00",
      "weather": "DRY",
      "temperatureC": 15,
-     "precipProbability": 3
+     "precipProbability": 15
     },
     {
      "at": "2026-10-25T14:00",
      "weather": "DRY",
      "temperatureC": 15,
-     "precipProbability": 20
+     "precipProbability": 38
     },
     {
      "at": "2026-10-25T15:00",
      "weather": "DRY",
      "temperatureC": 16,
-     "precipProbability": 20
+     "precipProbability": 30
     },
     {
      "at": "2026-10-25T16:00",
      "weather": "DRY",
-     "temperatureC": 15,
+     "temperatureC": 16,
      "precipProbability": 15
     },
     {
@@ -7229,26 +7301,26 @@
     {
      "at": "2026-10-25T18:00",
      "weather": "DRY",
-     "temperatureC": 15,
-     "precipProbability": 45
+     "temperatureC": 13,
+     "precipProbability": 35
     },
     {
      "at": "2026-10-25T19:00",
      "weather": "DRY",
      "temperatureC": 12,
-     "precipProbability": 40
+     "precipProbability": 23
     },
     {
      "at": "2026-10-25T20:00",
      "weather": "DRY",
-     "temperatureC": 11,
-     "precipProbability": 18
+     "temperatureC": 12,
+     "precipProbability": 8
     },
     {
      "at": "2026-10-25T21:00",
      "weather": "DRY",
      "temperatureC": 11,
-     "precipProbability": 8
+     "precipProbability": 3
     },
     {
      "at": "2026-10-25T22:00",
@@ -7289,7 +7361,7 @@
     {
      "at": "2026-10-26T04:00",
      "weather": "DRY",
-     "temperatureC": 7,
+     "temperatureC": 6,
      "precipProbability": 0
     },
     {
@@ -7301,7 +7373,7 @@
     {
      "at": "2026-10-26T06:00",
      "weather": "DRY",
-     "temperatureC": 6,
+     "temperatureC": 5,
      "precipProbability": 0
     },
     {
@@ -7327,9 +7399,37 @@
      "weather": "DRY",
      "temperatureC": 6,
      "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 8,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "DRY",
+     "temperatureC": 10,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "DRY",
+     "temperatureC": 13,
+     "precipProbability": 0
     }
    ],
-   "precipProbabilityNext3h": 100
+   "precipProbabilityNext3h": 5,
+   "traffic": "FLUID",
+   "trafficAt": "2026-10-25T00:13:45.007154+00:00",
+   "trafficSource": "Bison Futé TRAFICOLOR (TraficHyrondelle)",
+   "trafficDetail": {
+    "mesures": 81,
+    "fluidePct": 98,
+    "ralentiPct": 1,
+    "saturePct": 1,
+    "bloquePct": 0
+   }
   },
   "Clermont-Ferrand": {
    "lat": 45.7772,
@@ -7337,50 +7437,32 @@
    "dept": "63",
    "region": "Auvergne-Rhône-Alpes",
    "weather": "DRY",
-   "temperatureC": 12,
+   "temperatureC": 11,
    "precipitationMm": 0.0,
-   "windGustKmh": 22,
+   "windGustKmh": 29,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 11,
-     "precipProbability": 95
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "DRY",
-     "temperatureC": 12,
-     "precipProbability": 70
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "DRY",
-     "temperatureC": 12,
-     "precipProbability": 8
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "DRY",
-     "temperatureC": 12,
+     "temperatureC": 11,
      "precipProbability": 3
     },
     {
      "at": "2026-10-25T03:00",
      "weather": "DRY",
-     "temperatureC": 12,
+     "temperatureC": 11,
      "precipProbability": 3
     },
     {
      "at": "2026-10-25T04:00",
      "weather": "DRY",
-     "temperatureC": 12,
+     "temperatureC": 11,
      "precipProbability": 0
     },
     {
      "at": "2026-10-25T05:00",
      "weather": "DRY",
-     "temperatureC": 13,
+     "temperatureC": 12,
      "precipProbability": 0
     },
     {
@@ -7415,13 +7497,13 @@
     },
     {
      "at": "2026-10-25T11:00",
-     "weather": "DRY",
+     "weather": "LIGHT_RAIN",
      "temperatureC": 15,
      "precipProbability": 35
     },
     {
      "at": "2026-10-25T12:00",
-     "weather": "DRY",
+     "weather": "LIGHT_RAIN",
      "temperatureC": 16,
      "precipProbability": 50
     },
@@ -7446,43 +7528,43 @@
     {
      "at": "2026-10-25T16:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 16,
+     "temperatureC": 17,
      "precipProbability": 38
     },
     {
      "at": "2026-10-25T17:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 16,
+     "temperatureC": 15,
      "precipProbability": 23
     },
     {
      "at": "2026-10-25T18:00",
-     "weather": "LIGHT_RAIN",
+     "weather": "DRY",
      "temperatureC": 14,
      "precipProbability": 8
     },
     {
      "at": "2026-10-25T19:00",
      "weather": "DRY",
-     "temperatureC": 13,
+     "temperatureC": 12,
      "precipProbability": 5
     },
     {
      "at": "2026-10-25T20:00",
      "weather": "DRY",
-     "temperatureC": 12,
+     "temperatureC": 11,
      "precipProbability": 5
     },
     {
      "at": "2026-10-25T21:00",
      "weather": "DRY",
-     "temperatureC": 10,
+     "temperatureC": 9,
      "precipProbability": 0
     },
     {
      "at": "2026-10-25T22:00",
      "weather": "DRY",
-     "temperatureC": 9,
+     "temperatureC": 8,
      "precipProbability": 0
     },
     {
@@ -7506,13 +7588,13 @@
     {
      "at": "2026-10-26T02:00",
      "weather": "DRY",
-     "temperatureC": 7,
+     "temperatureC": 8,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T03:00",
      "weather": "DRY",
-     "temperatureC": 5,
+     "temperatureC": 6,
      "precipProbability": 0
     },
     {
@@ -7530,7 +7612,7 @@
     {
      "at": "2026-10-26T06:00",
      "weather": "DRY",
-     "temperatureC": 6,
+     "temperatureC": 5,
      "precipProbability": 0
     },
     {
@@ -7556,9 +7638,37 @@
      "weather": "DRY",
      "temperatureC": 6,
      "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 8,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "DRY",
+     "temperatureC": 10,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "DRY",
+     "temperatureC": 12,
+     "precipProbability": 0
     }
    ],
-   "precipProbabilityNext3h": 95
+   "precipProbabilityNext3h": 3,
+   "traffic": "FLUID",
+   "trafficAt": "2026-10-25T00:13:45.007154+00:00",
+   "trafficSource": "Bison Futé TRAFICOLOR (TraficDirmc)",
+   "trafficDetail": {
+    "mesures": 6,
+    "fluidePct": 100,
+    "ralentiPct": 0,
+    "saturePct": 0,
+    "bloquePct": 0
+   }
   },
   "Annecy": {
    "lat": 45.8992,
@@ -7567,27 +7677,9 @@
    "region": "Auvergne-Rhône-Alpes",
    "weather": "LIGHT_RAIN",
    "temperatureC": 9,
-   "precipitationMm": 0.1,
+   "precipitationMm": 0.2,
    "windGustKmh": 10,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 8,
-     "precipProbability": 88
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 9,
-     "precipProbability": 95
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 9,
-     "precipProbability": 90
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "LIGHT_RAIN",
@@ -7615,13 +7707,13 @@
     {
      "at": "2026-10-25T06:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 8,
+     "temperatureC": 10,
      "precipProbability": 78
     },
     {
      "at": "2026-10-25T07:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 9,
+     "weather": "DRY",
+     "temperatureC": 11,
      "precipProbability": 65
     },
     {
@@ -7639,19 +7731,19 @@
     {
      "at": "2026-10-25T10:00",
      "weather": "DRY",
-     "temperatureC": 11,
+     "temperatureC": 10,
      "precipProbability": 28
     },
     {
      "at": "2026-10-25T11:00",
-     "weather": "DRY",
-     "temperatureC": 12,
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 11,
      "precipProbability": 55
     },
     {
      "at": "2026-10-25T12:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 13,
+     "temperatureC": 11,
      "precipProbability": 90
     },
     {
@@ -7692,8 +7784,8 @@
     },
     {
      "at": "2026-10-25T19:00",
-     "weather": "DRY",
-     "temperatureC": 14,
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 13,
      "precipProbability": 55
     },
     {
@@ -7717,49 +7809,49 @@
     {
      "at": "2026-10-25T23:00",
      "weather": "DRY",
-     "temperatureC": 10,
+     "temperatureC": 9,
      "precipProbability": 5
     },
     {
      "at": "2026-10-26T00:00",
      "weather": "DRY",
-     "temperatureC": 9,
+     "temperatureC": 8,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T01:00",
      "weather": "DRY",
-     "temperatureC": 8,
+     "temperatureC": 6,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T02:00",
      "weather": "DRY",
-     "temperatureC": 7,
+     "temperatureC": 5,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T03:00",
      "weather": "DRY",
-     "temperatureC": 6,
+     "temperatureC": 4,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T04:00",
      "weather": "DRY",
-     "temperatureC": 4,
+     "temperatureC": 3,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T05:00",
      "weather": "DRY",
-     "temperatureC": 4,
+     "temperatureC": 3,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T06:00",
      "weather": "DRY",
-     "temperatureC": 4,
+     "temperatureC": 3,
      "precipProbability": 0
     },
     {
@@ -7771,23 +7863,41 @@
     {
      "at": "2026-10-26T08:00",
      "weather": "DRY",
-     "temperatureC": 3,
+     "temperatureC": 2,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T09:00",
      "weather": "DRY",
-     "temperatureC": 3,
+     "temperatureC": 2,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T10:00",
      "weather": "DRY",
-     "temperatureC": 5,
+     "temperatureC": 4,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 7,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "DRY",
+     "temperatureC": 10,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "DRY",
+     "temperatureC": 12,
      "precipProbability": 0
     }
    ],
-   "precipProbabilityNext3h": 95
+   "precipProbabilityNext3h": 100
   },
   "Toulon": {
    "lat": 43.1242,
@@ -7795,32 +7905,14 @@
    "dept": "83",
    "region": "Provence-Alpes-Côte d'Azur",
    "weather": "DRY",
-   "temperatureC": 16,
+   "temperatureC": 15,
    "precipitationMm": 0.0,
-   "windGustKmh": 40,
+   "windGustKmh": 38,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "DRY",
-     "temperatureC": 16,
-     "precipProbability": 0
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "DRY",
-     "temperatureC": 16,
-     "precipProbability": 0
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "DRY",
-     "temperatureC": 16,
-     "precipProbability": 0
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "DRY",
-     "temperatureC": 16,
+     "temperatureC": 15,
      "precipProbability": 0
     },
     {
@@ -8013,6 +8105,24 @@
      "at": "2026-10-26T10:00",
      "weather": "DRY",
      "temperatureC": 15,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 17,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "DRY",
+     "temperatureC": 18,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "DRY",
+     "temperatureC": 19,
      "precipProbability": 0
     }
    ],
@@ -8024,28 +8134,10 @@
    "dept": "84",
    "region": "Provence-Alpes-Côte d'Azur",
    "weather": "DRY",
-   "temperatureC": 11,
+   "temperatureC": 10,
    "precipitationMm": 0.0,
-   "windGustKmh": 11,
+   "windGustKmh": 5,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "DRY",
-     "temperatureC": 11,
-     "precipProbability": 0
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "DRY",
-     "temperatureC": 11,
-     "precipProbability": 8
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "DRY",
-     "temperatureC": 10,
-     "precipProbability": 15
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "DRY",
@@ -8121,7 +8213,7 @@
     {
      "at": "2026-10-25T14:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 16,
+     "temperatureC": 15,
      "precipProbability": 10
     },
     {
@@ -8132,8 +8224,8 @@
     },
     {
      "at": "2026-10-25T16:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 15,
+     "weather": "DRY",
+     "temperatureC": 16,
      "precipProbability": 8
     },
     {
@@ -8151,7 +8243,7 @@
     {
      "at": "2026-10-25T19:00",
      "weather": "DRY",
-     "temperatureC": 15,
+     "temperatureC": 14,
      "precipProbability": 0
     },
     {
@@ -8163,13 +8255,13 @@
     {
      "at": "2026-10-25T21:00",
      "weather": "DRY",
-     "temperatureC": 12,
+     "temperatureC": 13,
      "precipProbability": 0
     },
     {
      "at": "2026-10-25T22:00",
      "weather": "DRY",
-     "temperatureC": 12,
+     "temperatureC": 13,
      "precipProbability": 0
     },
     {
@@ -8243,9 +8335,27 @@
      "weather": "DRY",
      "temperatureC": 12,
      "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 13,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "DRY",
+     "temperatureC": 15,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "DRY",
+     "temperatureC": 16,
+     "precipProbability": 0
     }
    ],
-   "precipProbabilityNext3h": 15
+   "precipProbabilityNext3h": 20
   },
   "Perpignan": {
    "lat": 42.6887,
@@ -8253,28 +8363,10 @@
    "dept": "66",
    "region": "Occitanie",
    "weather": "DRY",
-   "temperatureC": 14,
+   "temperatureC": 13,
    "precipitationMm": 0.0,
-   "windGustKmh": 9,
+   "windGustKmh": 13,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "DRY",
-     "temperatureC": 14,
-     "precipProbability": 0
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "DRY",
-     "temperatureC": 14,
-     "precipProbability": 0
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "DRY",
-     "temperatureC": 14,
-     "precipProbability": 0
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "DRY",
@@ -8290,7 +8382,7 @@
     {
      "at": "2026-10-25T04:00",
      "weather": "DRY",
-     "temperatureC": 13,
+     "temperatureC": 12,
      "precipProbability": 0
     },
     {
@@ -8302,7 +8394,7 @@
     {
      "at": "2026-10-25T06:00",
      "weather": "DRY",
-     "temperatureC": 13,
+     "temperatureC": 12,
      "precipProbability": 0
     },
     {
@@ -8472,6 +8564,24 @@
      "weather": "DRY",
      "temperatureC": 17,
      "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 18,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "DRY",
+     "temperatureC": 19,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "DRY",
+     "temperatureC": 21,
+     "precipProbability": 0
     }
    ],
    "precipProbabilityNext3h": 0
@@ -8481,32 +8591,14 @@
    "lng": 4.3601,
    "dept": "30",
    "region": "Occitanie",
-   "weather": "DRY",
-   "temperatureC": 12,
+   "weather": "LIGHT_RAIN",
+   "temperatureC": 11,
    "precipitationMm": 0.0,
-   "windGustKmh": 6,
+   "windGustKmh": 3,
    "hourly": [
     {
-     "at": "2026-10-24T23:00",
-     "weather": "DRY",
-     "temperatureC": 12,
-     "precipProbability": 10
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "DRY",
-     "temperatureC": 12,
-     "precipProbability": 25
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "DRY",
-     "temperatureC": 11,
-     "precipProbability": 48
-    },
-    {
      "at": "2026-10-25T02:00",
-     "weather": "DRY",
+     "weather": "LIGHT_RAIN",
      "temperatureC": 11,
      "precipProbability": 35
     },
@@ -8525,7 +8617,7 @@
     {
      "at": "2026-10-25T05:00",
      "weather": "DRY",
-     "temperatureC": 12,
+     "temperatureC": 11,
      "precipProbability": 0
     },
     {
@@ -8555,7 +8647,7 @@
     {
      "at": "2026-10-25T10:00",
      "weather": "DRY",
-     "temperatureC": 11,
+     "temperatureC": 12,
      "precipProbability": 0
     },
     {
@@ -8567,13 +8659,13 @@
     {
      "at": "2026-10-25T12:00",
      "weather": "DRY",
-     "temperatureC": 15,
+     "temperatureC": 14,
      "precipProbability": 0
     },
     {
      "at": "2026-10-25T13:00",
-     "weather": "DRY",
-     "temperatureC": 16,
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 15,
      "precipProbability": 0
     },
     {
@@ -8584,8 +8676,8 @@
     },
     {
      "at": "2026-10-25T15:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 16,
+     "weather": "DRY",
+     "temperatureC": 17,
      "precipProbability": 3
     },
     {
@@ -8597,7 +8689,7 @@
     {
      "at": "2026-10-25T17:00",
      "weather": "DRY",
-     "temperatureC": 17,
+     "temperatureC": 18,
      "precipProbability": 3
     },
     {
@@ -8633,7 +8725,7 @@
     {
      "at": "2026-10-25T23:00",
      "weather": "DRY",
-     "temperatureC": 15,
+     "temperatureC": 14,
      "precipProbability": 0
     },
     {
@@ -8651,7 +8743,7 @@
     {
      "at": "2026-10-26T02:00",
      "weather": "DRY",
-     "temperatureC": 13,
+     "temperatureC": 12,
      "precipProbability": 0
     },
     {
@@ -8687,13 +8779,13 @@
     {
      "at": "2026-10-26T08:00",
      "weather": "DRY",
-     "temperatureC": 11,
+     "temperatureC": 10,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T09:00",
      "weather": "DRY",
-     "temperatureC": 11,
+     "temperatureC": 10,
      "precipProbability": 0
     },
     {
@@ -8701,9 +8793,27 @@
      "weather": "DRY",
      "temperatureC": 12,
      "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 14,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "DRY",
+     "temperatureC": 16,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "DRY",
+     "temperatureC": 17,
+     "precipProbability": 0
     }
    ],
-   "precipProbabilityNext3h": 48
+   "precipProbabilityNext3h": 35
   },
   "Limoges": {
    "lat": 45.8336,
@@ -8713,26 +8823,8 @@
    "weather": "LIGHT_RAIN",
    "temperatureC": 12,
    "precipitationMm": 0.0,
-   "windGustKmh": 34,
+   "windGustKmh": 37,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 12,
-     "precipProbability": 48
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 12,
-     "precipProbability": 0
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 12,
-     "precipProbability": 0
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "LIGHT_RAIN",
@@ -8747,7 +8839,7 @@
     },
     {
      "at": "2026-10-25T04:00",
-     "weather": "LIGHT_RAIN",
+     "weather": "DRY",
      "temperatureC": 12,
      "precipProbability": 0
     },
@@ -8765,13 +8857,13 @@
     },
     {
      "at": "2026-10-25T07:00",
-     "weather": "DRY",
+     "weather": "LIGHT_RAIN",
      "temperatureC": 12,
      "precipProbability": 3
     },
     {
      "at": "2026-10-25T08:00",
-     "weather": "DRY",
+     "weather": "LIGHT_RAIN",
      "temperatureC": 13,
      "precipProbability": 5
     },
@@ -8790,7 +8882,7 @@
     {
      "at": "2026-10-25T11:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 13,
+     "temperatureC": 14,
      "precipProbability": 100
     },
     {
@@ -8802,25 +8894,25 @@
     {
      "at": "2026-10-25T13:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 14,
+     "temperatureC": 15,
      "precipProbability": 98
     },
     {
      "at": "2026-10-25T14:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 15,
+     "temperatureC": 16,
      "precipProbability": 75
     },
     {
      "at": "2026-10-25T15:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 16,
+     "temperatureC": 15,
      "precipProbability": 23
     },
     {
      "at": "2026-10-25T16:00",
      "weather": "DRY",
-     "temperatureC": 16,
+     "temperatureC": 15,
      "precipProbability": 10
     },
     {
@@ -8862,7 +8954,7 @@
     {
      "at": "2026-10-25T23:00",
      "weather": "DRY",
-     "temperatureC": 9,
+     "temperatureC": 10,
      "precipProbability": 0
     },
     {
@@ -8874,7 +8966,7 @@
     {
      "at": "2026-10-26T01:00",
      "weather": "DRY",
-     "temperatureC": 8,
+     "temperatureC": 9,
      "precipProbability": 0
     },
     {
@@ -8886,19 +8978,19 @@
     {
      "at": "2026-10-26T03:00",
      "weather": "DRY",
-     "temperatureC": 7,
+     "temperatureC": 8,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T04:00",
      "weather": "DRY",
-     "temperatureC": 6,
+     "temperatureC": 7,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T05:00",
      "weather": "DRY",
-     "temperatureC": 5,
+     "temperatureC": 6,
      "precipProbability": 0
     },
     {
@@ -8910,29 +9002,57 @@
     {
      "at": "2026-10-26T07:00",
      "weather": "DRY",
-     "temperatureC": 5,
+     "temperatureC": 6,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T08:00",
      "weather": "DRY",
-     "temperatureC": 5,
+     "temperatureC": 6,
      "precipProbability": 5
     },
     {
      "at": "2026-10-26T09:00",
      "weather": "DRY",
-     "temperatureC": 5,
+     "temperatureC": 6,
      "precipProbability": 3
     },
     {
      "at": "2026-10-26T10:00",
      "weather": "DRY",
-     "temperatureC": 6,
+     "temperatureC": 7,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 9,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "DRY",
+     "temperatureC": 11,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "DRY",
+     "temperatureC": 12,
      "precipProbability": 0
     }
    ],
-   "precipProbabilityNext3h": 48
+   "precipProbabilityNext3h": 0,
+   "traffic": "FLUID",
+   "trafficAt": "2026-10-25T00:13:45.007154+00:00",
+   "trafficSource": "Bison Futé TRAFICOLOR (TraficLimoges)",
+   "trafficDetail": {
+    "mesures": 25,
+    "fluidePct": 100,
+    "ralentiPct": 0,
+    "saturePct": 0,
+    "bloquePct": 0
+   }
   },
   "Poitiers": {
    "lat": 46.5802,
@@ -8942,26 +9062,8 @@
    "weather": "LIGHT_RAIN",
    "temperatureC": 14,
    "precipitationMm": 0.1,
-   "windGustKmh": 50,
+   "windGustKmh": 53,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 14,
-     "precipProbability": 0
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 14,
-     "precipProbability": 0
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 14,
-     "precipProbability": 0
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "LIGHT_RAIN",
@@ -9031,7 +9133,7 @@
     {
      "at": "2026-10-25T13:00",
      "weather": "DRY",
-     "temperatureC": 16,
+     "temperatureC": 15,
      "precipProbability": 18
     },
     {
@@ -9079,7 +9181,7 @@
     {
      "at": "2026-10-25T21:00",
      "weather": "DRY",
-     "temperatureC": 11,
+     "temperatureC": 12,
      "precipProbability": 0
     },
     {
@@ -9091,7 +9193,7 @@
     {
      "at": "2026-10-25T23:00",
      "weather": "DRY",
-     "temperatureC": 10,
+     "temperatureC": 11,
      "precipProbability": 0
     },
     {
@@ -9139,7 +9241,7 @@
     {
      "at": "2026-10-26T07:00",
      "weather": "DRY",
-     "temperatureC": 7,
+     "temperatureC": 8,
      "precipProbability": 3
     },
     {
@@ -9151,7 +9253,7 @@
     {
      "at": "2026-10-26T09:00",
      "weather": "DRY",
-     "temperatureC": 8,
+     "temperatureC": 9,
      "precipProbability": 8
     },
     {
@@ -9159,9 +9261,37 @@
      "weather": "DRY",
      "temperatureC": 9,
      "precipProbability": 8
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 10,
+     "precipProbability": 8
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "DRY",
+     "temperatureC": 12,
+     "precipProbability": 8
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "DRY",
+     "temperatureC": 13,
+     "precipProbability": 3
     }
    ],
-   "precipProbabilityNext3h": 0
+   "precipProbabilityNext3h": 0,
+   "traffic": "NORMAL",
+   "trafficAt": "2026-10-25T00:13:45.007154+00:00",
+   "trafficSource": "Bison Futé TRAFICOLOR (TraficLimoges)",
+   "trafficDetail": {
+    "mesures": 12,
+    "fluidePct": 92,
+    "ralentiPct": 8,
+    "saturePct": 0,
+    "bloquePct": 0
+   }
   },
   "Pau": {
    "lat": 43.2951,
@@ -9169,28 +9299,10 @@
    "dept": "64",
    "region": "Nouvelle-Aquitaine",
    "weather": "DRY",
-   "temperatureC": 12,
+   "temperatureC": 10,
    "precipitationMm": 0.0,
-   "windGustKmh": 5,
+   "windGustKmh": 7,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "DRY",
-     "temperatureC": 12,
-     "precipProbability": 0
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "DRY",
-     "temperatureC": 12,
-     "precipProbability": 0
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "DRY",
-     "temperatureC": 11,
-     "precipProbability": 0
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "DRY",
@@ -9224,37 +9336,37 @@
     {
      "at": "2026-10-25T07:00",
      "weather": "DRY",
-     "temperatureC": 7,
+     "temperatureC": 9,
      "precipProbability": 0
     },
     {
      "at": "2026-10-25T08:00",
      "weather": "DRY",
-     "temperatureC": 7,
+     "temperatureC": 9,
      "precipProbability": 0
     },
     {
      "at": "2026-10-25T09:00",
      "weather": "DRY",
-     "temperatureC": 8,
+     "temperatureC": 12,
      "precipProbability": 0
     },
     {
      "at": "2026-10-25T10:00",
      "weather": "DRY",
-     "temperatureC": 11,
+     "temperatureC": 14,
      "precipProbability": 0
     },
     {
      "at": "2026-10-25T11:00",
      "weather": "DRY",
-     "temperatureC": 15,
+     "temperatureC": 18,
      "precipProbability": 0
     },
     {
      "at": "2026-10-25T12:00",
      "weather": "DRY",
-     "temperatureC": 18,
+     "temperatureC": 19,
      "precipProbability": 0
     },
     {
@@ -9265,20 +9377,20 @@
     },
     {
      "at": "2026-10-25T14:00",
-     "weather": "DRY",
+     "weather": "LIGHT_RAIN",
      "temperatureC": 19,
      "precipProbability": 8
     },
     {
      "at": "2026-10-25T15:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 18,
+     "temperatureC": 19,
      "precipProbability": 30
     },
     {
      "at": "2026-10-25T16:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 18,
+     "temperatureC": 17,
      "precipProbability": 65
     },
     {
@@ -9307,13 +9419,13 @@
     },
     {
      "at": "2026-10-25T21:00",
-     "weather": "DRY",
+     "weather": "LIGHT_RAIN",
      "temperatureC": 16,
      "precipProbability": 43
     },
     {
      "at": "2026-10-25T22:00",
-     "weather": "DRY",
+     "weather": "LIGHT_RAIN",
      "temperatureC": 16,
      "precipProbability": 35
     },
@@ -9350,43 +9462,61 @@
     {
      "at": "2026-10-26T04:00",
      "weather": "DRY",
-     "temperatureC": 15,
+     "temperatureC": 16,
      "precipProbability": 20
     },
     {
      "at": "2026-10-26T05:00",
      "weather": "DRY",
-     "temperatureC": 15,
+     "temperatureC": 16,
      "precipProbability": 10
     },
     {
      "at": "2026-10-26T06:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 15,
+     "weather": "DRY",
+     "temperatureC": 16,
      "precipProbability": 5
     },
     {
      "at": "2026-10-26T07:00",
-     "weather": "LIGHT_RAIN",
+     "weather": "DRY",
      "temperatureC": 15,
      "precipProbability": 3
     },
     {
      "at": "2026-10-26T08:00",
      "weather": "DRY",
-     "temperatureC": 15,
+     "temperatureC": 16,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T09:00",
      "weather": "DRY",
-     "temperatureC": 15,
+     "temperatureC": 16,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T10:00",
      "weather": "DRY",
      "temperatureC": 16,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 18,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "DRY",
+     "temperatureC": 19,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "DRY",
+     "temperatureC": 21,
      "precipProbability": 0
     }
    ],
@@ -9398,32 +9528,14 @@
    "dept": "64",
    "region": "Nouvelle-Aquitaine",
    "weather": "DRY",
-   "temperatureC": 15,
+   "temperatureC": 12,
    "precipitationMm": 0.0,
-   "windGustKmh": 18,
+   "windGustKmh": 12,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "DRY",
-     "temperatureC": 14,
-     "precipProbability": 0
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "DRY",
-     "temperatureC": 16,
-     "precipProbability": 0
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "DRY",
-     "temperatureC": 15,
-     "precipProbability": 0
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "DRY",
-     "temperatureC": 13,
+     "temperatureC": 12,
      "precipProbability": 0
     },
     {
@@ -9447,7 +9559,7 @@
     {
      "at": "2026-10-25T06:00",
      "weather": "DRY",
-     "temperatureC": 13,
+     "temperatureC": 12,
      "precipProbability": 0
     },
     {
@@ -9536,19 +9648,19 @@
     },
     {
      "at": "2026-10-25T21:00",
-     "weather": "DRY",
+     "weather": "LIGHT_RAIN",
      "temperatureC": 18,
      "precipProbability": 60
     },
     {
      "at": "2026-10-25T22:00",
-     "weather": "DRY",
+     "weather": "LIGHT_RAIN",
      "temperatureC": 18,
      "precipProbability": 65
     },
     {
      "at": "2026-10-25T23:00",
-     "weather": "DRY",
+     "weather": "LIGHT_RAIN",
      "temperatureC": 18,
      "precipProbability": 60
     },
@@ -9566,7 +9678,7 @@
     },
     {
      "at": "2026-10-26T02:00",
-     "weather": "LIGHT_RAIN",
+     "weather": "DRY",
      "temperatureC": 17,
      "precipProbability": 33
     },
@@ -9617,6 +9729,24 @@
      "weather": "DRY",
      "temperatureC": 17,
      "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 18,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "DRY",
+     "temperatureC": 20,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "DRY",
+     "temperatureC": 21,
+     "precipProbability": 0
     }
    ],
    "precipProbabilityNext3h": 0
@@ -9627,28 +9757,10 @@
    "dept": "49",
    "region": "Pays de la Loire",
    "weather": "DRY",
-   "temperatureC": 16,
+   "temperatureC": 17,
    "precipitationMm": 0.0,
-   "windGustKmh": 49,
+   "windGustKmh": 59,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "DRY",
-     "temperatureC": 15,
-     "precipProbability": 0
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "DRY",
-     "temperatureC": 16,
-     "precipProbability": 0
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 16,
-     "precipProbability": 0
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "DRY",
@@ -9657,20 +9769,20 @@
     },
     {
      "at": "2026-10-25T03:00",
-     "weather": "DRY",
+     "weather": "LIGHT_RAIN",
      "temperatureC": 17,
      "precipProbability": 5
     },
     {
      "at": "2026-10-25T04:00",
-     "weather": "DRY",
+     "weather": "LIGHT_RAIN",
      "temperatureC": 17,
      "precipProbability": 8
     },
     {
      "at": "2026-10-25T05:00",
-     "weather": "DRY",
-     "temperatureC": 18,
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 17,
      "precipProbability": 35
     },
     {
@@ -9694,12 +9806,12 @@
     {
      "at": "2026-10-25T09:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 16,
+     "temperatureC": 15,
      "precipProbability": 85
     },
     {
      "at": "2026-10-25T10:00",
-     "weather": "LIGHT_RAIN",
+     "weather": "DRY",
      "temperatureC": 14,
      "precipProbability": 45
     },
@@ -9772,13 +9884,13 @@
     {
      "at": "2026-10-25T22:00",
      "weather": "DRY",
-     "temperatureC": 12,
+     "temperatureC": 11,
      "precipProbability": 0
     },
     {
      "at": "2026-10-25T23:00",
      "weather": "DRY",
-     "temperatureC": 11,
+     "temperatureC": 10,
      "precipProbability": 0
     },
     {
@@ -9790,19 +9902,19 @@
     {
      "at": "2026-10-26T01:00",
      "weather": "DRY",
-     "temperatureC": 9,
+     "temperatureC": 10,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T02:00",
      "weather": "DRY",
-     "temperatureC": 9,
+     "temperatureC": 10,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T03:00",
      "weather": "DRY",
-     "temperatureC": 9,
+     "temperatureC": 10,
      "precipProbability": 0
     },
     {
@@ -9846,9 +9958,27 @@
      "weather": "DRY",
      "temperatureC": 11,
      "precipProbability": 33
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 11,
+     "precipProbability": 38
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "DRY",
+     "temperatureC": 13,
+     "precipProbability": 20
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "DRY",
+     "temperatureC": 15,
+     "precipProbability": 5
     }
    ],
-   "precipProbabilityNext3h": 0
+   "precipProbabilityNext3h": 8
   },
   "Le Mans": {
    "lat": 48.0061,
@@ -9856,31 +9986,13 @@
    "dept": "72",
    "region": "Pays de la Loire",
    "weather": "LIGHT_RAIN",
-   "temperatureC": 14,
-   "precipitationMm": 0.3,
-   "windGustKmh": 59,
+   "temperatureC": 16,
+   "precipitationMm": 0.1,
+   "windGustKmh": 61,
    "hourly": [
     {
-     "at": "2026-10-24T23:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 14,
-     "precipProbability": 3
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 14,
-     "precipProbability": 0
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 15,
-     "precipProbability": 5
-    },
-    {
      "at": "2026-10-25T02:00",
-     "weather": "DRY",
+     "weather": "LIGHT_RAIN",
      "temperatureC": 16,
      "precipProbability": 10
     },
@@ -9892,13 +10004,13 @@
     },
     {
      "at": "2026-10-25T04:00",
-     "weather": "DRY",
+     "weather": "LIGHT_RAIN",
      "temperatureC": 17,
      "precipProbability": 35
     },
     {
      "at": "2026-10-25T05:00",
-     "weather": "DRY",
+     "weather": "LIGHT_RAIN",
      "temperatureC": 17,
      "precipProbability": 80
     },
@@ -9929,7 +10041,7 @@
     {
      "at": "2026-10-25T10:00",
      "weather": "DRY",
-     "temperatureC": 12,
+     "temperatureC": 13,
      "precipProbability": 28
     },
     {
@@ -9971,7 +10083,7 @@
     {
      "at": "2026-10-25T17:00",
      "weather": "DRY",
-     "temperatureC": 14,
+     "temperatureC": 15,
      "precipProbability": 0
     },
     {
@@ -9989,7 +10101,7 @@
     {
      "at": "2026-10-25T20:00",
      "weather": "DRY",
-     "temperatureC": 12,
+     "temperatureC": 13,
      "precipProbability": 0
     },
     {
@@ -10013,7 +10125,7 @@
     {
      "at": "2026-10-26T00:00",
      "weather": "DRY",
-     "temperatureC": 11,
+     "temperatureC": 10,
      "precipProbability": 0
     },
     {
@@ -10025,7 +10137,7 @@
     {
      "at": "2026-10-26T02:00",
      "weather": "DRY",
-     "temperatureC": 10,
+     "temperatureC": 9,
      "precipProbability": 0
     },
     {
@@ -10037,13 +10149,13 @@
     {
      "at": "2026-10-26T04:00",
      "weather": "DRY",
-     "temperatureC": 9,
+     "temperatureC": 8,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T05:00",
      "weather": "DRY",
-     "temperatureC": 9,
+     "temperatureC": 8,
      "precipProbability": 0
     },
     {
@@ -10072,12 +10184,30 @@
     },
     {
      "at": "2026-10-26T10:00",
-     "weather": "DRY",
+     "weather": "LIGHT_RAIN",
      "temperatureC": 9,
      "precipProbability": 28
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 10,
+     "precipProbability": 23
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "DRY",
+     "temperatureC": 11,
+     "precipProbability": 25
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "DRY",
+     "temperatureC": 11,
+     "precipProbability": 15
     }
    ],
-   "precipProbabilityNext3h": 5
+   "precipProbabilityNext3h": 35
   },
   "Reims": {
    "lat": 49.2583,
@@ -10085,28 +10215,10 @@
    "dept": "51",
    "region": "Grand Est",
    "weather": "LIGHT_RAIN",
-   "temperatureC": 11,
-   "precipitationMm": 0.1,
+   "temperatureC": 13,
+   "precipitationMm": 0.7,
    "windGustKmh": 66,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 11,
-     "precipProbability": 100
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 11,
-     "precipProbability": 88
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 12,
-     "precipProbability": 63
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "LIGHT_RAIN",
@@ -10116,7 +10228,7 @@
     {
      "at": "2026-10-25T03:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 13,
+     "temperatureC": 14,
      "precipProbability": 100
     },
     {
@@ -10146,7 +10258,7 @@
     {
      "at": "2026-10-25T08:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 14,
+     "temperatureC": 13,
      "precipProbability": 98
     },
     {
@@ -10158,19 +10270,19 @@
     {
      "at": "2026-10-25T10:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 11,
+     "temperatureC": 12,
      "precipProbability": 45
     },
     {
      "at": "2026-10-25T11:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 12,
+     "weather": "DRY",
+     "temperatureC": 13,
      "precipProbability": 13
     },
     {
      "at": "2026-10-25T12:00",
      "weather": "DRY",
-     "temperatureC": 13,
+     "temperatureC": 14,
      "precipProbability": 3
     },
     {
@@ -10182,12 +10294,12 @@
     {
      "at": "2026-10-25T14:00",
      "weather": "DRY",
-     "temperatureC": 14,
+     "temperatureC": 15,
      "precipProbability": 8
     },
     {
      "at": "2026-10-25T15:00",
-     "weather": "DRY",
+     "weather": "LIGHT_RAIN",
      "temperatureC": 14,
      "precipProbability": 13
     },
@@ -10218,7 +10330,7 @@
     {
      "at": "2026-10-25T20:00",
      "weather": "DRY",
-     "temperatureC": 12,
+     "temperatureC": 11,
      "precipProbability": 0
     },
     {
@@ -10230,7 +10342,7 @@
     {
      "at": "2026-10-25T22:00",
      "weather": "DRY",
-     "temperatureC": 10,
+     "temperatureC": 11,
      "precipProbability": 0
     },
     {
@@ -10248,7 +10360,7 @@
     {
      "at": "2026-10-26T01:00",
      "weather": "DRY",
-     "temperatureC": 10,
+     "temperatureC": 9,
      "precipProbability": 0
     },
     {
@@ -10266,7 +10378,7 @@
     {
      "at": "2026-10-26T04:00",
      "weather": "DRY",
-     "temperatureC": 9,
+     "temperatureC": 8,
      "precipProbability": 0
     },
     {
@@ -10304,6 +10416,24 @@
      "weather": "DRY",
      "temperatureC": 9,
      "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 10,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "DRY",
+     "temperatureC": 11,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "DRY",
+     "temperatureC": 11,
+     "precipProbability": 5
     }
    ],
    "precipProbabilityNext3h": 100
@@ -10315,27 +10445,9 @@
    "region": "Grand Est",
    "weather": "LIGHT_RAIN",
    "temperatureC": 9,
-   "precipitationMm": 0.1,
-   "windGustKmh": 54,
+   "precipitationMm": 0.6,
+   "windGustKmh": 58,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 9,
-     "precipProbability": 100
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 9,
-     "precipProbability": 100
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 9,
-     "precipProbability": 100
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "LIGHT_RAIN",
@@ -10369,7 +10481,7 @@
     {
      "at": "2026-10-25T07:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 10,
+     "temperatureC": 11,
      "precipProbability": 100
     },
     {
@@ -10387,31 +10499,31 @@
     {
      "at": "2026-10-25T10:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 14,
+     "temperatureC": 12,
      "precipProbability": 100
     },
     {
      "at": "2026-10-25T11:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 12,
+     "temperatureC": 11,
      "precipProbability": 98
     },
     {
      "at": "2026-10-25T12:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 11,
+     "temperatureC": 12,
      "precipProbability": 80
     },
     {
      "at": "2026-10-25T13:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 11,
+     "weather": "DRY",
+     "temperatureC": 13,
      "precipProbability": 33
     },
     {
      "at": "2026-10-25T14:00",
      "weather": "DRY",
-     "temperatureC": 13,
+     "temperatureC": 14,
      "precipProbability": 23
     },
     {
@@ -10434,8 +10546,8 @@
     },
     {
      "at": "2026-10-25T18:00",
-     "weather": "DRY",
-     "temperatureC": 12,
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 13,
      "precipProbability": 15
     },
     {
@@ -10533,9 +10645,37 @@
      "weather": "DRY",
      "temperatureC": 8,
      "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 9,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "DRY",
+     "temperatureC": 10,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "DRY",
+     "temperatureC": 11,
+     "precipProbability": 0
     }
    ],
-   "precipProbabilityNext3h": 100
+   "precipProbabilityNext3h": 100,
+   "traffic": "FLUID",
+   "trafficAt": "2026-10-25T00:13:45.007154+00:00",
+   "trafficSource": "Bison Futé TRAFICOLOR (TraficMyrabel)",
+   "trafficDetail": {
+    "mesures": 34,
+    "fluidePct": 100,
+    "ralentiPct": 0,
+    "saturePct": 0,
+    "bloquePct": 0
+   }
   },
   "Nancy": {
    "lat": 48.6921,
@@ -10544,27 +10684,9 @@
    "region": "Grand Est",
    "weather": "LIGHT_RAIN",
    "temperatureC": 9,
-   "precipitationMm": 0.1,
-   "windGustKmh": 54,
+   "precipitationMm": 0.9,
+   "windGustKmh": 69,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 9,
-     "precipProbability": 100
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 9,
-     "precipProbability": 100
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 9,
-     "precipProbability": 100
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "LIGHT_RAIN",
@@ -10598,7 +10720,7 @@
     {
      "at": "2026-10-25T07:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 11,
+     "temperatureC": 10,
      "precipProbability": 100
     },
     {
@@ -10610,7 +10732,7 @@
     {
      "at": "2026-10-25T09:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 12,
+     "temperatureC": 11,
      "precipProbability": 100
     },
     {
@@ -10639,26 +10761,26 @@
     },
     {
      "at": "2026-10-25T14:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 12,
+     "weather": "DRY",
+     "temperatureC": 13,
      "precipProbability": 18
     },
     {
      "at": "2026-10-25T15:00",
      "weather": "DRY",
-     "temperatureC": 13,
+     "temperatureC": 14,
      "precipProbability": 10
     },
     {
      "at": "2026-10-25T16:00",
      "weather": "DRY",
-     "temperatureC": 13,
+     "temperatureC": 14,
      "precipProbability": 28
     },
     {
      "at": "2026-10-25T17:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 13,
+     "weather": "DRY",
+     "temperatureC": 14,
      "precipProbability": 13
     },
     {
@@ -10682,7 +10804,7 @@
     {
      "at": "2026-10-25T21:00",
      "weather": "DRY",
-     "temperatureC": 10,
+     "temperatureC": 11,
      "precipProbability": 0
     },
     {
@@ -10712,19 +10834,19 @@
     {
      "at": "2026-10-26T02:00",
      "weather": "DRY",
-     "temperatureC": 9,
+     "temperatureC": 8,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T03:00",
      "weather": "DRY",
-     "temperatureC": 9,
+     "temperatureC": 8,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T04:00",
      "weather": "DRY",
-     "temperatureC": 9,
+     "temperatureC": 8,
      "precipProbability": 0
     },
     {
@@ -10762,9 +10884,37 @@
      "weather": "DRY",
      "temperatureC": 8,
      "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 9,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "DRY",
+     "temperatureC": 11,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "DRY",
+     "temperatureC": 12,
+     "precipProbability": 0
     }
    ],
-   "precipProbabilityNext3h": 100
+   "precipProbabilityNext3h": 100,
+   "traffic": "FLUID",
+   "trafficAt": "2026-10-25T00:13:45.007154+00:00",
+   "trafficSource": "Bison Futé TRAFICOLOR (TraficMyrabel)",
+   "trafficDetail": {
+    "mesures": 24,
+    "fluidePct": 100,
+    "ralentiPct": 0,
+    "saturePct": 0,
+    "bloquePct": 0
+   }
   },
   "Mulhouse": {
    "lat": 47.7508,
@@ -10773,27 +10923,9 @@
    "region": "Grand Est",
    "weather": "LIGHT_RAIN",
    "temperatureC": 9,
-   "precipitationMm": 0.1,
-   "windGustKmh": 27,
+   "precipitationMm": 0.0,
+   "windGustKmh": 26,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 9,
-     "precipProbability": 100
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 9,
-     "precipProbability": 100
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 9,
-     "precipProbability": 100
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "LIGHT_RAIN",
@@ -10809,13 +10941,13 @@
     {
      "at": "2026-10-25T04:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 10,
+     "temperatureC": 9,
      "precipProbability": 95
     },
     {
      "at": "2026-10-25T05:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 10,
+     "temperatureC": 9,
      "precipProbability": 93
     },
     {
@@ -10827,7 +10959,7 @@
     {
      "at": "2026-10-25T07:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 13,
+     "temperatureC": 12,
      "precipProbability": 90
     },
     {
@@ -10881,13 +11013,13 @@
     {
      "at": "2026-10-25T16:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 13,
+     "temperatureC": 12,
      "precipProbability": 43
     },
     {
      "at": "2026-10-25T17:00",
      "weather": "DRY",
-     "temperatureC": 12,
+     "temperatureC": 13,
      "precipProbability": 8
     },
     {
@@ -10899,7 +11031,7 @@
     {
      "at": "2026-10-25T19:00",
      "weather": "DRY",
-     "temperatureC": 11,
+     "temperatureC": 12,
      "precipProbability": 0
     },
     {
@@ -10935,7 +11067,7 @@
     {
      "at": "2026-10-26T01:00",
      "weather": "DRY",
-     "temperatureC": 8,
+     "temperatureC": 9,
      "precipProbability": 0
     },
     {
@@ -10959,19 +11091,19 @@
     {
      "at": "2026-10-26T05:00",
      "weather": "DRY",
-     "temperatureC": 8,
+     "temperatureC": 7,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T06:00",
      "weather": "DRY",
-     "temperatureC": 8,
+     "temperatureC": 7,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T07:00",
      "weather": "DRY",
-     "temperatureC": 8,
+     "temperatureC": 7,
      "precipProbability": 0
     },
     {
@@ -10991,6 +11123,24 @@
      "weather": "DRY",
      "temperatureC": 8,
      "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 10,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "DRY",
+     "temperatureC": 11,
+     "precipProbability": 0
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "DRY",
+     "temperatureC": 12,
+     "precipProbability": 0
     }
    ],
    "precipProbabilityNext3h": 100
@@ -11001,32 +11151,14 @@
    "dept": "80",
    "region": "Hauts-de-France",
    "weather": "LIGHT_RAIN",
-   "temperatureC": 12,
-   "precipitationMm": 0.2,
-   "windGustKmh": 68,
+   "temperatureC": 15,
+   "precipitationMm": 0.3,
+   "windGustKmh": 64,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 12,
-     "precipProbability": 100
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 13,
-     "precipProbability": 100
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 13,
-     "precipProbability": 100
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 14,
+     "temperatureC": 15,
      "precipProbability": 100
     },
     {
@@ -11038,7 +11170,7 @@
     {
      "at": "2026-10-25T04:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 15,
+     "temperatureC": 16,
      "precipProbability": 100
     },
     {
@@ -11050,7 +11182,7 @@
     {
      "at": "2026-10-25T06:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 12,
+     "temperatureC": 13,
      "precipProbability": 100
     },
     {
@@ -11067,8 +11199,8 @@
     },
     {
      "at": "2026-10-25T09:00",
-     "weather": "DRY",
-     "temperatureC": 11,
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 12,
      "precipProbability": 93
     },
     {
@@ -11086,13 +11218,13 @@
     {
      "at": "2026-10-25T12:00",
      "weather": "DRY",
-     "temperatureC": 12,
+     "temperatureC": 14,
      "precipProbability": 65
     },
     {
      "at": "2026-10-25T13:00",
-     "weather": "DRY",
-     "temperatureC": 13,
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 12,
      "precipProbability": 58
     },
     {
@@ -11103,14 +11235,14 @@
     },
     {
      "at": "2026-10-25T15:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 13,
+     "weather": "DRY",
+     "temperatureC": 14,
      "precipProbability": 37
     },
     {
      "at": "2026-10-25T16:00",
      "weather": "DRY",
-     "temperatureC": 13,
+     "temperatureC": 14,
      "precipProbability": 25
     },
     {
@@ -11121,26 +11253,26 @@
     },
     {
      "at": "2026-10-25T18:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 12,
+     "weather": "DRY",
+     "temperatureC": 13,
      "precipProbability": 7
     },
     {
      "at": "2026-10-25T19:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 11,
+     "weather": "DRY",
+     "temperatureC": 12,
      "precipProbability": 3
     },
     {
      "at": "2026-10-25T20:00",
      "weather": "DRY",
-     "temperatureC": 10,
+     "temperatureC": 11,
      "precipProbability": 0
     },
     {
      "at": "2026-10-25T21:00",
      "weather": "DRY",
-     "temperatureC": 11,
+     "temperatureC": 10,
      "precipProbability": 0
     },
     {
@@ -11194,13 +11326,13 @@
     {
      "at": "2026-10-26T06:00",
      "weather": "DRY",
-     "temperatureC": 9,
+     "temperatureC": 10,
      "precipProbability": 0
     },
     {
      "at": "2026-10-26T07:00",
      "weather": "DRY",
-     "temperatureC": 9,
+     "temperatureC": 10,
      "precipProbability": 1
     },
     {
@@ -11220,6 +11352,24 @@
      "weather": "DRY",
      "temperatureC": 10,
      "precipProbability": 5
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 11,
+     "precipProbability": 12
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "DRY",
+     "temperatureC": 11,
+     "precipProbability": 30
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 11,
+     "precipProbability": 53
     }
    ],
    "precipProbabilityNext3h": 100
@@ -11230,43 +11380,25 @@
    "dept": "62",
    "region": "Hauts-de-France",
    "weather": "LIGHT_RAIN",
-   "temperatureC": 15,
-   "precipitationMm": 2.3,
-   "windGustKmh": 86,
+   "temperatureC": 17,
+   "precipitationMm": 0.5,
+   "windGustKmh": 84,
    "hourly": [
-    {
-     "at": "2026-10-24T23:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 14,
-     "precipProbability": 100
-    },
-    {
-     "at": "2026-10-25T00:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 16,
-     "precipProbability": 100
-    },
-    {
-     "at": "2026-10-25T01:00",
-     "weather": "LIGHT_RAIN",
-     "temperatureC": 17,
-     "precipProbability": 100
-    },
     {
      "at": "2026-10-25T02:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 16,
+     "temperatureC": 17,
      "precipProbability": 98
     },
     {
      "at": "2026-10-25T03:00",
      "weather": "LIGHT_RAIN",
-     "temperatureC": 14,
+     "temperatureC": 15,
      "precipProbability": 98
     },
     {
      "at": "2026-10-25T04:00",
-     "weather": "LIGHT_RAIN",
+     "weather": "DRY",
      "temperatureC": 13,
      "precipProbability": 70
     },
@@ -11435,7 +11567,7 @@
     {
      "at": "2026-10-26T08:00",
      "weather": "DRY",
-     "temperatureC": 10,
+     "temperatureC": 11,
      "precipProbability": 10
     },
     {
@@ -11449,9 +11581,27 @@
      "weather": "DRY",
      "temperatureC": 12,
      "precipProbability": 33
+    },
+    {
+     "at": "2026-10-26T11:00",
+     "weather": "DRY",
+     "temperatureC": 12,
+     "precipProbability": 33
+    },
+    {
+     "at": "2026-10-26T12:00",
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 12,
+     "precipProbability": 28
+    },
+    {
+     "at": "2026-10-26T13:00",
+     "weather": "LIGHT_RAIN",
+     "temperatureC": 11,
+     "precipProbability": 70
     }
    ],
-   "precipProbabilityNext3h": 100
+   "precipProbabilityNext3h": 98
   }
  },
  "regions": {
@@ -11466,8 +11616,9 @@
    "weather": "LIGHT_RAIN",
    "rainingCities": 3,
    "temperatureMinC": 9,
-   "temperatureMaxC": 12,
-   "windGustMaxKmh": 22
+   "temperatureMaxC": 11,
+   "windGustMaxKmh": 29,
+   "trafficWorst": "FLUID"
   },
   "Bourgogne-Franche-Comté": {
    "cities": [
@@ -11476,20 +11627,21 @@
    ],
    "weather": "LIGHT_RAIN",
    "rainingCities": 2,
-   "temperatureMinC": 9,
+   "temperatureMinC": 8,
    "temperatureMaxC": 9,
-   "windGustMaxKmh": 51
+   "windGustMaxKmh": 58
   },
   "Bretagne": {
    "cities": [
     "Brest",
     "Rennes"
    ],
-   "weather": "DRY",
-   "rainingCities": 0,
+   "weather": "LIGHT_RAIN",
+   "rainingCities": 1,
    "temperatureMinC": 16,
    "temperatureMaxC": 16,
-   "windGustMaxKmh": 73
+   "windGustMaxKmh": 76,
+   "trafficWorst": "FLUID"
   },
   "Centre-Val de Loire": {
    "cities": [
@@ -11498,9 +11650,9 @@
    ],
    "weather": "LIGHT_RAIN",
    "rainingCities": 2,
-   "temperatureMinC": 13,
-   "temperatureMaxC": 14,
-   "windGustMaxKmh": 61
+   "temperatureMinC": 14,
+   "temperatureMaxC": 15,
+   "windGustMaxKmh": 67
   },
   "Corse": {
    "cities": [
@@ -11510,8 +11662,8 @@
    "weather": "DRY",
    "rainingCities": 0,
    "temperatureMinC": 13,
-   "temperatureMaxC": 16,
-   "windGustMaxKmh": 20
+   "temperatureMaxC": 14,
+   "windGustMaxKmh": 17
   },
   "Grand Est": {
    "cities": [
@@ -11524,8 +11676,9 @@
    "weather": "LIGHT_RAIN",
    "rainingCities": 5,
    "temperatureMinC": 9,
-   "temperatureMaxC": 11,
-   "windGustMaxKmh": 66
+   "temperatureMaxC": 13,
+   "windGustMaxKmh": 69,
+   "trafficWorst": "FLUID"
   },
   "Hauts-de-France": {
    "cities": [
@@ -11535,9 +11688,9 @@
    ],
    "weather": "LIGHT_RAIN",
    "rainingCities": 3,
-   "temperatureMinC": 11,
-   "temperatureMaxC": 15,
-   "windGustMaxKmh": 86
+   "temperatureMinC": 14,
+   "temperatureMaxC": 17,
+   "windGustMaxKmh": 84
   },
   "Normandie": {
    "cities": [
@@ -11546,10 +11699,11 @@
     "Rouen"
    ],
    "weather": "LIGHT_RAIN",
-   "rainingCities": 2,
-   "temperatureMinC": 15,
-   "temperatureMaxC": 16,
-   "windGustMaxKmh": 81
+   "rainingCities": 3,
+   "temperatureMinC": 16,
+   "temperatureMaxC": 17,
+   "windGustMaxKmh": 89,
+   "trafficWorst": "FLUID"
   },
   "Nouvelle-Aquitaine": {
    "cities": [
@@ -11561,9 +11715,10 @@
    ],
    "weather": "LIGHT_RAIN",
    "rainingCities": 2,
-   "temperatureMinC": 12,
-   "temperatureMaxC": 15,
-   "windGustMaxKmh": 50
+   "temperatureMinC": 10,
+   "temperatureMaxC": 16,
+   "windGustMaxKmh": 53,
+   "trafficWorst": "NORMAL"
   },
   "Occitanie": {
    "cities": [
@@ -11574,9 +11729,10 @@
    ],
    "weather": "LIGHT_RAIN",
    "rainingCities": 1,
-   "temperatureMinC": 12,
-   "temperatureMaxC": 14,
-   "windGustMaxKmh": 13
+   "temperatureMinC": 11,
+   "temperatureMaxC": 13,
+   "windGustMaxKmh": 15,
+   "trafficWorst": "FLUID"
   },
   "Pays de la Loire": {
    "cities": [
@@ -11586,9 +11742,10 @@
    ],
    "weather": "LIGHT_RAIN",
    "rainingCities": 1,
-   "temperatureMinC": 14,
-   "temperatureMaxC": 16,
-   "windGustMaxKmh": 72
+   "temperatureMinC": 16,
+   "temperatureMaxC": 17,
+   "windGustMaxKmh": 74,
+   "trafficWorst": "FLUID"
   },
   "Provence-Alpes-Côte d'Azur": {
    "cities": [
@@ -11599,9 +11756,10 @@
    ],
    "weather": "DRY",
    "rainingCities": 0,
-   "temperatureMinC": 11,
-   "temperatureMaxC": 16,
-   "windGustMaxKmh": 40
+   "temperatureMinC": 10,
+   "temperatureMaxC": 15,
+   "windGustMaxKmh": 38,
+   "trafficWorst": "FLUID"
   },
   "Île-de-France": {
    "cities": [
@@ -11617,22 +11775,26 @@
     "Versailles"
    ],
    "weather": "LIGHT_RAIN",
-   "rainingCities": 8,
-   "temperatureMinC": 12,
-   "temperatureMaxC": 14,
-   "windGustMaxKmh": 73
+   "rainingCities": 9,
+   "temperatureMinC": 13,
+   "temperatureMaxC": 15,
+   "windGustMaxKmh": 79
   }
  },
  "national": {
   "cityCount": 50,
   "weatherCities": 50,
   "weatherCounts": {
-   "LIGHT_RAIN": 29,
-   "DRY": 21
+   "LIGHT_RAIN": 32,
+   "DRY": 18
   },
-  "temperatureMinC": 9,
-  "temperatureMaxC": 16,
-  "trafficMeasuredCities": 0
+  "temperatureMinC": 8,
+  "temperatureMaxC": 17,
+  "trafficMeasuredCities": 15,
+  "trafficCounts": {
+   "FLUID": 14,
+   "NORMAL": 1
+  }
  },
  "highways": {
   "A1": {
@@ -11788,9 +11950,225 @@
    },
    {
     "name": "Bison Futé TRAFICOLOR",
-    "ok": false,
-    "files": 0,
-    "diagnostic": []
+    "ok": true,
+    "files": 14,
+    "diagnostic": [
+     {
+      "file": "ALIENOR_DataTRT_20261025_020640.xml",
+      "states": 165,
+      "attributed": 151,
+      "publicationTime": "2026-10-25T02:06:40",
+      "departments": {
+       "33": 151,
+       "79": 2,
+       "80": 2,
+       "09": 2,
+       "10": 2,
+       "11": 2
+      },
+      "cities": [
+       "Bordeaux"
+      ],
+      "dir": "ALIENOR"
+     },
+     {
+      "file": "TraficStBrieuc_DataTRT_20261025_021300.xml",
+      "states": 91,
+      "attributed": 0,
+      "publicationTime": "2026-10-25T02:13:00",
+      "departments": {
+       "29": 50,
+       "22": 41
+      },
+      "cities": [],
+      "dir": "TRAFIC_TraficStBrieuc"
+     },
+     {
+      "file": "TraficTriskell56_DataTRT_20261025_021220.xml",
+      "states": 153,
+      "attributed": 0,
+      "publicationTime": "2026-10-25T02:12:20",
+      "departments": {
+       "56": 137,
+       "29": 16
+      },
+      "cities": [],
+      "dir": "TRAFIC_TraficTriskell56"
+     },
+     {
+      "file": "TraficBreizhNantes_DataTRT_20261025_021220.xml",
+      "states": 193,
+      "attributed": 193,
+      "publicationTime": "2026-10-25T02:12:20",
+      "departments": {
+       "44": 193
+      },
+      "cities": [
+       "Nantes"
+      ],
+      "dir": "TraficBreizhNantes"
+     },
+     {
+      "file": "TraficBreizhRennes_DataTRT_20261025_021220.xml",
+      "states": 177,
+      "attributed": 177,
+      "publicationTime": "2026-10-25T02:12:20",
+      "departments": {
+       "35": 177
+      },
+      "cities": [
+       "Rennes"
+      ],
+      "dir": "TraficBreizhRennes"
+     },
+     {
+      "file": "TraficDirmc_DataTRT_20261025_020730.xml",
+      "states": 14,
+      "attributed": 14,
+      "publicationTime": "2026-10-25T02:07:30",
+      "departments": {
+       "34": 8,
+       "63": 6
+      },
+      "cities": [
+       "Clermont-Ferrand",
+       "Montpellier"
+      ],
+      "dir": "TraficDirmc"
+     },
+     {
+      "file": "TraficErato_DataTRT_20261025_021220.xml",
+      "states": 122,
+      "attributed": 85,
+      "publicationTime": "2026-10-25T02:12:20",
+      "departments": {
+       "31": 85,
+       "?": 37
+      },
+      "cities": [
+       "Toulouse"
+      ],
+      "dir": "TraficErato"
+     },
+     {
+      "file": "TraficGentiane_1_DataTRT_20261025_021220.xml",
+      "states": 26,
+      "attributed": 26,
+      "publicationTime": "2026-10-25T02:12:20",
+      "departments": {
+       "38": 26
+      },
+      "cities": [
+       "Grenoble"
+      ],
+      "dir": "TraficGentiane"
+     },
+     {
+      "file": "TraficHyrondelle_1_DataTRT_20261025_021240.xml",
+      "states": 98,
+      "attributed": 98,
+      "publicationTime": "2026-10-25T02:12:40",
+      "departments": {
+       "42": 81,
+       "69": 17
+      },
+      "cities": [
+       "Lyon",
+       "Saint-Etienne"
+      ],
+      "dir": "TraficHyrondelle"
+     },
+     {
+      "file": "TraficLimoges_DataTRT_20261025_021220.xml",
+      "states": 63,
+      "attributed": 37,
+      "publicationTime": "2026-10-25T02:12:20",
+      "departments": {
+       "87": 25,
+       "86": 12,
+       "19": 12,
+       "18": 6,
+       "36": 4,
+       "23": 3
+      },
+      "cities": [
+       "Limoges",
+       "Poitiers"
+      ],
+      "dir": "TraficLimoges"
+     },
+     {
+      "file": "TraficLyon_DataTRT_20261025_021235.xml",
+      "states": 223,
+      "attributed": 203,
+      "publicationTime": "2026-10-25T02:12:35.630+02:00",
+      "departments": {
+       "69": 203,
+       "01": 17,
+       "38": 3
+      },
+      "cities": [
+       "Lyon"
+      ],
+      "dir": "TraficLyon"
+     },
+     {
+      "file": "TraficMarius_DataTRT_20261025_015400.xml",
+      "states": 178,
+      "attributed": 178,
+      "publicationTime": "2026-10-25T01:54:00.000+02:00",
+      "departments": {
+       "13": 178
+      },
+      "cities": [
+       "Marseille"
+      ],
+      "dir": "TraficMarius"
+     },
+     {
+      "file": "TraficMyrabel_DataTRT_20261025_021230.xml",
+      "states": 58,
+      "attributed": 58,
+      "publicationTime": "2026-10-25T02:12:30",
+      "departments": {
+       "57": 34,
+       "54": 24
+      },
+      "cities": [
+       "Metz",
+       "Nancy"
+      ],
+      "dir": "TraficMyrabel"
+     },
+     {
+      "file": "TraficRouen_DataTRT_20261025_021220.xml",
+      "states": 96,
+      "attributed": 62,
+      "publicationTime": "2026-10-25T02:12:20",
+      "departments": {
+       "76": 62,
+       "?": 34
+      },
+      "cities": [
+       "Rouen"
+      ],
+      "dir": "TraficRouen"
+     }
+    ],
+    "agglomerations": [
+     "ALIENOR",
+     "TraficBreizhNantes",
+     "TraficBreizhRennes",
+     "TraficDirmc",
+     "TraficErato",
+     "TraficGentiane",
+     "TraficHyrondelle",
+     "TraficLimoges",
+     "TraficLyon",
+     "TraficMarius",
+     "TraficMyrabel",
+     "TraficRouen"
+    ]
    },
    {
     "name": "Bison Futé RSS",
